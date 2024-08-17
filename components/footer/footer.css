@@ -1,0 +1,21 @@
+.footer {
+  margin-top: auto;
+
+  font-family: Inter;
+  color: var(--color);
+  text-align: center;
+}
+
+.footer__title {
+  /*h2*/
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.26;
+}
+
+.footer__description {
+  /* p */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
