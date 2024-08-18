@@ -34,9 +34,6 @@
 }
 
 .accordion {
-  width: 580px;
-  height: auto;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -44,7 +41,7 @@
 
 .accordion__details {
   margin-top: 8px;
-  padding: 32px;
+  padding: 24px 32px;
 
   border: var(--alternate-border) solid 1px;
   border-radius: 8px;
@@ -93,6 +90,8 @@
 }
 
 .accordion__content {
+  margin: 16px 0 0;
+
   color: var(--color-content);
 
   text-indent: 10px;
