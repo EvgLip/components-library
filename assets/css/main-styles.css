@@ -3,6 +3,7 @@
 @import url('../../components/main/main.css');
 @import url('../../components/header/header.css');
 @import url('../../components/footer/footer.css');
+@import url('../fonts/fonts.css');
 
 :root {
   --white: rgb(255, 255, 255);
