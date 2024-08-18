@@ -53,7 +53,43 @@
 }
 
 .accordion__summary {
+  position: relative;
   color: var(--color);
+
+  cursor: pointer;
+}
+
+.accordion__summary::marker {
+  content: '';
+}
+
+/* .accordion__summary::before,
+.accordion__summary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 0.75rem;
+  height: 0;
+  border: 1px solid;
+
+} */
+
+/* .accordion__details[open] .accordion__summary::after {
+  transform: rotate(90deg);
+} */
+
+.accordion__summary-marker {
+  width: 1.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.accordion__details[open] .accordion__summary-marker {
+  transform: rotate(180deg);
+  transform-origin: 50% 25%;
 }
 
 .accordion__content {
