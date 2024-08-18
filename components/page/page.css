@@ -1,3 +1,4 @@
+/*разметка страницы*/
 .page {
   display: flex;
   flex-direction: column;
