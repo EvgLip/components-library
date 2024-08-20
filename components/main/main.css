@@ -1,3 +1,13 @@
-main {
+.main {
   background: var(--background-main);
+  font-size: 0;
+}
+
+.main__inner {
+  margin: 0 -15px;
+}
+
+.main__card {
+  margin: 15px;
+  font-size: 16px;
 }
