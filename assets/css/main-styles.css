@@ -14,9 +14,11 @@
   --black: rgb(33, 36, 41);
   --pink: rgb(247, 132, 173);
   --purple: rgb(112, 72, 232);
-  --blue: rgb(55, 79, 199);
+  --purple-2: rgb(80, 40, 198);
+  --blue: rgb(66, 99, 235);
+  --blue-2: rgb(35, 66, 192);
   --red: rgb(240, 61, 62);
-  --grey-1: rgb(249, 250, 251);
+  --grey-1: rgb(248, 249, 250);
   --grey-2: rgb(221, 226, 229);
   --grey-3: rgb(172, 181, 189);
   --grey-4: rgb(73, 80, 87);
@@ -25,14 +27,24 @@
   --success: var(--blue);
 
   --primary: var(--blue);
+  --primary-hover: var(--blue-2);
   --secondary: var(--purple);
+  --secondary-hover: var(--purple-2);
+  --alternate: var(--white);
+  --alternate-border: var(--grey-3);
+  --alternate-border-hover: var(--black);
 
   /* background */
   --background-main: var(--white-2);
-  --background-other: var(--white);
+  --background: var(--white);
 
   /* font color */
   --color: var(--black);
+  --color-content: var(var(--grey-4));
+  --color-btn: var(--white);
+
+  /* border color */
+  --border-prim: var(--grey-3);
 }
 
 /* html, body {
