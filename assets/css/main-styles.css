@@ -35,6 +35,6 @@
   --color: var(--black);
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
+/* html, body {
+  height: 100%;
+} */
