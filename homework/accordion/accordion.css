@@ -1,17 +1,17 @@
 :root {
-  --white: #ffffff;
-  --white-2: #f9fafc;
-  --black: #212429;
-  --pink: #F784AD;
-  --purple: #7048E8;
-  --purple-2: #5028c6;
-  --blue: #374FC7;
-  --blue-2: #2342c0;
-  --red: #F03D3E;
-  --grey-1: #F8F9FA;
-  --grey-2: #DDE2E5;
-  --grey-3: #ACB5BD;
-  --grey-4: #495057;
+  --white: rgb(255, 255, 255);
+  --white-2: rgb(249, 250, 252);
+  --black: rgb(33, 36, 41);
+  --pink: rgb(247, 132, 173);
+  --purple: rgb(112, 72, 232);
+  --purple-2: rgb(80, 40, 198);
+  --blue: rgb(55, 79, 199);
+  --blue-2: rgb(35, 66, 192);
+  --red: rgb(240, 61, 62);
+  --grey-1: rgb(248, 249, 250);
+  --grey-2: rgb(221, 226, 229);
+  --grey-3: rgb(172, 181, 189);
+  --grey-4: rgb(73, 80, 87);
 
   --error: var(--red);
   --success: var(--blue);
@@ -23,6 +23,7 @@
   --alternate: var(--white);
   --alternate-border: var(--grey-3);
   --alternate-border-hover: var(--black);
+
   /* background */
   --background-main: var(--white-2);
   --background: var(--white);
@@ -31,6 +32,9 @@
   --color: var(--black);
   --color-content: var(var(--grey-4));
   --color-btn: var(--white);
+
+  /* border color */
+  --border-prim: var(--grey-3);
 }
 
 .accordion {
