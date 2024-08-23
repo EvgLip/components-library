@@ -4,8 +4,11 @@
 @import url('../../components/header/header.css');
 @import url('../../components/footer/footer.css');
 @import url('../../components/container/container.css');
+@import url('../../components/button/button.css');
+@import url('../../components/accordion/accordion.css');
 @import url('../../components/card/card.css');
 @import url('../../components/histogram/histogram.css');
+@import url('../../components/skeleton/skeleton.css');
 
 @import url('../fonts/fonts.css');
 
@@ -27,6 +30,7 @@
   --error: var(--red);
   --success: var(--blue);
 
+  /* для компонентов */
   --primary: var(--blue);
   --primary-hover: var(--blue-2);
   --secondary: var(--purple);
@@ -35,13 +39,13 @@
   --alternate-border: var(--grey-3);
   --alternate-border-hover: var(--black);
 
-  /* background */
+  /* background для секций сайта */
   --background-main: var(--white-2);
   --background: var(--white);
 
   /* font color */
   --color: var(--black);
-  --color-content: var(var(--grey-4));
+  --color-content: var(--grey-4);
   --color-btn: var(--white);
 
   /* border color */
