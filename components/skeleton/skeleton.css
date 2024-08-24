@@ -1,6 +1,12 @@
+/* структура скелетона */
 .skeleton {
   box-sizing: border-box;
-  padding: 24px 32px 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding: 32px 24px 40px;
   border: 1px solid var(--border-prim);
   border-radius: 8px;
 
@@ -9,11 +15,22 @@
 
 .skeleton__line {
   height: 20px;
+}
 
-  margin: 8px 0;
+.skeleton__header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 16px;
+  row-gap: 8px;
+
+  grid-template-areas:
+    'logo title1'
+    'logo title2';
 }
 
 .skeleton__logo {
+  grid-area: logo;
+
   border-radius: 50%;
   width: 64px;
   height: 64px;
@@ -21,18 +38,24 @@
   background: var(--grey-2);
 }
 
-.skeleton__header {
+.skeleton__title1 {
+  grid-area: title1;
+  align-self: self-end;
+}
+
+.skeleton__title2 {
+  grid-area: title2;
+  align-self: start;
+}
+
+.skeleton__body {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 16px;
-  align-items: center;
-
-  margin-bottom: 24px;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.skeleton__title {
-  flex-grow: 1;
-}
+
+/* модификаторы скелетона */
 
 .line-short {
   width: 50%;
@@ -47,23 +70,25 @@
 }
 
 .lg-type1 {
-  background: linear-gradient(162.84deg,
+  background: linear-gradient(160deg,
       rgb(221, 226, 229) 10%,
       rgb(226, 230, 232) 40%,
       rgb(243, 245, 245) 57%,
       rgb(227, 231, 234) 77%,
       rgb(221, 226, 229) 100%);
+  background-size: 200%;
   animation: shine 1.5s linear infinite;
 }
 
 .lg-type2 {
-  background: linear-gradient(162.84deg,
+  background: linear-gradient(160deg,
       rgb(221, 226, 229) 7%,
       rgb(226, 230, 232) 35%,
       rgb(243, 245, 245) 60%,
       rgb(227, 231, 234) 80%,
       rgb(221, 226, 229) 100%);
-  animation: shine 1.5s linear infinite;
+  background-size: 200%;
+  animation: shine 2s linear infinite;
 }
 
 @keyframes shine {
