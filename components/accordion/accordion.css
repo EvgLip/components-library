@@ -12,12 +12,12 @@
   border: var(--border-prim) solid 1px;
   border-radius: 8px;
 
-  background: var(--white);
+  background: var(--background-light);
 }
 
 .accordion__summary {
   position: relative;
-  color: var(--color);
+  color: var(--font-soft);
 
   cursor: pointer;
 }
@@ -58,7 +58,7 @@
 .accordion__content {
   margin: 16px 0 0;
 
-  color: var(--color-content);
+  color: var(--font-grey);
 
   text-indent: 10px;
 }

@@ -1,4 +1,5 @@
 .header {
+  background: var(--background-light);
   padding: 96px 0 77px;
   background: var(--background);
 }

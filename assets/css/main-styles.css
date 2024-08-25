@@ -15,7 +15,8 @@
 :root {
   --white: rgb(255, 255, 255);
   --white-2: rgb(249, 250, 252);
-  --black: rgb(33, 36, 41);
+  --black: rgb(0, 0, 0);
+  --soft-black: rgb(33, 36, 41);
   --pink: rgb(247, 132, 173);
   --purple: rgb(112, 72, 232);
   --purple-2: rgb(80, 40, 198);
@@ -40,13 +41,14 @@
   --alternate-border-hover: var(--black);
 
   /* background для секций сайта */
-  --background-main: var(--white-2);
-  --background: var(--white);
+  --background-dark: var(--white-2);
+  --background-light: var(--white);
 
   /* font color */
-  --color: var(--black);
-  --color-content: var(--grey-4);
-  --color-btn: var(--white);
+  --font-dark: var(--black);
+  --font-soft: var(--soft-black);
+  --font-grey: var(--grey-4);
+  --font-light: var(--white);
 
   /* border color */
   --border-prim: var(--grey-3);

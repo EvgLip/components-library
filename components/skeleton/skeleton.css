@@ -10,7 +10,7 @@
   border: 1px solid var(--border-prim);
   border-radius: 8px;
 
-  background: var(--background);
+  background: var(--background-light);
 }
 
 .skeleton__line {
