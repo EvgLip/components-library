@@ -1,21 +1,52 @@
 .footer {
-  background: var(--background-light);
-  font-family: Inter;
-  color: var(--color);
+  box-sizing: border-box;
+  font-family: var(--font-family-1);
   text-align: center;
 }
 
-.footer__title {
+/* для страницы index.html */
+.footer-index {
+  padding: 72px 10px 136px;
+
+  color: var(--font-soft);
+}
+
+.footer-index__title {
+  margin: 0;
+
   font-size: 38px;
   font-weight: 500;
   line-height: 1.26;
 }
 
-.footer__description {
-  width: 640px;
-  margin: 0 auto 30px;
+.footer-index__description {
+  /* max-width: 640px; */
+  width: 100%;
+  margin: 32px auto 0;
 
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+/* для страницы component-page.html */
+.footer-component__title {
+  margin: 0;
+  padding: 56px;
+
+  color: var(--font-soft-grey);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* модификаторы */
+
+.footer_light {
+  background: var(--background-light);
+}
+
+.footer_dark {
+  background: var(--background-dark);
 }

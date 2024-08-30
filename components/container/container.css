@@ -1,4 +1,8 @@
 .container {
-  max-width: 1110px;
+  box-sizing: border-box;
+  max-width: 1150px;
+  height: 100%;
+  min-height: 0;
   margin: 0 auto;
+  padding: 0 20px;
 }

@@ -1,11 +1,42 @@
 .main {
-  background: var(--background-dark);
-  padding-top: 67px;
+  box-sizing: border-box;
 }
 
-.main__cards {
+/* для index.html */
+.main-index {
+  padding: 65px 45px;
+}
+
+.main-index__cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: stretch;
   gap: 30px;
+}
+
+/* для страницы component-page.html */
+.main__inner {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.main__component {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: calc(100%);
+}
+
+.main__menu {
+  width: 229px;
+}
+
+/* модификаторы */
+
+.main_dark {
+  background: var(--background-dark);
+}
+
+.main_light {
+  background: var(--background-light);
 }

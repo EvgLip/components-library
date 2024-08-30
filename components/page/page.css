@@ -1,11 +1,20 @@
 /*разметка страницы*/
 .page {
-  display: flex;
-  flex-direction: column;
-
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.page__main {
+/* для index.html */
+.page-index {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-index__main {
   flex-grow: 1;
+}
+
+/* для component-page.html */
+.page-component {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }

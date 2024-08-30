@@ -9,7 +9,7 @@
   border-radius: 8px;
   outline: none;
 
-  font-family: Roboto;
+  font-family: var(--font-family-2), sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
@@ -45,11 +45,11 @@
 }
 
 .btn_alternate {
-  border-color: var(--alternate-border);
-  background: var(--alternate);
-  color: var(--font-dark);
+  border-color: var(--border-prim);
+  background: var(--background-light);
+  color: var(--font-grey);
 }
 
 .btn_alternate:hover:not([disabled]) {
-  border-color: var(--alternate-border-hover);
+  border-color: var(--border-dark);
 }

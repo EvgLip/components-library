@@ -14,7 +14,7 @@
 
 :root {
   --white: rgb(255, 255, 255);
-  --white-2: rgb(249, 250, 252);
+  --white-2: rgb(229, 236, 252);
   --black: rgb(0, 0, 0);
   --soft-black: rgb(33, 36, 41);
   --pink: rgb(247, 132, 173);
@@ -36,22 +36,25 @@
   --primary-hover: var(--blue-2);
   --secondary: var(--purple);
   --secondary-hover: var(--purple-2);
-  --alternate: var(--white);
-  --alternate-border: var(--grey-3);
-  --alternate-border-hover: var(--black);
 
-  /* background для секций сайта */
+  /* background */
   --background-dark: var(--white-2);
   --background-light: var(--white);
+
+  /* font-family */
+  --font-family-1: 'Inter';
+  --font-family-2: 'Roboto';
 
   /* font color */
   --font-dark: var(--black);
   --font-soft: var(--soft-black);
+  --font-soft-grey: var(--grey-3);
   --font-grey: var(--grey-4);
   --font-light: var(--white);
 
   /* border color */
   --border-prim: var(--grey-3);
+  --border-dark: var(--black);
 }
 
 /* html, body {
