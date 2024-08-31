@@ -9,6 +9,7 @@
 @import url('../../components/card/card.css');
 @import url('../../components/histogram/histogram.css');
 @import url('../../components/skeleton/skeleton.css');
+@import url('../../components/calendar/calendar.css');
 
 @import url('../fonts/fonts.css');
 
@@ -20,7 +21,7 @@
   --pink: rgb(247, 132, 173);
   --purple: rgb(112, 72, 232);
   --purple-2: rgb(80, 40, 198);
-  --blue: rgb(66, 99, 235);
+  --blue: rgb(66, 99, 235, .2);
   --blue-2: rgb(35, 66, 192);
   --red: rgb(240, 61, 62);
   --grey-1: rgb(248, 249, 250);
