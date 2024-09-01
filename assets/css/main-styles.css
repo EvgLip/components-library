@@ -14,20 +14,20 @@
 @import url('../fonts/fonts.css');
 
 :root {
-  --white: rgb(255, 255, 255);
-  --white-2: rgb(229, 236, 252);
-  --black: rgb(0, 0, 0);
-  --soft-black: rgb(33, 36, 41);
-  --pink: rgb(247, 132, 173);
-  --purple: rgb(112, 72, 232);
-  --purple-2: rgb(80, 40, 198);
-  --blue: rgb(66, 99, 235, .2);
-  --blue-2: rgb(35, 66, 192);
-  --red: rgb(240, 61, 62);
-  --grey-1: rgb(248, 249, 250);
-  --grey-2: rgb(221, 226, 229);
-  --grey-3: rgb(172, 181, 189);
-  --grey-4: rgb(73, 80, 87);
+  --white: 255 255 255;
+  --white-2: 229 236 252;
+  --black: 0 0 0;
+  --soft-black: 33 36 41;
+  --pink: 247 132 173;
+  --purple: 112 72 232;
+  --purple-2: 80 40 198;
+  --blue: 66 99 235;
+  --blue-2: 35 66 192;
+  --red: 240 61 62;
+  --grey-1: 248 249 250;
+  --grey-2: 221 226 229;
+  --grey-3: 172 181 189;
+  --grey-4: 73 80 87;
 
   --error: var(--red);
   --success: var(--blue);
