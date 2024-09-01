@@ -1,6 +1,11 @@
-.calendar {
+.calendar *,
+.calendar *::before,
+.calendar *::after {
   box-sizing: border-box;
+  margin: 0;
+}
 
+.calendar {
   max-width: 304px;
   min-width: 250px;
   width: 100%;

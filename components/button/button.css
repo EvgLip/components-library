@@ -1,6 +1,11 @@
-.btn {
+.btn *,
+.btn *::before,
+.btn *::after {
   box-sizing: border-box;
+  margin: 0;
+}
 
+.btn {
   height: 48px;
   padding: 0 15px;
 
@@ -23,33 +28,31 @@
 }
 
 .btn_primary {
-  border-color: var(--primary);
-  background: var(--primary);
-  color: var(--font-light);
+  border-color: rgb(var(--primary));
+  background: rgb(var(--primary));
+  color: rgb(var(--font-light));
 }
 
 .btn_primary:hover:not([disabled]) {
-  border-color: var(--primary-hover);
-  background: var(--primary-hover);
+  --primary: var(--primary-hover);
 }
 
 .btn_secondary {
-  border-color: var(--secondary);
-  background: var(--secondary);
-  color: var(--font-light);
+  border-color: rgb(var(--secondary));
+  background: rgb(var(--secondary));
+  color: rgb(var(--font-light));
 }
 
 .btn_secondary:hover:not([disabled]) {
-  border-color: var(--secondary-hover);
-  background: var(--secondary-hover);
+  --secondary: var(--secondary-hover);
 }
 
 .btn_alternate {
-  border-color: var(--border-prim);
-  background: var(--background-light);
-  color: var(--font-grey);
+  border-color: rgb(var(--border-prim));
+  background: rgb(var(--background-light));
+  color: rgb(var(--font-grey));
 }
 
 .btn_alternate:hover:not([disabled]) {
-  border-color: var(--border-dark);
+  border-color: rgb(var(--border-dark));
 }

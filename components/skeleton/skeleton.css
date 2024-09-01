@@ -1,16 +1,21 @@
 /* структура скелетона */
-.skeleton {
+.skeleton *,
+.skeleton *::before,
+.skeleton *::after {
   box-sizing: border-box;
+  margin: 0;
+}
 
+.skeleton {
   display: flex;
   flex-direction: column;
   gap: 24px;
 
   padding: 32px 24px 40px;
-  border: 1px solid var(--border-prim);
+  border: 1px solid rgb(var(--border-prim));
   border-radius: 8px;
 
-  background: var(--background-light);
+  background: rgb(var(--background-light));
 }
 
 .skeleton__line {
@@ -23,8 +28,7 @@
   column-gap: 16px;
   row-gap: 8px;
 
-  grid-template-areas:
-    'logo title1'
+  grid-template-areas: 'logo title1'
     'logo title2';
 }
 
@@ -35,7 +39,7 @@
   width: 64px;
   height: 64px;
 
-  background: var(--grey-2);
+  background: rgb(var(--grey-2));
 }
 
 .skeleton__title1 {

@@ -8,7 +8,7 @@
 .footer-index {
   padding: 72px 10px 136px;
 
-  color: var(--font-soft);
+  color: rgb(var(--font-soft));
 }
 
 .footer-index__title {
@@ -34,7 +34,7 @@
   margin: 0;
   padding: 56px;
 
-  color: var(--font-soft-grey);
+  color: rgb(var(--font-soft-grey));
   font-size: 12px;
   font-weight: 500;
   line-height: 1.2;
@@ -44,9 +44,9 @@
 /* модификаторы */
 
 .footer_light {
-  background: var(--background-light);
+  background: rgb(var(--background-light));
 }
 
 .footer_dark {
-  background: var(--background-dark);
+  background: rgb(var(--background-dark));
 }
