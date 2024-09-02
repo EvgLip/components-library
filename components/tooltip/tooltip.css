@@ -25,8 +25,13 @@
 
 .tooltip__bubble {
   display: none;
-
   position: absolute;
+
+  min-width: 200px;
+}
+
+/* tooltip снизу*/
+.tooltip__bubble_bottom {
   top: calc(100% + var(--size));
   left: 50%;
   transform: translateX(-50%);
@@ -37,7 +42,8 @@
   box-shadow: 0px 2px 4px 0px rgba(var(--background-soft-dark) 0.05);
 }
 
-.tooltip__bubble::before {
+/* создание хвостика для tooltip */
+.tooltip__bubble_bottom::before {
   content: '';
 
   position: absolute;
@@ -47,6 +53,31 @@
 
   border: var(--size) solid transparent;
   border-bottom: var(--size) solid rgb(var(--background-soft-dark));
+}
+
+/* tooltip сверху*/
+.tooltip__bubble_top {
+  bottom: calc(100% + var(--size));
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgb(var(--background-soft-dark));
+  border-radius: 10px;
+
+  box-shadow: 0px 2px 4px 0px rgba(var(--background-soft-dark) 0.05);
+}
+
+/* создание хвостика для tooltip */
+.tooltip__bubble_top::before {
+  content: '';
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: var(--size) solid transparent;
+  border-top: var(--size) solid rgb(var(--background-soft-dark));
 }
 
 .tooltip__helper-text {
