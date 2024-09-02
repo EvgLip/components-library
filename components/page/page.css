@@ -4,17 +4,18 @@
 }
 
 /* для index.html */
-.page-index {
+.page_flex {
   display: flex;
   flex-direction: column;
 }
 
-.page-index__main {
+.page__main_index {
   flex-grow: 1;
 }
 
+
 /* для component-page.html */
-.page-component {
+.page_grid {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }

@@ -6,9 +6,11 @@
   padding: 24px 0;
 }
 
+/*//// МОДИФИКАТОРЫ ////*/
+
 /* для страницы index.html */
-.header-index__title {
-  color: var(--font-soft);
+.header__title_index {
+  color: rgb(var(--font-soft));
 
   font-size: 50px;
   font-weight: 500;
@@ -17,18 +19,18 @@
 }
 
 /* для страницы component-page.html */
-.header-component {
+.header_component {
   height: 115px;
 
   padding: 24px 0 60px;
 }
 
-/* МОДИФИКАТОРЫ */
-
-.header_light {
-  background: var(--background-light);
-}
+/* общие */
 
 .header_dark {
-  background: var(--background-dark);
+  background: rgb(var(--background-dark));
+}
+
+.header_light {
+  background: rgb(var(--background-light));
 }

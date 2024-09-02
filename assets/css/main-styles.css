@@ -10,12 +10,15 @@
 @import url('../../components/histogram/histogram.css');
 @import url('../../components/skeleton/skeleton.css');
 @import url('../../components/calendar/calendar.css');
+@import url('../../components/tooltip/tooltip.css');
 
 @import url('../fonts/fonts.css');
 
+
+
 :root {
   --white: 255 255 255;
-  --white-2: 229 236 252;
+  --white-2: 249 250 252;
   --black: 0 0 0;
   --soft-black: 33 36 41;
   --pink: 247 132 173;
@@ -40,6 +43,7 @@
 
   /* background */
   --background-dark: var(--white-2);
+  --background-soft-dark: var(--soft-black);
   --background-light: var(--white);
 
   /* font-family */

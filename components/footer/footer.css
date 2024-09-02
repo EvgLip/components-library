@@ -4,14 +4,16 @@
   text-align: center;
 }
 
+/*//// МОДИФИКАТОРЫ ////*/
+
 /* для страницы index.html */
-.footer-index {
+.footer_index {
   padding: 72px 10px 136px;
 
   color: rgb(var(--font-soft));
 }
 
-.footer-index__title {
+.footer__title_index {
   margin: 0;
 
   font-size: 38px;
@@ -19,7 +21,7 @@
   line-height: 1.26;
 }
 
-.footer-index__description {
+.footer__description_index {
   /* max-width: 640px; */
   width: 100%;
   margin: 32px auto 0;
@@ -30,7 +32,7 @@
 }
 
 /* для страницы component-page.html */
-.footer-component__title {
+.footer__title_component {
   margin: 0;
   padding: 56px;
 
@@ -41,7 +43,7 @@
   text-transform: uppercase;
 }
 
-/* модификаторы */
+/* общие */
 
 .footer_light {
   background: rgb(var(--background-light));
