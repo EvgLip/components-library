@@ -17,6 +17,15 @@
   gap: 30px;
 }
 
+.main__card {
+  /* когда в строке может не хватать карточек */
+  /* можно использовать max-width в сочетании с flex-basis */
+  /* максимальная ширина = две базовых ширины + gap */
+  /* max-width: calc(350px * 2 + 30px); */
+  height: 367px;
+  flex: 1 1 350px;
+}
+
 /* для страницы component-page.html */
 .main__body {
   display: grid;
