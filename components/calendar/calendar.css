@@ -6,10 +6,10 @@
 }
 
 .calendar {
-  max-width: 304px;
-  min-width: 250px;
+  max-width: 200px;
+  min-width: 160px;
   width: 100%;
-  padding: 26px;
+  padding: 8%;
 
   border: 1px solid rgb(var(--border-prim));
   border-radius: 8px;

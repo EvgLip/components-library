@@ -1,6 +1,45 @@
 .card {
-  border-radius: 12px;
+  border-radius: 0.75rem;
 
-  box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
-  background: rgb(200, 82, 82);
+  box-shadow: 0px 2px 4px 0px rgba(var(--soft-black), 0.05);
+  background: rgb(var(--background-light));
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.card__footer {
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: var(--font-family-2);
+}
+
+.card__description {
+  margin: 0;
+
+  color: rgb(var(--font-soft));
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.card__content-type {
+  margin-top: 0.5rem;
+  color: rgb(var(--font-grey));
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2;
 }
