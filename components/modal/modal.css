@@ -1,0 +1,59 @@
+.modal *,
+.modal *::before,
+.modal *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+html,
+body {
+  /* резервирование места для скрола */
+  scrollbar-gutter: stable;
+}
+
+.modal {
+  width: 100%;
+  max-width: 500px;
+  padding: 0;
+
+  border: none;
+
+  background-color: rgb(var(--background-light));
+}
+
+.modal_preview {
+  border: 1px solid rgb(var(--border-prim));
+}
+
+.modal::backdrop {
+  background: rgba(var(--primary) / 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.modal__wrapper {
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+
+  border-radius: 8px;
+}
+
+.modal__btn-close {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
