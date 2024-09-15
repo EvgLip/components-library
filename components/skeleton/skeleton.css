@@ -1,12 +1,6 @@
-/* структура скелетона */
-.skeleton *,
-.skeleton *::before,
-.skeleton *::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .skeleton {
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   gap: 24px;

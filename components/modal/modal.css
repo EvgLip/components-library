@@ -1,11 +1,3 @@
-.modal *,
-.modal *::before,
-.modal *::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-
 html,
 body {
   /* резервирование места для скрола */
@@ -13,6 +5,8 @@ body {
 }
 
 .modal {
+  box-sizing: border-box;
+
   width: 100%;
   max-width: 500px;
   padding: 0;
@@ -31,10 +25,10 @@ body {
 .modal::backdrop {
   background: rgba(var(--primary) / 0.5);
   backdrop-filter: blur(2px);
-  border-radius: 8px;
 }
 
 .modal__wrapper {
+  box-sizing: inherit;
   width: 100%;
   position: relative;
   padding: 1rem;
@@ -65,4 +59,11 @@ body {
 
 .scroll-lock {
   overflow: hidden;
+}
+
+.backdrop {
+  padding: 20px;
+  background: rgb(196, 196, 196);
+  opacity: 0.5;
+  ;
 }

@@ -1,13 +1,5 @@
-.btn *,
-.btn *::before,
-.btn *::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .btn {
-  height: 48px;
-  padding: 0 15px;
+  box-sizing: border-box;
 
   border-width: 1px;
   border-style: solid;
@@ -20,6 +12,11 @@
   line-height: 1.2;
 
   cursor: pointer;
+}
+
+.btn_size {
+  height: 48px;
+  padding: 0 15px;
 }
 
 .btn:disabled {

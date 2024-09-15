@@ -1,11 +1,6 @@
-.histogram *,
-.histogram *::before,
-.histogram *::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .histogram {
+  box-sizing: border-box;
+
   padding: 16px 24px 24px;
   width: 100%;
   border: 1px solid rgb(var(--border-prim));
@@ -21,6 +16,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .histogram__title {

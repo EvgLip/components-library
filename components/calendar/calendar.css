@@ -1,15 +1,10 @@
-.calendar *,
-.calendar *::before,
-.calendar *::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .calendar {
+  box-sizing: border-box;
+
   max-width: 200px;
   min-width: 160px;
   width: 100%;
-  padding: 8%;
+  padding: 1rem;
 
   border: 1px solid rgb(var(--border-prim));
   border-radius: 8px;
@@ -29,6 +24,7 @@
 }
 
 .calendar__wrapper {
+
   position: relative;
 
   padding-bottom: 100%;

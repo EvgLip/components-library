@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/*//// МОДИФИКАТОРЫ ////*/
+/* верстка по схеме MOBILE FIRST */
 
 /* для index.html */
 .main_index {
@@ -18,12 +18,12 @@
 /* для страницы component-page.html */
 .main__body {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr;
   height: 100%;
 }
 
 .main__menu {
-  width: 229px;
+  display: none;
 }
 
 /* общие */
@@ -37,6 +37,8 @@
 }
 
 @media (min-width: 768px) {
+
+  /* для index.html */
   .main__cards {
     display: grid;
     /* 20px - это pading в container */
@@ -44,6 +46,18 @@
     grid-template-rows: repeat(auto-fill, minmax(350px, auto));
     gap: 30px;
     margin: 1.5rem 0;
+  }
+
+  /* для страницы component-page.html */
+  .main__body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100%;
+  }
+
+  .main__menu {
+    display: block;
+    width: 229px;
   }
 }
 
