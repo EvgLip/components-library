@@ -1,5 +1,6 @@
 .accordion {
   box-sizing: border-box;
+
   font-family: var(--font-family-1), sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -10,15 +11,15 @@
   margin-top: 8px;
   padding: 24px 32px;
 
-  border: var(--border-prim) solid 1px;
+  border: rgb(var(--border-prim)) solid 1px;
   border-radius: 8px;
 
-  background: var(--background-light);
+  background: rgb(var(--background-light));
 }
 
 .accordion__summary {
   position: relative;
-  color: var(--font-soft);
+  color: rgb(var(--font-soft));
 
   cursor: pointer;
 }
@@ -51,6 +52,12 @@
   transform: translateY(-50%);
 }
 
+.svg-icon {
+  width: 24px;
+  height: 24px;
+  color: red;
+}
+
 .accordion__details[open] .accordion__summary-marker {
   transform: rotate(180deg);
   transform-origin: 50% 25%;
@@ -59,7 +66,7 @@
 .accordion__content {
   margin: 16px 0 0;
 
-  color: var(--font-grey);
+  color: rgb(var(--font-grey));
 
   text-indent: 10px;
 }
