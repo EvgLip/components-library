@@ -57,7 +57,7 @@
 
   .main__menu {
     display: block;
-    width: 229px;
+    width: clamp(229px, 30vw, 350px);
   }
 }
 
