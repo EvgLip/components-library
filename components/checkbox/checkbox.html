@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/main-styles.css">
+  <title>Checkbox</title>
+</head>
+<body>
+
+  <div style="display: block; margin: 30px auto 0; width: 300px;">
+
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox" checked>
+      <div class="checkbox__state">
+        <div class="checkbox__control">
+          <svg class="checkbox__icon">
+            <use href="icons/check.svg#check"></use>
+          </svg>
+        </div>
+        <div class="checkbox__title">По уполчанию</div>
+      </div>
+    </label>
+
+  </div>
+
+  <div style="display: block; margin: 30px auto 0; width: 300px;">
+    <!-- заблокированный -->
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox" checked disabled>
+      <div class="checkbox__state">
+        <div class="checkbox__control">
+          <svg class="checkbox__icon">
+            <use href="icons/check.svg#check"></use>
+          </svg>
+        </div>
+        <div class="checkbox__title">По уполчанию</div>
+      </div>
+    </label>
+
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<symbol id="check">
+			<path d="M17.7 0.29C18.09 0.68 18.09 1.31 17.7 1.7L6.7 12.7C6.31 13.09 5.68 13.09 5.29 12.7L0.29 7.7C-0.1 7.31 -0.1 6.68 0.29 6.29C0.68 5.9 1.31 5.9 1.7 6.29L6 10.58L16.29 0.29C16.68 -0.1 17.31 -0.1 17.7 0.29Z" fill="currentColor" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</symbol>
+	</defs>
+</svg>
+
+<!-- preserveAspectRatio="xMinYMin meet" -->

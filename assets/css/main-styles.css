@@ -13,6 +13,7 @@
 @import url('../../components/calendar/calendar.css');
 @import url('../../components/tooltip/tooltip.css');
 @import url('../../components/modal/modal.css');
+@import url('../../components/checkbox/checkbox.css');
 
 @import url('../fonts/fonts.css');
 
@@ -46,6 +47,7 @@
   /* background */
   --background-dark: var(--white-2);
   --background-soft-dark: var(--soft-black);
+  --background-light-grey: var(--grey-2);
   --background-light: var(--white);
 
   /* font-family */
@@ -55,13 +57,15 @@
   /* font color */
   --font-dark: var(--black);
   --font-soft: var(--soft-black);
-  --font-soft-grey: var(--grey-3);
   --font-grey: var(--grey-4);
+  --font-soft-grey: var(--grey-3);
+  --font-light-grey: var(--grey-2);
   --font-light: var(--white);
 
   /* border color */
   --border-prim: var(--grey-3);
   --border-dark: var(--black);
+  --border-light: var(--grey-2);
 }
 
 /* html, body {
