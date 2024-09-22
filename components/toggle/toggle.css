@@ -32,10 +32,13 @@
   border-radius: 16px;
 
   background: rgb(var(--background-light));
+
+  transition: background 0.2s;
 }
 
 .toggle__input:checked:not([disabled])~.toggle__body .toggle__control {
   background: rgb(var(--primary));
+  border-color: rgb(var(--primary));
 }
 
 .toggle__input:disabled~.toggle__body .toggle__control {
@@ -45,7 +48,7 @@
 .toggle__control::before {
   content: '';
   position: absolute;
-  top: 2.3px;
+  top: 2.5px;
   left: 2.2px;
 
   width: 23px;
@@ -54,7 +57,7 @@
   border-radius: 50%;
   background: rgb(var(--background-light-grey));
 
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.5s;
 }
 
 .toggle__input:checked:not([disabled])~.toggle__body .toggle__control::before {

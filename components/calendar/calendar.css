@@ -17,7 +17,7 @@
 .calendar__title {
   margin: 0 0 26px;
   color: rgb(var(--font-soft));
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
