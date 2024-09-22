@@ -15,6 +15,7 @@
 @import url('../../components/modal/modal.css');
 @import url('../../components/checkbox/checkbox.css');
 @import url('../../components/radiobutton/radiobutton.css');
+@import url('../../components/toggle/toggle.css');
 
 @import url('../fonts/fonts.css');
 
@@ -48,6 +49,7 @@
   /* background */
   --background-dark: var(--white-2);
   --background-soft-dark: var(--soft-black);
+  --background-soft-grey: var(--grey-3);
   --background-light-grey: var(--grey-2);
   --background-light: var(--white);
 
