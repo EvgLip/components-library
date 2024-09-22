@@ -1,5 +1,6 @@
 .radio {
-  display: inline-flex;
+  display: flex;
+  margin-block-end: 10px;
   cursor: pointer;
 }
 
@@ -11,6 +12,15 @@
   position: absolute;
   left: -100vw;
   opacity: 0;
+}
+
+.radio__input:hover~.radio__body .radio__title,
+.radio__input:focus~.radio__body .radio__title {
+  font-weight: 600;
+}
+
+.radio__input:hover~.radio__body .radio__control {
+  border-width: 2px;
 }
 
 .radio__input:checked:not([disabled])~.radio__body .radio__control {
@@ -38,6 +48,7 @@
 
 .radio__control {
   box-sizing: border-box;
+
   display: flex;
   justify-content: center;
   align-items: center;
