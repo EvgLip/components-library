@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/main-styles.css">
+  <title>Input</title>
+</head>
+<body>
+  
+  <div class="wrapper" style="display: block; margin: 100px 0 0 100px;">
+
+    <label class="txt-filed">
+      <input class="txt-filed__input" type="text" name="name" placeholder="&nbsp;">
+      <span class="txt-filed__placeholder">Введите текст</span>
+      <span class="txt-filed__valid-msg" aria-live="polite"></span>
+    </label>
+
+  </div>
+
+  <div class="wrapper" style="display: block; margin: 10px 0 0 100px;">
+
+    <label class="txt-filed">
+      <input class="txt-filed__input txt-filed__input_success" type="text" name="name" placeholder="&nbsp;" value="Успешно">
+      <span class="txt-filed__placeholder">Введите текст</span>
+      <span class="txt-filed__valid-msg" aria-live="polite"></span>
+    </label>
+
+  </div>
+  
+
+  <div class="wrapper" style="display: block; margin: 10px 0 0 100px;">
+
+     <label class="txt-filed">
+      <input class="txt-filed__input txt-filed__input_error" type="text" name="name" placeholder="&nbsp;" value="Ошибка">
+      <span class="txt-filed__placeholder" data-err="Внесите изменения">Введите текст</span>
+      <span class="txt-filed__valid-msg" aria-live="polite">
+        Не правильный текст Не правильный текст Не правильный текст Не правильный текст Не правильный текст Не правильный текст Не правильный текст
+      </span>
+    </label>
+
+  </div>
+
+  <span></span>
+</body>
+</html>
