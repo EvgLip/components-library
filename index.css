@@ -6,3 +6,8 @@
   transform: translateY(70px);
   height: 90px;
 }
+
+.avatar-container {
+  box-sizing: border-box;
+  width: 160px;
+}

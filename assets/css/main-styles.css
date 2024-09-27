@@ -1,5 +1,4 @@
 @import url('normolize.css');
-@import url('../../index.css');
 @import url('../../components/page/page.css');
 @import url('../../components/main/main.css');
 @import url('../../components/header/header.css');
@@ -19,6 +18,8 @@
 @import url('../../components/toggle/toggle.css');
 @import url('../../components/input/input.css');
 @import url('../../components/avatar/avatar.css');
+
+@import url('../../index.css');
 
 @import url('../fonts/fonts.css');
 
