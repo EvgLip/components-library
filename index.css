@@ -1,0 +1,8 @@
+.tooltip-container .tooltip__bubble {
+  display: block;
+}
+
+.tooltip-container {
+  transform: translateY(70px);
+  height: 90px;
+}

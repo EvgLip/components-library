@@ -27,15 +27,6 @@
   min-width: 200px;
 }
 
-.wrapper .tooltip__bubble {
-  display: block;
-}
-
-.wrapper {
-  transform: translateY(70px);
-  height: 90px;
-}
-
 /* tooltip снизу*/
 .tooltip__bubble_bottom {
   top: calc(100% + var(--size));
