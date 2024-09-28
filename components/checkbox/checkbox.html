@@ -6,10 +6,21 @@
   <link rel="stylesheet" href="../../assets/css/main-styles.css">
   <title>Checkbox</title>
 </head>
-<body>
+<body style="display: flex; flex-direction: column; justify-content: center; gap: 15px; margin: 100px;">
 
-  <div style="display: block; margin: 30px auto 0; width: 300px;">
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox">
+      <div class="checkbox__body">
+        <div class="checkbox__control">
+          <svg class="checkbox__icon">
+            <use href="icons/check.svg#check"></use>
+          </svg>
+        </div>
+        <div class="checkbox__title">По умолчанию</div>
+      </div>
+    </label>
 
+    <!-- Отмеченный -->
     <label class="checkbox">
       <input class="checkbox__input" type="checkbox" checked>
       <div class="checkbox__body">
@@ -18,13 +29,10 @@
             <use href="icons/check.svg#check"></use>
           </svg>
         </div>
-        <div class="checkbox__title">По уполчанию</div>
+        <div class="checkbox__title">Отмеченный</div>
       </div>
     </label>
 
-  </div>
-
-  <div style="display: block; margin: 30px auto 0; width: 300px;">
     <!-- заблокированный -->
     <label class="checkbox">
       <input class="checkbox__input" type="checkbox" name="name" checked disabled>
@@ -34,12 +42,9 @@
             <use href="icons/check.svg#check"></use>
           </svg>
         </div>
-        <div class="checkbox__title">По уполчанию</div>
+        <div class="checkbox__title">Заблокированный</div>
       </div>
     </label>
-
-  </div>
-
 
 </body>
 </html>

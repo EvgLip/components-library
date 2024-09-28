@@ -17,6 +17,11 @@
   flex-grow: 1;
 }
 
+.card__content_clm {
+  flex-direction: column;
+  gap: 16px;
+}
+
 .card__footer {
   margin-top: 1.5rem;
 

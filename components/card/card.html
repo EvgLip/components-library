@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/main-styles.css">
+  <title>Карточка</title>
+</head>
+<body>
+  
+  <a href="#" class="card">
+    <div class="card__content">
+
+      <div class="card__grid">
+
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox">
+          <div class="checkbox__body">
+            <div class="checkbox__control">
+              <svg class="checkbox__icon">
+                <use href="../checkbox/icons/check.svg#check"></use>
+              </svg>
+            </div>
+            <div class="checkbox__title">По умолчанию</div>
+          </div>
+        </label>
+  
+        <!-- Отмеченный -->
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" checked>
+          <div class="checkbox__body">
+            <div class="checkbox__control">
+              <svg class="checkbox__icon">
+                <use href="../checkbox/icons/check.svg#check"></use>
+              </svg>
+            </div>
+            <div class="checkbox__title">Отмеченный</div>
+          </div>
+        </label>
+  
+        <!-- заблокированный -->
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="name" checked disabled>
+          <div class="checkbox__body">
+            <div class="checkbox__control">
+              <svg class="checkbox__icon">
+                <use href="../checkbox/icons/check.svg#check"></use>
+              </svg>
+            </div>
+            <div class="checkbox__title">Заблокированный</div>
+          </div>
+        </label>
+        
+      </div>
+
+    </div>
+    <div class="card__footer">
+      <h4 class="card__description">Описание</h4>
+      <p class="card__content-type">Доп описание</p>
+    </div>
+  </a>
+
+</body>
+</html>
