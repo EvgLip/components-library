@@ -40,15 +40,15 @@
   -webkit-text-fill-color: rgb(var(--font-grey)) !important;
 }
 
-.input-field:has(.input-field__placeholder:hover) .input-field__input:not(.input-field__input.txt_input_error),
-.input-field__input:focus:not(.input-field__input.txt_input_error),
-.input-field__input:hover:not(.input-field__input.txt_input_error) {
+.input-field:has(.input-field__placeholder:hover) .input-field__input:not(.input-field__input.input-field_error),
+.input-field__input:focus:not(.input-field__input.input-field_error),
+.input-field__input:hover:not(.input-field__input.input-field_error) {
   outline: none;
   border-color: rgb(var(--primary));
   box-shadow: 1px 1px 1px 0px rgba(var(--primary-hover) / 0.1);
 }
 
-.txt_input_error {
+.input-field_error {
   outline: none;
   border-color: rgb(var(--error));
 
@@ -58,12 +58,12 @@
   background-position: right calc(var(--padding)) center;
 }
 
-.input-field__input.txt_input_error:hover,
-.input-field__input.txt_input_error:focus {
+.input-field__input.input-field_error:hover,
+.input-field__input.input-field_error:focus {
   outline: rgba(var(--error) / 0.2) solid 5px;
 }
 
-.txt_input_success {
+.input-field_success {
   background-image: url('img/success.svg');
   background-repeat: no-repeat;
   background-size: 1em;
@@ -112,7 +112,7 @@
   transition: top ease .3s, font-size ease .3s;
 }
 
-.input-field__input.txt_input_error~.input-field__placeholder {
+.input-field__input.input-field_error~.input-field__placeholder {
   /* выше правило переопределило font-size в .input-field__placeholder */
   /* на 0.5em поэтому чтобы вернуться к родительскому font-size */
   /* нужно установить 2em */
@@ -120,7 +120,7 @@
   color: transparent;
 }
 
-.input-field__input.txt_input_error~.input-field__placeholder::after {
+.input-field__input.input-field_error~.input-field__placeholder::after {
   content: attr(data-err);
   color: rgb(var(--error));
 }
@@ -131,6 +131,6 @@
   color: rgb(var(--error));
 }
 
-.input-field__input.txt_input_error~.input-field__valid-msg {
+.input-field__input.input-field_error~.input-field__valid-msg {
   display: inline-block;
 }

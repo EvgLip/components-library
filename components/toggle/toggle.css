@@ -1,5 +1,5 @@
 .toggle {
-  display: flex;
+  display: inline-flex;
   cursor: pointer;
 }
 
