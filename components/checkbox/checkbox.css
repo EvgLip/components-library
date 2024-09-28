@@ -1,4 +1,7 @@
 .checkbox {
+  --font-size-max: 1rem;
+  --font-size-min: 0.7rem;
+
   display: inline-flex;
 
   cursor: pointer;
@@ -62,7 +65,7 @@
 .checkbox__title {
   color: rgb(var(--font-grey));
   font-family: var(--font-family-1);
-  font-size: 1rem;
+  font-size: clamp(var(--font-size-min), 2vw, var(--font-size-max));
   font-weight: 400;
   line-height: 1.5;
 

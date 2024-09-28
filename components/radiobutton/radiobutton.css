@@ -1,6 +1,5 @@
 .radio {
   display: flex;
-  margin-block-end: 10px;
   cursor: pointer;
 }
 
