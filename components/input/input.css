@@ -1,8 +1,9 @@
 /*Поле ввода*/
 
-.txt-filed {
+.input-field {
   --padding: 10px;
-  --font-size: 1.25rem;
+  --font-size-max: 1.25rem;
+  --font-size-min: 0.8rem;
   --width: 350px;
 
   display: inline-flex;
@@ -14,10 +15,10 @@
   width: 100%;
 
   font-family: var(--font-family-1);
-  font-size: var(--font-size);
+  font-size: clamp(var(--font-size-min), 2vw, var(--font-size-max));
 }
 
-.txt-filed__input {
+.input-field__input {
   box-sizing: border-box;
 
   padding: var(--padding) calc(var(--padding)*2.4) var(--padding);
@@ -31,9 +32,9 @@
   line-height: 1.3;
 }
 
-.txt-filed:has(.txt-filed__placeholder:hover) .txt-filed__input:not(.txt-filed__input.txt_input_error),
-.txt-filed__input:focus:not(.txt-filed__input.txt_input_error),
-.txt-filed__input:hover:not(.txt-filed__input.txt_input_error) {
+.input-field:has(.input-field__placeholder:hover) .input-field__input:not(.input-field__input.txt_input_error),
+.input-field__input:focus:not(.input-field__input.txt_input_error),
+.input-field__input:hover:not(.input-field__input.txt_input_error) {
   outline: none;
   border-color: rgb(var(--primary));
   box-shadow: 1px 1px 1px 0px rgba(var(--primary-hover) / 0.1);
@@ -49,8 +50,8 @@
   background-position: right calc(var(--padding)) center;
 }
 
-.txt-filed__input.txt_input_error:hover,
-.txt-filed__input.txt_input_error:focus {
+.input-field__input.txt_input_error:hover,
+.input-field__input.txt_input_error:focus {
   outline: rgba(var(--error) / 0.2) solid 5px;
 }
 
@@ -61,16 +62,16 @@
   background-position: right calc(var(--padding)) center;
 }
 
-/* .txt-filed__input:valid {
+/* .input-field__input:valid {
   background: red;
 } */
 
-.txt-filed__input,
-.txt-filed__placeholder {
+.input-field__input,
+.input-field__placeholder {
   font-weight: 400;
 }
 
-.txt-filed__placeholder {
+.input-field__placeholder {
   position: absolute;
   left: calc(var(--padding)*2.4);
   top: 50%;
@@ -88,10 +89,10 @@
   text-overflow: ellipsis;
 }
 
-.txt-filed__placeholder:hover,
-.txt-filed__input:focus~.txt-filed__placeholder,
-.txt-filed__input:hover~.txt-filed__placeholder,
-.txt-filed__input:not(:placeholder-shown)~.txt-filed__placeholder {
+.input-field__placeholder:hover,
+.input-field__input:focus~.input-field__placeholder,
+.input-field__input:hover~.input-field__placeholder,
+.input-field__input:not(:placeholder-shown)~.input-field__placeholder {
   padding: 0 calc(var(--padding)/2);
   top: 0;
 
@@ -103,25 +104,25 @@
   transition: top ease .3s, font-size ease .3s;
 }
 
-.txt-filed__input.txt_input_error~.txt-filed__placeholder {
-  /* выше правило переопределило font-size в .txt-filed__placeholder */
+.input-field__input.txt_input_error~.input-field__placeholder {
+  /* выше правило переопределило font-size в .input-field__placeholder */
   /* на 0.5em поэтому чтобы вернуться к родительскому font-size */
   /* нужно установить 2em */
   text-indent: calc(2em/(-0.29));
   color: transparent;
 }
 
-.txt-filed__input.txt_input_error~.txt-filed__placeholder::after {
+.input-field__input.txt_input_error~.input-field__placeholder::after {
   content: attr(data-err);
   color: rgb(var(--error));
 }
 
-.txt-filed__valid-msg {
+.input-field__valid-msg {
   display: none;
   font-size: max(10px, 0.6em);
   color: rgb(var(--error));
 }
 
-.txt-filed__input.txt_input_error~.txt-filed__valid-msg {
+.input-field__input.txt_input_error~.input-field__valid-msg {
   display: inline-block;
 }

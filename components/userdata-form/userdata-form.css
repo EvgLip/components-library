@@ -1,0 +1,19 @@
+/* Форма для ввода данных пользователя */
+
+.userdata-form {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.userdata-form__input-field {
+  --width: 100%;
+}
+
+.userdata-form__btn {
+  align-self: start;
+  padding: 10px 15px;
+}

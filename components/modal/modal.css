@@ -31,10 +31,15 @@ body {
   box-sizing: inherit;
   width: 100%;
   position: relative;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .modal__btn-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+
   width: 30px;
   height: 30px;
   padding: 0;
@@ -47,10 +52,7 @@ body {
   cursor: pointer;
   opacity: 0.3;
 
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+
 }
 
 .modal__btn-close:hover {
