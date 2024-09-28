@@ -11,3 +11,17 @@
   box-sizing: border-box;
   width: 160px;
 }
+
+.index__modal {
+  border: 1px solid rgb(var(--border-prim));
+  border-radius: 8px;
+}
+
+.index__modal {
+
+  & .index__modal-input-field,
+  & .index__modal-btn {
+    --font-size-max: 1rem;
+    --font-size-min: 0.7rem;
+  }
+}

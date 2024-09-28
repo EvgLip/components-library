@@ -17,11 +17,6 @@ body {
   background-color: rgb(var(--background-light));
 }
 
-.modal_preview {
-  border: 1px solid rgb(var(--border-prim));
-  border-radius: 8px;
-}
-
 .modal::backdrop {
   background: rgba(var(--primary) / 0.5);
   backdrop-filter: blur(2px);
