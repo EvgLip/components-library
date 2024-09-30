@@ -1,0 +1,75 @@
+/* Вкладки */
+input[name="tab"] {
+  position: absolute;
+  opacity: 0;
+  left: -100vw;
+}
+
+.tabs__label {
+  & {
+    display: flex;
+    gap: 40px;
+
+    color: rgb(var(--font-soft-grey));
+    font-family: var(--font-family-1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  & label {
+    box-sizing: border-box;
+    position: relative;
+
+    cursor: pointer;
+    user-select: none;
+  }
+
+  & label::after {
+    box-sizing: border-box;
+    position: absolute;
+
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+
+    background: rgb(var(--background-soft-dark));
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  & label:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+#all-components:checked~.tabs__label label[for="all-components"],
+#elements:checked~.tabs__label label[for="elements"],
+#containers:checked~.tabs__label label[for="containers"],
+#templates:checked~.tabs__label label[for="templates"] {
+  color: rgb(var(--font-grey));
+  cursor: default;
+}
+
+
+#all-components:checked~.tabs__label label[for="all-components"]::after,
+#elements:checked~.tabs__label label[for="elements"]::after,
+#containers:checked~.tabs__label label[for="containers"]::after,
+#templates:checked~.tabs__label label[for="templates"]::after {
+  transform: scaleX(1);
+}
+
+.tabs__content {
+  display: none;
+}
+
+#all-components:checked~.tabs__content_all-components,
+#elements:checked~.tabs__content_elements,
+#containers:checked~.tabs__content_containers,
+#templates:checked~.tabs__content_templates {
+  display: block;
+  ;
+}

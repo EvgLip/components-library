@@ -1,9 +1,5 @@
 @import url('normolize.css');
-@import url('../../components/page/page.css');
-@import url('../../components/main/main.css');
-@import url('../../components/header/header.css');
-@import url('../../components/nav/nav.css');
-@import url('../../components/footer/footer.css');
+
 @import url('../../components/container/container.css');
 @import url('../../components/button/button.css');
 @import url('../../components/accordion/accordion.css');
@@ -19,6 +15,14 @@
 @import url('../../components/input/input.css');
 @import url('../../components/avatar/avatar.css');
 @import url('../../components/userdata-form/userdata-form.css');
+@import url('../../components/tabs/tabs.css');
+
+
+@import url('../../components/page/page.css');
+@import url('../../components/main/main.css');
+@import url('../../components/header/header.css');
+@import url('../../components/nav/nav.css');
+@import url('../../components/footer/footer.css');
 
 @import url('../../index.css');
 
@@ -52,7 +56,7 @@
   --secondary-hover: var(--purple-2);
 
   /* background */
-  --background-dark: var(--white-2);
+  --background-dark: var(--black);
   --background-soft-dark: var(--soft-black);
   --background-soft-grey: var(--grey-3);
   --background-light-grey: var(--grey-2);
