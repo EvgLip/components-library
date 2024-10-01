@@ -5,15 +5,25 @@
 /* верстка по схеме MOBILE FIRST */
 
 /* для index.html */
-.main_index {
-  padding: 65px 45px;
+.main__title_index {
+  color: rgb(var(--font-dark-grey));
+  font-size: clamp(1rem, 4.2vw, 3.13rem);
+  font-weight: 400;
+  line-height: 1.35;
+
+  @media (min-width: 768px) {
+    & {
+      color: rgb(var(--font-soft-dark));
+
+      font-weight: 500;
+      line-height: 1.28;
+      text-align: left;
+    }
+  }
 }
 
-.main__cards {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(230px, auto));
-  grid-gap: 16px;
-}
+
+
 
 /* для страницы component-page.html */
 .main__body {
@@ -36,38 +46,16 @@
   background: rgb(var(--background-light));
 }
 
-@media (min-width: 768px) {
 
-  /* для index.html */
-  .main__cards {
-    display: grid;
-    /* 20px - это pading в container */
-    grid-template-columns: repeat(2, calc(50% - 20px));
-    grid-template-rows: repeat(auto-fill, minmax(350px, auto));
-    gap: 30px;
-    margin: 1.5rem 0;
-  }
 
-  /* для страницы component-page.html */
-  .main__body {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    height: 100%;
-  }
-
-  .main__menu {
-    display: block;
-    width: clamp(229px, 30vw, 350px);
-  }
+/* для страницы component-page.html */
+.main__body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
 }
 
-@media (min-width: 1024px) {
-  .main__cards {
-    display: grid;
-    /* 20px - это pading в container */
-    grid-template-columns: repeat(3, calc(33.3333% - 20px));
-    grid-template-rows: repeat(auto-fill, minmax(350px, auto));
-    gap: 30px;
-    margin: 1.5rem 0;
-  }
+.main__menu {
+  display: block;
+  width: clamp(229px, 30vw, 350px);
 }

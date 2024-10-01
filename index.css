@@ -1,3 +1,104 @@
+/* index.html */
+.index__title-chapter {
+  margin: 64px 0 32px;
+
+  font-family: var(--font-family-1);
+  color: rgb(var(--font-soft-grey));
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.index__cards {
+  & {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(230px, auto));
+    grid-gap: 16px;
+  }
+
+  @media (min-width: 768px) {
+    & {
+      /* 20px - это pading в container */
+      grid-template-columns: repeat(2, calc(50% - 20px));
+      grid-template-rows: repeat(auto-fill, minmax(350px, auto));
+      gap: 30px;
+      margin: 1.5rem 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      /* 20px - это pading в container */
+      grid-template-columns: repeat(3, calc(33.3333% - 20px));
+      grid-template-rows: repeat(auto-fill, minmax(350px, auto));
+      gap: 30px;
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+.index__title-btn,
+.index__title-elements {
+  font-family: var(--font-family-2);
+  color: rgb(var(--font-soft));
+  font-size: clamp(0.8rem, 2vw, 1.25rem);
+  font-weight: normal;
+}
+
+.index__title-btn {
+  & {
+    justify-self: center;
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      justify-self: start;
+    }
+  }
+}
+
+
+.index__grid-btn {
+  & {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    justify-items: center;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(2, auto);
+      grid-auto-flow: column;
+    }
+  }
+}
+
+.index__flex-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.index__grid-elements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem 1rem;
+  justify-items: start;
+  align-items: center;
+}
+
+.tabs__content {
+  padding: 65px 0;
+  min-height: calc(100vh - 600px);
+  background: rgb(var(--background-light-grey));
+}
+
 .tooltip-container .tooltip__bubble_show {
   display: block;
 }

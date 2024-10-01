@@ -16,7 +16,7 @@
 
 .calendar__title {
   margin: 0 0 26px;
-  color: rgb(var(--font-soft));
+  color: rgb(var(--font-soft-dark));
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.2;
@@ -46,7 +46,7 @@
   display: grid;
   place-items: center;
 
-  color: rgb(var(--font-soft));
+  color: rgb(var(--font-soft-dark));
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;

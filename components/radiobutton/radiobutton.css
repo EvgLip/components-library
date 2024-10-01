@@ -1,4 +1,7 @@
 .radio {
+  --font-size-min: 0.8rem;
+  --font-size-max: 1rem;
+
   display: inline-flex;
   cursor: pointer;
 }
@@ -36,7 +39,7 @@
 }
 
 .radio__input:disabled~.radio__body .radio__control {
-  background: rgb(var(--background-light-grey));
+  background: rgb(var(--background-grey));
   border-color: rgb(var(--border-light));
 }
 
@@ -64,9 +67,9 @@
 }
 
 .radio__title {
-  color: rgb(var(--font-grey));
+  color: rgb(var(--font-dark-grey));
   font-family: var(--font-family-1);
-  font-size: 1rem;
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
   font-weight: 400;
   line-height: 1.5;
 
@@ -74,10 +77,28 @@
 }
 
 .radio__input:disabled~.radio__body .radio__title {
-  color: rgb(var(--font-light-grey));
+  color: rgb(var(--font-grey));
 }
 
 .radio__input:hover:not([disabled])~.radio__body .radio__title,
 .radio__input:focus:not([disabled])~.radio__body .radio__title {
   font-weight: 600;
+}
+
+.radio__title::before {
+  content: attr(data-off);
+  color: rgb(var(--font-dark-grey));
+  font-family: var(--font-family-1);
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.radio__input:focus:not([disabled])~.radio__body .radio__title::before,
+.radio__input:hover:not([disabled])~.radio__body .radio__title::before {
+  font-weight: 600;
+}
+
+.radio__input:checked:not([disabled])~.radio__body .radio__title::before {
+  content: attr(data-on);
 }

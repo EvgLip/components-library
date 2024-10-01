@@ -6,16 +6,14 @@ input[name="tab"] {
 }
 
 .tabs__label {
-  & {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 20px;
 
-    color: rgb(var(--font-soft-grey));
-    font-family: var(--font-family-1);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-  }
+  color: rgb(var(--font-soft-grey));
+  font-family: var(--font-family-1);
+  font-size: clamp(0.6rem, 2.5vw, 1rem);
+  font-weight: 400;
+  line-height: 1.5;
 
   & label {
     box-sizing: border-box;
@@ -36,7 +34,7 @@ input[name="tab"] {
     top: 100%;
     left: 0;
 
-    background: rgb(var(--background-soft-dark));
+    background: rgb(var(--background-soft-grey));
     transform: scaleX(0);
     transition: transform 0.25s ease-in-out;
   }
@@ -46,20 +44,21 @@ input[name="tab"] {
   }
 }
 
-#all-components:checked~.tabs__label label[for="all-components"],
-#elements:checked~.tabs__label label[for="elements"],
-#containers:checked~.tabs__label label[for="containers"],
-#templates:checked~.tabs__label label[for="templates"] {
-  color: rgb(var(--font-grey));
+.tabs:has(#all-components:checked) .tabs__label label[for="all-components"],
+.tabs:has(#elements:checked) .tabs__label label[for="elements"],
+.tabs:has(#containers:checked) .tabs__label label[for="containers"],
+.tabs:has(#templates:checked) .tabs__label label[for="templates"] {
+  color: rgb(var(--font-dark-grey));
   cursor: default;
 }
 
 
-#all-components:checked~.tabs__label label[for="all-components"]::after,
-#elements:checked~.tabs__label label[for="elements"]::after,
-#containers:checked~.tabs__label label[for="containers"]::after,
-#templates:checked~.tabs__label label[for="templates"]::after {
+.tabs:has(#all-components:checked) .tabs__label label[for="all-components"]::after,
+.tabs:has(#elements:checked) .tabs__label label[for="elements"]::after,
+.tabs:has(#containers:checked) .tabs__label label[for="containers"]::after,
+.tabs:has(#templates:checked) .tabs__label label[for="templates"]::after {
   transform: scaleX(1);
+  background: rgb(var(--background-dark-grey));
 }
 
 .tabs__content {

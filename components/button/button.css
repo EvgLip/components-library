@@ -10,7 +10,7 @@
   outline: none;
 
   font-family: var(--font-family-2), sans-serif;
-  font-size: clamp(var(--font-size-min), 2vw, var(--font-size-max));
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
   font-weight: 400;
   line-height: 1.2;
 
@@ -47,9 +47,15 @@
 .btn_alternate {
   border-color: rgb(var(--border-prim));
   background: rgb(var(--background-light));
-  color: rgb(var(--font-grey));
+  color: rgb(var(--font-dark-grey));
 }
 
 .btn_alternate:hover:not([disabled]) {
   border-color: rgb(var(--border-dark));
+}
+
+.btn_fix-size {
+  padding: 20px;
+  max-width: 350px;
+  width: 100%;
 }

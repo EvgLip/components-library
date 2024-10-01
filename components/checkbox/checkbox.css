@@ -1,6 +1,6 @@
 .checkbox {
+  --font-size-min: 0.8rem;
   --font-size-max: 1rem;
-  --font-size-min: 0.7rem;
 
   display: inline-flex;
 
@@ -48,7 +48,7 @@
 }
 
 .checkbox__input:disabled~.checkbox__body .checkbox__control {
-  background: rgb(var(--background-light-grey));
+  background: rgb(var(--background-grey));
 }
 
 .checkbox__icon {
@@ -63,9 +63,9 @@
 
 
 .checkbox__title {
-  color: rgb(var(--font-grey));
+  color: rgb(var(--font-dark-grey));
   font-family: var(--font-family-1);
-  font-size: clamp(var(--font-size-min), 2vw, var(--font-size-max));
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
   font-weight: 400;
   line-height: 1.5;
 
@@ -78,5 +78,24 @@
 }
 
 .checkbox__input:disabled~.checkbox__body .checkbox__title {
-  color: rgb(var(--font-light-grey));
+  color: rgb(var(--font-grey));
+}
+
+
+.checkbox__title::before {
+  content: attr(data-off);
+  color: rgb(var(--font-dark-grey));
+  font-family: var(--font-family-1);
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.checkbox__input:focus:not([disabled])~.checkbox__body .checkbox__title::before,
+.checkbox__input:hover:not([disabled])~.checkbox__body .checkbox__title::before {
+  font-weight: 600;
+}
+
+.checkbox__input:checked:not([disabled])~.checkbox__body .checkbox__title::before {
+  content: attr(data-on);
 }

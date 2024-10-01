@@ -58,8 +58,10 @@
   /* background */
   --background-dark: var(--black);
   --background-soft-dark: var(--soft-black);
+  --background-dark-grey: var(--grey-4);
   --background-soft-grey: var(--grey-3);
-  --background-light-grey: var(--grey-2);
+  --background-grey: var(--grey-2);
+  --background-light-grey: var(--grey-1);
   --background-light: var(--white);
 
   /* font-family */
@@ -68,10 +70,11 @@
 
   /* font color */
   --font-dark: var(--black);
-  --font-soft: var(--soft-black);
-  --font-grey: var(--grey-4);
+  --font-soft-dark: var(--soft-black);
+  --font-dark-grey: var(--grey-4);
   --font-soft-grey: var(--grey-3);
-  --font-light-grey: var(--grey-2);
+  --font-grey: var(--grey-2);
+  --font-light-grey: var(--grey-1);
   --font-light: var(--white);
 
   /* border color */

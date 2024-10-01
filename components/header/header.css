@@ -18,25 +18,7 @@
 
 /* MOBILE FIRST */
 
-.header__title_index {
-  /* h3 */
-  color: rgb(var(--font-grey));
-  /* font-size: 1.75rem; */
-  font-size: clamp(1rem, 4.2vw, 3.13rem);
-  font-weight: 400;
-  line-height: 1.35;
-}
-
 @media (min-width: 768px) {
-
-  .header__title_index {
-    color: rgb(var(--font-soft));
-
-    /* font-size: 3.1rem; */
-    font-weight: 500;
-    line-height: 1.28;
-    text-align: left;
-  }
 
   /* для страницы component-page.html */
   .header_component {

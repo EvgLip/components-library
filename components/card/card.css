@@ -36,7 +36,7 @@
 .card__description {
   margin: 0;
 
-  color: rgb(var(--font-soft));
+  color: rgb(var(--font-soft-dark));
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.2;
@@ -44,7 +44,7 @@
 
 .card__content-type {
   margin-top: 0.5rem;
-  color: rgb(var(--font-grey));
+  color: rgb(var(--font-dark-grey));
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.2;

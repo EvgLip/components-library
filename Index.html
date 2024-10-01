@@ -31,214 +31,374 @@
           </div>
         </nav>
 
-        <h1 class="header__title_index">Библиотека переиспользуемых компонентов</h1>
-
       </div> <!-- container -->
     </header>
   
-    <main class="main main_index main_dark">
+    <main class="page__main_index">
+
       <div class="container">
-        <div class="main__cards">
+        <h1 class="main__title_index">Библиотека переиспользуемых компонентов</h1>
+      </div>
+      <!--start tabs-->
+      <article class="tabs">
+        <input type="radio" name="tab" id="all-components" checked>
+        <input type="radio" name="tab" id="elements">
+        <input type="radio" name="tab" id="containers">
+        <input type="radio" name="tab" id="templates">
 
-          <!--Календарь-->
-          <a href="#" class="card">
-            <div class="card__content">
-              <article class="calendar">
-                <h2 class="calendar__title">Август 2024 г</h2>
-                <div class="calendar__wrapper">
-                  <div class="calendar__content">
-                    <span class="calendar__item calendar__item_grey">Пн</span>
-                    <span class="calendar__item calendar__item_grey">Вт</span>
-                    <span class="calendar__item calendar__item_grey">Ср</span>
-                    <span class="calendar__item calendar__item_grey">Чт</span>
-                    <span class="calendar__item calendar__item_grey">Пт</span>
-                    <span class="calendar__item calendar__item_grey">Сб</span>
-                    <span class="calendar__item calendar__item_grey">Вс</span>
-                    <span class="calendar__item calendar__item_grey">29</span>
-                    <span class="calendar__item calendar__item_grey">30</span>
-                    <span class="calendar__item calendar__item_grey">31</span>
-                    <span class="calendar__item">1</span>
-                    <span class="calendar__item">2</span>
-                    <span class="calendar__item">3</span>
-                    <span class="calendar__item calendar__item_active">4</span>
-                    <span class="calendar__item calendar__item_active-range">5</span>
-                    <span class="calendar__item calendar__item_active-range">6</span>
-                    <span class="calendar__item calendar__item_active-range">7</span>
-                    <span class="calendar__item calendar__item_active">8</span>
-                    <span class="calendar__item">9</span>
-                    <span class="calendar__item">10</span>
-                    <span class="calendar__item">11</span>
-                    <span class="calendar__item">12</span>
-                    <span class="calendar__item">13</span>
-                    <span class="calendar__item">14</span>
-                    <span class="calendar__item">15</span>
-                    <span class="calendar__item">16</span>
-                    <span class="calendar__item">17</span>
-                    <span class="calendar__item">18</span>
-                    <span class="calendar__item">19</span>
-                    <span class="calendar__item">20</span>
-                    <span class="calendar__item">21</span>
-                    <span class="calendar__item">22</span>
-                    <span class="calendar__item">23</span>
-                    <span class="calendar__item">24</span>
-                    <span class="calendar__item">25</span>
-                    <span class="calendar__item">26</span>
-                    <span class="calendar__item">27</span>
-                    <span class="calendar__item">28</span>
-                    <span class="calendar__item">29</span>
-                    <span class="calendar__item">30</span>
-                    <span class="calendar__item">31</span>
-                    <span class="calendar__item calendar__item_grey">1</span>
-                    <span class="calendar__item calendar__item_grey">2</span>
-                    <span class="calendar__item calendar__item_grey">3</span>
-                    <span class="calendar__item calendar__item_grey">4</span>
-                    <span class="calendar__item calendar__item_grey">5</span>
-                    <span class="calendar__item calendar__item_grey">6</span>
-                    <span class="calendar__item calendar__item_grey">7</span>
-                    <span class="calendar__item calendar__item_grey">8</span>
+        <!--tab labels-->
+        <div class="container">
+          <div class="tabs__label">
+            <label for="all-components">Все компоненты</label>
+            <label for="elements">Элементы</label>
+            <label for="containers">Контейнеры</label>
+            <label for="templates">Шаблоны</label>
+          </div>
+        </div>
+
+        <!-- start tab 1-->
+        <section class="tabs__content tabs__content_all-components">
+          <div class="container">
+            <div class="index__cards">
+              <!--Календарь-->
+              <a href="#" class="card">
+                <div class="card__content">
+                  <article class="calendar">
+                    <h2 class="calendar__title">Август 2024 г</h2>
+                    <div class="calendar__wrapper">
+                      <div class="calendar__content">
+                        <span class="calendar__item calendar__item_grey">Пн</span>
+                        <span class="calendar__item calendar__item_grey">Вт</span>
+                        <span class="calendar__item calendar__item_grey">Ср</span>
+                        <span class="calendar__item calendar__item_grey">Чт</span>
+                        <span class="calendar__item calendar__item_grey">Пт</span>
+                        <span class="calendar__item calendar__item_grey">Сб</span>
+                        <span class="calendar__item calendar__item_grey">Вс</span>
+                        <span class="calendar__item calendar__item_grey">29</span>
+                        <span class="calendar__item calendar__item_grey">30</span>
+                        <span class="calendar__item calendar__item_grey">31</span>
+                        <span class="calendar__item">1</span>
+                        <span class="calendar__item">2</span>
+                        <span class="calendar__item">3</span>
+                        <span class="calendar__item calendar__item_active">4</span>
+                        <span class="calendar__item calendar__item_active-range">5</span>
+                        <span class="calendar__item calendar__item_active-range">6</span>
+                        <span class="calendar__item calendar__item_active-range">7</span>
+                        <span class="calendar__item calendar__item_active">8</span>
+                        <span class="calendar__item">9</span>
+                        <span class="calendar__item">10</span>
+                        <span class="calendar__item">11</span>
+                        <span class="calendar__item">12</span>
+                        <span class="calendar__item">13</span>
+                        <span class="calendar__item">14</span>
+                        <span class="calendar__item">15</span>
+                        <span class="calendar__item">16</span>
+                        <span class="calendar__item">17</span>
+                        <span class="calendar__item">18</span>
+                        <span class="calendar__item">19</span>
+                        <span class="calendar__item">20</span>
+                        <span class="calendar__item">21</span>
+                        <span class="calendar__item">22</span>
+                        <span class="calendar__item">23</span>
+                        <span class="calendar__item">24</span>
+                        <span class="calendar__item">25</span>
+                        <span class="calendar__item">26</span>
+                        <span class="calendar__item">27</span>
+                        <span class="calendar__item">28</span>
+                        <span class="calendar__item">29</span>
+                        <span class="calendar__item">30</span>
+                        <span class="calendar__item">31</span>
+                        <span class="calendar__item calendar__item_grey">1</span>
+                        <span class="calendar__item calendar__item_grey">2</span>
+                        <span class="calendar__item calendar__item_grey">3</span>
+                        <span class="calendar__item calendar__item_grey">4</span>
+                        <span class="calendar__item calendar__item_grey">5</span>
+                        <span class="calendar__item calendar__item_grey">6</span>
+                        <span class="calendar__item calendar__item_grey">7</span>
+                        <span class="calendar__item calendar__item_grey">8</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="card__footer">
+                  <h4 class="card__description">Календарь</h4>
+                  <p class="card__content-type">Контейнер</p>
+                </div>
+              </a>
+
+              <!--Гистрограмма-->
+              <a href="#" class="card">
+                <div class="card__content">
+                  <article class="histogram">
+                    <header class="histogram__header">
+                      <h1 class="histogram__title">Всего заказов</h1>
+                      <span class="histogram__view-details">Подробнее</span>
+                    </header>
+                    <h4 class="histogram__total">5025</h4>
+                    <div class="histogram__items">
+                      <div class="histogram__item" style="height: 100%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 44%;"></div>
+                      <div class="histogram__item" style="height: 78%;"></div>
+                      <div class="histogram__item" style="height: 44%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 78%;"></div>
+                      <div class="histogram__item" style="height: 100%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 44%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 100%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 78%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 44%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 78%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 90%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 34%;"></div>
+                    </div>
+                  </article>
+                </div>
+                <div class="card__footer">
+                  <h4 class="card__description">Гистограмма</h4>
+                  <p class="card__content-type">Элемент</p>
+                </div>
+              </a>
+
+              <!--Тултип-->
+              <a href="#" class="card">
+                <div class="card__content">
+                  <div class="tooltip-container">
+                    <article class="tooltip">
+                      <div class="tooltip__triger"></div>
+                      <div class="tooltip__bubble tooltip__bubble_show tooltip__bubble_top">
+                        <p class="tooltip__helper-text">
+                          Текст подсказки
+                        </p>
+                      </div>
+                    </article>
                   </div>
                 </div>
-              </article>
-            </div>
-            <div class="card__footer">
-              <h4 class="card__description">Календарь</h4>
-              <p class="card__content-type">Контейнер</p>
-            </div>
-          </a>
-          
-          <!--Гистрограмма-->
-          <a href="#" class="card">
-            <div class="card__content">
-              <article class="histogram">
-                <header class="histogram__header">
-                  <h1 class="histogram__title">Всего заказов</h1>
-                  <span class="histogram__view-details">Подробнее</span>
-                </header>
-                <h4 class="histogram__total">5025</h4>
-                <div class="histogram__items">
-                  <div class="histogram__item" style="height: 100%;"></div>
-                  <div class="histogram__item" style="height: 70%;"></div>
-                  <div class="histogram__item" style="height: 44%;"></div>
-                  <div class="histogram__item" style="height: 78%;"></div>
-                  <div class="histogram__item" style="height: 44%;"></div>
-                  <div class="histogram__item" style="height: 60%;"></div>
-                  <div class="histogram__item" style="height: 78%;"></div>
-                  <div class="histogram__item" style="height: 100%;"></div>
-                  <div class="histogram__item" style="height: 22%;"></div>
-                  <div class="histogram__item" style="height: 44%;"></div>
-                  <div class="histogram__item" style="height: 60%;"></div>
-                  <div class="histogram__item" style="height: 70%;"></div>
-                  <div class="histogram__item" style="height: 22%;"></div>
-                  <div class="histogram__item" style="height: 100%;"></div>
-                  <div class="histogram__item" style="height: 22%;"></div>
-                  <div class="histogram__item" style="height: 78%;"></div>
-                  <div class="histogram__item" style="height: 60%;"></div>
-                  <div class="histogram__item" style="height: 44%;"></div>
-                  <div class="histogram__item" style="height: 70%;"></div>
-                  <div class="histogram__item" style="height: 60%;"></div>
-                  <div class="histogram__item" style="height: 22%;"></div>
-                  <div class="histogram__item" style="height: 78%;"></div>
-                  <div class="histogram__item" style="height: 70%;"></div>
-                  <div class="histogram__item" style="height: 90%;"></div>
-                  <div class="histogram__item" style="height: 60%;"></div>
-                  <div class="histogram__item" style="height: 22%;"></div>
-                  <div class="histogram__item" style="height: 60%;"></div>
-                  <div class="histogram__item" style="height: 22%;"></div>
-                  <div class="histogram__item" style="height: 70%;"></div>
-                  <div class="histogram__item" style="height: 34%;"></div>
+                <div class="card__footer">
+                  <h4 class="card__description">Тултип</h4>
+                  <p class="card__content-type">Контейнер</p>
                 </div>
-              </article>
-            </div>
-            <div class="card__footer">
-              <h4 class="card__description">Гистограмма</h4>
-              <p class="card__content-type">Элемент</p>
-            </div>
-          </a>
+              </a>
 
-          <!--Тултип-->
-          <a href="#" class="card">
-            <div class="card__content">
-              <div class="tooltip-container">
-                <article class="tooltip">
-                  <div class="tooltip__triger"></div>
-                  <div class="tooltip__bubble tooltip__bubble_show tooltip__bubble_top">
-                    <p class="tooltip__helper-text">
-                      Текст подсказки
-                    </p>
+              <!--Модальное окно-->
+              <a href="#" class="card">
+                <div class="card__content">
+
+                  <div class="modal__wrapper index__modal">
+                    <form action="" class="userdata-form" id="userdata-form">
+                      <label class="input-field 
+                                    userdata-form__input-field 
+                                    index__modal-input-field">
+                        <input class="input-field__input" type="text" name="user-name" placeholder="&nbsp;">
+                        <span class="input-field__placeholder">Укажите имя</span>
+                        <span class="input-field__valid-msg" aria-live="polite"></span>
+                      </label>
+
+                      <label class="input-field 
+                                    userdata-form__input-field 
+                                    index__modal-input-field">
+                        <input class="input-field__input" type="email" name="user-email" placeholder="&nbsp;">
+                        <span class="input-field__placeholder">Укажите email</span>
+                        <span class="input-field__valid-msg" aria-live="polite"></span>
+                      </label>
+
+                      <button class="btn 
+                                    userdata-form__btn
+                                    index__modal-btn 
+                                    btn_primary" type="button">Отправить</button>
+                    </form>
+                    <button class="modal__btn-close" type="button" onclick="window.myDialog.close()">&times;</button>
+                  </div> <!--modal__wrapper-->
+
+                </div>
+                <div class="card__footer">
+                  <h4 class="card__description">Модальное окно</h4>
+                  <p class="card__content-type">Контейнер</p>
+                </div>
+              </a>
+
+              <!--Аватарка-->
+              <a href="#" class="card">
+                <div class="card__content">
+                  <div class="avatar-container">
+                    <article class="avatar">
+                      <div class="avatar__circle">
+                        <img src="components/avatar/images/640.jpg" class="avatar__img" alt="Изображение аватарки"
+                          srcset="components/avatar/images/160.jpg 1x,
+                                  components/avatar/images/320.jpg 2x,
+                                  components/avatar/images/480.jpg 3x,
+                                  components/avatar/images/640.jpg 4x"
+                          sizes="160px"
+                        >
+                      </div>
+                    </article>
                   </div>
-                </article>
-              </div>
-            </div>
-            <div class="card__footer">
-              <h4 class="card__description">Тултип</h4>
-              <p class="card__content-type">Контейнер</p>
-            </div>
-          </a>
+                </div>
+                <div class="card__footer">
+                  <h4 class="card__description">Аватарка</h4>
+                  <p class="card__content-type">Элемент</p>
+                </div>
+              </a>
 
-          <!--Модальное окно-->
-          <a href="#" class="card">
-            <div class="card__content">
+              <!--Отдельные элементы-->
+              <a href="#" class="card">
+                <div class="card__content">
+                  <div class="card__grid-of-elements">
 
-              <div class="modal__wrapper index__modal">
-                <form action="" class="userdata-form" id="userdata-form">
-                  <label class="input-field 
-                                userdata-form__input-field 
-                                index__modal-input-field">
-                    <input class="input-field__input" type="text" name="user-name" placeholder="&nbsp;">
-                    <span class="input-field__placeholder">Укажите имя</span>
-                    <span class="input-field__valid-msg" aria-live="polite"></span>
-                  </label>
+                    <label class="radio">
+                      <input class="radio__input" name="group1" type="radio">
+                      <div class="radio__body">
+                        <div class="radio__control">
+                          <div class="radio__dot"></div>
+                        </div>
+                        <div class="radio__title" data-on="Выбран" data-off="По умолчанию"></div>
+                      </div>
+                    </label>
+                    
+                    <label class="radio">
+                      <input class="radio__input" name="group1" type="radio" checked>
+                      <div class="radio__body">
+                        <div class="radio__control">
+                          <div class="radio__dot"></div>
+                        </div>
+                        <div class="radio__title" data-on="Выбран" data-off="По умолчанию"></div>
+                      </div>
+                    </label>
+                    
+                    <label class="radio">
+                      <input class="radio__input" name="group1" type="radio" disabled>
+                      <div class="radio__body">
+                        <div class="radio__control">
+                          <div class="radio__dot"></div>
+                        </div>
+                        <div class="radio__title">Заблокирован</div>
+                      </div>
+                    </label>
+                  </div> <!--card__grid-of-elements-->
+                </div> <!--card__content-->
+                <div class="card__footer">
+                  <h4 class="card__description">Пользовательские<br>элементы формы</h4>
+                  <p class="card__content-type">Элемент</p>
+                </div>
+              </a>
+            </div> <!--cards-->
+          </div> <!--container-->
+        </section>
 
-                  <label class="input-field 
-                                userdata-form__input-field 
-                                index__modal-input-field">
-                    <input class="input-field__input" type="email" name="user-email" placeholder="&nbsp;">
-                    <span class="input-field__placeholder">Укажите email</span>
-                    <span class="input-field__valid-msg" aria-live="polite"></span>
-                  </label>
-
-                  <button class="btn 
-                                 userdata-form__btn
-                                 index__modal-btn 
-                                 btn_primary">Отправить</button>
-                </form>
-                <button class="modal__btn-close" type="button" onclick="window.myDialog.close()">&times;</button>
-              </div> <!--modal__wrapper-->
-
-            </div>
-            <div class="card__footer">
-              <h4 class="card__description">Модальное окно</h4>
-              <p class="card__content-type">Контейнер</p>
-            </div>
-          </a>
-
-          <!--Аватарка-->
-          <a href="#" class="card">
-            <div class="card__content">
-              <div class="avatar-container">
-                <article class="avatar">
-                  <div class="avatar__circle">
-                    <img src="components/avatar/images/640.jpg" class="avatar__img" alt="Изображение аватарки"
-                      srcset="components/avatar/images/160.jpg 1x,
-                              components/avatar/images/320.jpg 2x,
-                              components/avatar/images/480.jpg 3x,
-                              components/avatar/images/640.jpg 4x"
-                      sizes="160px"
-                    >
+        <!--start tab 2-->
+        <section class="tabs__content tabs__content_elements">
+          <div class="container">
+            <!--карточки-->
+            <div class="index__cards">
+              <!--Аватарка-->
+              <a href="#" class="card">
+                <div class="card__content">
+                  <div class="avatar-container">
+                    <article class="avatar">
+                      <div class="avatar__circle">
+                        <img src="components/avatar/images/640.jpg" class="avatar__img" alt="Изображение аватарки"
+                          srcset="components/avatar/images/160.jpg 1x,
+                                  components/avatar/images/320.jpg 2x,
+                                  components/avatar/images/480.jpg 3x,
+                                  components/avatar/images/640.jpg 4x"
+                          sizes="160px"
+                        >
+                      </div>
+                    </article>
                   </div>
-                </article>
-              </div>
-            </div>
-            <div class="card__footer">
-              <h4 class="card__description">Аватарка</h4>
-              <p class="card__content-type">Элемент</p>
-            </div>
-          </a>
+                </div>
+                <div class="card__footer">
+                  <h4 class="card__description">Аватарка</h4>
+                  <p class="card__content-type">Элемент</p>
+                </div>
+              </a>
 
-          <!--Отдельные-->
-          <a href="#" class="card">
-            <div class="card__content">
-              <div class="card__grid-of-elements">
+              <!--Гистрограмма-->
+              <a href="#" class="card">
+                <div class="card__content">
+                  <article class="histogram">
+                    <header class="histogram__header">
+                      <h1 class="histogram__title">Всего заказов</h1>
+                      <span class="histogram__view-details">Подробнее</span>
+                    </header>
+                    <h4 class="histogram__total">5025</h4>
+                    <div class="histogram__items">
+                      <div class="histogram__item" style="height: 100%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 44%;"></div>
+                      <div class="histogram__item" style="height: 78%;"></div>
+                      <div class="histogram__item" style="height: 44%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 78%;"></div>
+                      <div class="histogram__item" style="height: 100%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 44%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 100%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 78%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 44%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 78%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 90%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 60%;"></div>
+                      <div class="histogram__item" style="height: 22%;"></div>
+                      <div class="histogram__item" style="height: 70%;"></div>
+                      <div class="histogram__item" style="height: 34%;"></div>
+                    </div>
+                  </article>
+                </div>
+                <div class="card__footer">
+                  <h4 class="card__description">Гистограмма</h4>
+                  <p class="card__content-type">Элемент</p>
+                </div>
+              </a>
+            </div> <!--cards-->
+            <!--кнопки-->
+            <h3 class="index__title-chapter">Кнопки</h3>
+            <div class="index__grid-btn">
+              <span class="index__title-btn">Кнопка</span>
+              <span class="index__title-btn">Заблокированная кнопка</span>
+
+              <button class="btn btn_primary btn_fix-size">Primary</button>
+              <button class="btn btn_primary btn_fix-size" disabled>Primary</button>
+
+              <button class="btn btn_secondary btn_fix-size">Secondary</button>
+              <button class="btn btn_secondary btn_fix-size" disabled>secondary</button>
+
+              <button class="btn btn_alternate btn_fix-size">Alternate</button>
+              <button class="btn btn_alternate btn_fix-size" disabled>Alternate</button>
+            </div>
+            <!--Радиокнопки Чекбоксы Переключатели-->
+            <h3 class="index__title-chapter">Пользовательские элементы формы</h3>
+            <div class="index__grid-elements">
+              <!--radiobutton-->
+              <div class="index__flex-elements">
+
+                <span class="index__title-elements">Радиокнопка</span>
 
                 <label class="radio">
                   <input class="radio__input" name="group1" type="radio">
@@ -246,7 +406,7 @@
                     <div class="radio__control">
                       <div class="radio__dot"></div>
                     </div>
-                    <div class="radio__title">По уполчанию</div>
+                    <div class="radio__title" data-on="Выбран" data-off="По умолчанию"></div>
                   </div>
                 </label>
                 
@@ -256,7 +416,7 @@
                     <div class="radio__control">
                       <div class="radio__dot"></div>
                     </div>
-                    <div class="radio__title">Выбран</div>
+                    <div class="radio__title" data-on="Выбран" data-off="По умолчанию"></div>
                   </div>
                 </label>
                 
@@ -269,15 +429,99 @@
                     <div class="radio__title">Заблокирован</div>
                   </div>
                 </label>
-              </div> <!--card__grid-of-elements-->
-            </div> <!--card__content-->
-            <div class="card__footer">
-              <h4 class="card__description">Пользовательские<br>элементы формы</h4>
-              <p class="card__content-type">Элемент</p>
-            </div>
-          </a>
-        </div> <!--main__cards-->
-      </div> <!-- container -->
+              </div>
+
+              <!--checkbox-->
+              <div class="index__flex-elements">
+
+                <span class="index__title-elements">Чекбокс</span>
+
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox">
+                  <div class="checkbox__body">
+                    <div class="checkbox__control">
+                      <svg class="checkbox__icon">
+                        <use href="components/checkbox/icons/check.svg#check"></use>
+                      </svg>
+                    </div>
+                    <div class="checkbox__title" data-on="Выбран" data-off="По умолчанию"></div>
+                  </div>
+                </label>
+
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" checked>
+                  <div class="checkbox__body">
+                    <div class="checkbox__control">
+                      <svg class="checkbox__icon">
+                        <use href="components/checkbox/icons/check.svg#check"></use>
+                      </svg>
+                    </div>
+                    <div class="checkbox__title" data-on="Выбран" data-off="По умолчанию"></div>
+                  </div>
+                </label>
+
+                <!-- заблокированный -->
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="name" checked disabled>
+                  <div class="checkbox__body">
+                    <div class="checkbox__control">
+                      <svg class="checkbox__icon">
+                        <use href="components/checkbox/icons/check.svg#check"></use>
+                      </svg>
+                    </div>
+                    <div class="checkbox__title">Заблокированный</div>
+                  </div>
+                </label>
+              </div>
+
+              <!--togle-->
+              <div class="index__flex-elements">
+
+                <span class="index__title-elements">Переключатель</span>
+
+                <label class="toggle">
+                  <input class="toggle__input" type="checkbox" name="name">
+                  <div class="toggle__body">
+                    <div class="toggle__control"></div>
+                    <span class="toggle__title" data-on="On" data-off="Off"></span>
+                  </div>
+                </label>
+
+                <label class="toggle">
+                  <input class="toggle__input" type="checkbox" name="name" checked>
+                  <div class="toggle__body">
+                    <div class="toggle__control"></div>
+                    <span class="toggle__title" data-on="On" data-off="Off"></span>
+                  </div>
+                </label>
+
+                <label class="toggle">
+                  <input class="toggle__input" type="checkbox" name="name" checked disabled>
+                  <div class="toggle__body">
+                    <div class="toggle__control"></div>
+                    <span class="toggle__title" data-on="On" data-off="Off"></span>
+                  </div>
+                </label>
+              </div>
+            </div> <!--index__grid-elements-->
+          </div> <!--container-->
+        </section>
+
+        <!--start tab 3-->
+        <section class="tabs__content tabs__content_containers">
+          <div class="container">
+            СЕКЦИЯ 3
+          </div> <!--container-->
+        </section>
+        <!--start tab 4-->
+        <section class="tabs__content tabs__content_templates">
+          <div class="container">
+            СЕКЦИЯ 3
+          </div> <!--container-->
+        </section>
+
+      </article>
+      <!--end tabs-->
     </main>
   
     <footer class="footer footer_index footer_light">

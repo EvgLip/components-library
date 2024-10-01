@@ -1,4 +1,9 @@
+/* Переключатель */
+
 .toggle {
+  --font-size-min: 0.8rem;
+  --font-size-max: 1rem;
+
   display: inline-flex;
   cursor: pointer;
 }
@@ -42,7 +47,7 @@
 }
 
 .toggle__input:disabled~.toggle__body .toggle__control {
-  background: rgb(var(--background-light-grey));
+  background: rgb(var(--background-grey));
 }
 
 .toggle__control::before {
@@ -55,7 +60,7 @@
   height: 23px;
 
   border-radius: 50%;
-  background: rgb(var(--background-light-grey));
+  background: rgb(var(--background-soft-grey));
 
   transition: transform 0.3s, background 0.5s;
 }
@@ -69,24 +74,24 @@
   background: rgb(var(--background-soft-grey));
 }
 
+.toggle__input:disabled~.toggle__body .toggle__title::before {
+  color: rgb(var(--font-soft-grey));
+}
+
 .toggle__title::before {
   content: attr(data-off);
-  color: rgb(var(--font-grey));
+  color: rgb(var(--font-dark-grey));
   font-family: var(--font-family-1);
-  font-size: 1rem;
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
   font-weight: 400;
   line-height: 1.5;
-}
-
-.toggle__input:checked:not([disabled])~.toggle__body .toggle__title::before {
-  content: attr(data-on);
-}
-
-.toggle__input:disabled~.toggle__body .toggle__title::before {
-  color: rgb(var(--font-light-grey));
 }
 
 .toggle__input:focus:not([disabled])~.toggle__body .toggle__title::before,
 .toggle__input:hover:not([disabled])~.toggle__body .toggle__title::before {
   font-weight: 600;
+}
+
+.toggle__input:checked:not([disabled])~.toggle__body .toggle__title::before {
+  content: attr(data-on);
 }
