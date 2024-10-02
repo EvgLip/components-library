@@ -380,7 +380,7 @@
             <!--кнопки-->
             <h3 class="index__title-chapter">Кнопки</h3>
             <div class="index__grid-btn">
-              <span class="index__title-btn">Кнопка</span>
+              <span class="index__title-btn">Кнопка по умолчанию</span>
               <span class="index__title-btn">Заблокированная кнопка</span>
 
               <button class="btn btn_primary btn_fix-size">Primary</button>
@@ -503,7 +503,36 @@
                   </div>
                 </label>
               </div>
-            </div> <!--index__grid-elements-->
+            </div>
+            <!--текстовые поля ввода-->
+            <div class="index__grid-txtinput">
+
+              <article class="input-wrapper">
+                <label class="input-field">
+                  <input class="input-field__input" type="text" name="name" placeholder="&nbsp;">
+                  <span class="input-field__placeholder">Введите текст</span>
+                </label>
+                <span class="input-wrapper__valid-msg" aria-live="polite"></span>
+              </article>
+
+              <article class="input-wrapper">
+                <label class="input-field">
+                  <input class="input-field__input input-field_success" type="text" name="name" placeholder="&nbsp;" value="Успешно">
+                  <span class="input-field__placeholder">Введите текст</span>
+                </label>
+                <span class="input-wrapper__valid-msg" aria-live="polite"></span>
+              </article>
+
+              <article class="input-wrapper">
+                <label class="input-field">
+                <input class="input-field__input input-field_error" type="text" name="name" placeholder="&nbsp;" value="Ошибка">
+                <span class="input-field__placeholder" data-err="Внесите изменения">Введите текст</span>
+                </label>
+                <span class="input-wrapper__valid-msg" aria-live="polite">
+                  Текст, поясняющий ошибку.
+                </span>
+              </article>
+            </div>
           </div> <!--container-->
         </section>
 

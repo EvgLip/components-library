@@ -9,36 +9,33 @@
 </head>
 <body>
   
-  <div style="display: block; margin: 100px 0 0 100px;">
+  <div style="display: flex; flex-direction: column; gap: 50px; margin: 100px 100px 0;">
 
-    <label class="input-field">
-      <input class="input-field__input" type="text" name="name" placeholder="&nbsp;">
-      <span class="input-field__placeholder">Введите текст</span>
-      <span class="input-field__valid-msg" aria-live="polite"></span>
-    </label>
+    <article class="input-wrapper">
+      <label class="input-field">
+        <input class="input-field__input" type="text" name="name" placeholder="&nbsp;">
+        <span class="input-field__placeholder">Введите текст</span>
+      </label>
+      <span class="input-wrapper__valid-msg" aria-live="polite"></span>
+    </article>
 
-  </div>
+    <article class="input-wrapper">
+      <label class="input-field">
+        <input class="input-field__input input-field_success" type="text" name="name" placeholder="&nbsp;" value="Успешно">
+        <span class="input-field__placeholder">Введите текст</span>
+      </label>
+      <span class="input-wrapper__valid-msg" aria-live="polite"></span>
+    </article>
 
-  <div style="display: block; margin: 10px 0 0 100px;">
-
-    <label class="input-field">
-      <input class="input-field__input input-field_success" type="text" name="name" placeholder="&nbsp;" value="Успешно">
-      <span class="input-field__placeholder">Введите текст</span>
-      <span class="input-field__valid-msg" aria-live="polite"></span>
-    </label>
-
-  </div>
-  
-
-  <div style="display: block; margin: 10px 0 0 100px;">
-
-     <label class="input-field">
-      <input class="input-field__input input-field_error" type="text" name="name" placeholder="&nbsp;" value="Ошибка">
-      <span class="input-field__placeholder" data-err="Внесите изменения">Введите текст</span>
-      <span class="input-field__valid-msg" aria-live="polite">
+    <article class="input-wrapper">
+      <label class="input-field">
+       <input class="input-field__input input-field_error" type="text" name="name" placeholder="&nbsp;" value="Ошибка">
+       <span class="input-field__placeholder" data-err="Внесите изменения">Введите текст</span>
+      </label>
+      <span class="input-wrapper__valid-msg" aria-live="polite">
         Не правильный текст Не правильный текст Не правильный текст Не правильный текст Не правильный текст Не правильный текст Не правильный текст
       </span>
-    </label>
+    </article>
 
   </div>
 

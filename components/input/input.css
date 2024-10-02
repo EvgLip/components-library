@@ -1,17 +1,22 @@
 /*Поле ввода*/
 
+.input-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}
+
 .input-field {
   --padding: 10px;
   --font-size-min: 0.8rem;
   --font-size-max: 1.25rem;
-  --width: 350px;
+  --width: 200px;
 
+  position: relative;
   display: inline-flex;
   flex-direction: column;
   gap: 5px;
 
-  position: relative;
-  max-width: var(--width);
+  min-width: var(--width);
   width: 100%;
 
   font-family: var(--font-family-1);
@@ -83,13 +88,11 @@
   position: absolute;
   left: calc(var(--padding)*2.4);
   top: 50%;
-
+  transform: translateY(-50%);
   max-width: calc(100% - calc(6*var(--padding)));
 
   color: rgb(var(--font-grey));
   line-height: 1;
-
-  transform: translateY(-50%);
   /* text-transform: uppercase; */
 
   overflow: hidden;
@@ -113,8 +116,8 @@
 }
 
 .input-field__input.input-field_error~.input-field__placeholder {
-  /* выше правило переопределило font-size в .input-field__placeholder */
-  /* на 0.5em поэтому чтобы вернуться к родительскому font-size */
+  /* правило выше переопределило font-size в .input-field__placeholder */
+  /* на 0.6em поэтому чтобы вернуться к родительскому font-size */
   /* нужно установить 2em */
   text-indent: calc(2em/(-0.29));
   color: transparent;
@@ -125,12 +128,12 @@
   color: rgb(var(--error));
 }
 
-.input-field__valid-msg {
+.input-wrapper__valid-msg {
   display: none;
-  font-size: max(10px, 0.6em);
+  font-size: max(11px, 0.6em);
   color: rgb(var(--error));
 }
 
-.input-field__input.input-field_error~.input-field__valid-msg {
+.input-field:has(.input-field__input.input-field_error)~.input-wrapper__valid-msg {
   display: inline-block;
 }
