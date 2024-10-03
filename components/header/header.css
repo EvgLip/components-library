@@ -8,6 +8,37 @@
   font-family: var(--font-family-1), sans-serif;
 }
 
+.header__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__burger-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.header__logo {
+  font-size: 0;
+}
+
+.header__theme-toggle {
+  position: absolute;
+  visibility: hidden;
+}
+
 .header_dark {
   background: rgb(var(--background-light-grey));
 }
@@ -16,13 +47,22 @@
   background: rgb(var(--background-light));
 }
 
-
-
 @media (min-width: 768px) {
-
-  /* для страницы component-page.html */
-  .header_component {
+  .header {
     height: 115px;
     padding: 24px 0 60px;
+  }
+
+  .header__inner {
+    justify-content: space-between;
+  }
+
+  .header__burger-btn {
+    visibility: hidden;
+  }
+
+  .header__theme-toggle {
+    position: static;
+    visibility: visible;
   }
 }
