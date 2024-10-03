@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/main-styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
   <title>Страница компонента</title>
 </head>
 <body>
@@ -12,7 +12,24 @@
 
     <header class="header header_component header_dark">
       <div class="container">
-        <h1>Заголовок</h1>
+
+        <nav class="nav header__nav">
+
+          <a class="nav__logo" href="#">
+            <img src="../assets/images/logo-black.svg" alt="Логотип сайта. Переход на главную страницу.">
+          </a>
+
+          <ul class="nav__items">
+            <li class="nav__item">1</li>
+            <li class="nav__item">2</li>
+            <li class="nav__item">3</li>
+            <li class="nav__item">4</li>
+          </ul>
+
+          <div class="burger">
+            <img src="../assets/images/burger.svg" alt="Меню навигации">
+          </div>
+        </nav>
       </div>  <!-- container -->
     </header>
   

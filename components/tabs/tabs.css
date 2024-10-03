@@ -70,5 +70,4 @@ input[name="tab"] {
 #containers:checked~.tabs__content_containers,
 #templates:checked~.tabs__content_templates {
   display: block;
-  ;
 }

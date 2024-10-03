@@ -78,9 +78,12 @@
   --font-light: var(--white);
 
   /* border color */
-  --border-prim: var(--grey-3);
   --border-dark: var(--black);
-  --border-light: var(--grey-2);
+  --border-soft-dark: var(--soft-black);
+  --border-dark-grey: var(--grey-4);
+  --border-soft-grey: var(--grey-3);
+  --border-grey: var(--grey-2);
+  --border-light-grey: var(--grey-1);
 }
 
 /* html, body {

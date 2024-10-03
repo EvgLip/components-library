@@ -3,6 +3,7 @@
   --font-size-min: 0.8rem;
 
   box-sizing: border-box;
+  padding: 10px 25px;
 
   border-width: 1px;
   border-style: solid;
@@ -33,6 +34,10 @@
   background: rgb(var(--primary-hover));
 }
 
+.btn_primary:active:not([disabled]) {
+  background: rgba(var(--primary-hover) / 0.8);
+}
+
 .btn_secondary {
   border-color: rgb(var(--secondary));
   background: rgb(var(--secondary));
@@ -44,14 +49,22 @@
   background: rgb(var(--secondary-hover));
 }
 
+.btn_secondary:active:not([disabled]) {
+  background: rgba(var(--secondary-hover) / 0.8);
+}
+
 .btn_alternate {
-  border-color: rgb(var(--border-prim));
+  border-color: rgb(var(--border-soft-grey));
   background: rgb(var(--background-light));
   color: rgb(var(--font-dark-grey));
 }
 
 .btn_alternate:hover:not([disabled]) {
-  border-color: rgb(var(--border-dark));
+  border-color: rgb(var(--border-dark-grey));
+}
+
+.btn_alternate:active:not([disabled]) {
+  background: rgb(var(--background-grey));
 }
 
 .btn_fix-size {

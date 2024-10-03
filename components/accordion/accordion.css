@@ -11,7 +11,7 @@
   margin-top: 8px;
   padding: 24px 32px;
 
-  border: rgb(var(--border-prim)) solid 1px;
+  border: rgb(var(--border-soft-grey)) solid 1px;
   border-radius: 8px;
 
   background: rgb(var(--background-light));

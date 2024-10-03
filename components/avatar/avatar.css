@@ -15,7 +15,7 @@
   width: 100%;
   height: 100%;
 
-  border: 3px solid rgb(var(--border-prim));
+  border: 3px solid rgb(var(--border-soft-grey));
   border-radius: 50%;
   overflow: hidden;
 }

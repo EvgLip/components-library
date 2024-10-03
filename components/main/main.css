@@ -23,8 +23,6 @@
 }
 
 
-
-
 /* для страницы component-page.html */
 .main__body {
   display: grid;
@@ -39,7 +37,7 @@
 /* общие */
 
 .main_dark {
-  background: rgb(var(--background-dark));
+  background: rgb(var(--background-light-grey));
 }
 
 .main_light {

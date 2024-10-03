@@ -29,7 +29,7 @@
   padding: var(--padding) calc(var(--padding)*2.4) var(--padding);
   width: 100%;
 
-  border: 1px solid rgb(var(--border-light));
+  border: 1px solid rgb(var(--border-soft-grey));
   border-radius: calc(0.8*var(--padding));
   background: rgb(var(--background-light));
 

@@ -51,5 +51,5 @@
 }
 
 .footer_dark {
-  background: rgb(var(--background-dark));
+  background: rgb(var(--background-light-grey));
 }

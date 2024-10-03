@@ -1,29 +1,28 @@
 /* header */
+/* MOBILE FIRST */
 
 .header {
   box-sizing: border-box;
+  padding: 24px 0;
 
   font-family: var(--font-family-1), sans-serif;
-
-  padding: 24px 0;
 }
 
 .header_dark {
-  background: rgb(var(--background-dark));
+  background: rgb(var(--background-light-grey));
 }
 
 .header_light {
   background: rgb(var(--background-light));
 }
 
-/* MOBILE FIRST */
+
 
 @media (min-width: 768px) {
 
   /* для страницы component-page.html */
   .header_component {
     height: 115px;
-
     padding: 24px 0 60px;
   }
 }

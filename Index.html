@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/main-styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="components/modal/modal.js" type="text/javascript"></script>
   <title>Библиотека компонентов</title>
 </head>
 <body>
@@ -57,7 +58,7 @@
         </div>
 
         <!-- start tab 1-->
-        <section class="tabs__content tabs__content_all-components">
+        <section class="tabs__content tabs__content_all-components index__tab-content">
           <div class="container">
             <div class="index__cards">
               <!--Календарь-->
@@ -178,7 +179,7 @@
               <!--Тултип-->
               <a href="#" class="card">
                 <div class="card__content">
-                  <div class="tooltip-container">
+                  <div class="index__tooltip-container">
                     <article class="tooltip">
                       <div class="tooltip__triger"></div>
                       <div class="tooltip__bubble tooltip__bubble_show tooltip__bubble_top">
@@ -219,7 +220,6 @@
 
                       <button class="btn 
                                     userdata-form__btn
-                                    index__modal-btn 
                                     btn_primary" type="button">Отправить</button>
                     </form>
                     <button class="modal__btn-close" type="button" onclick="window.myDialog.close()">&times;</button>
@@ -235,7 +235,7 @@
               <!--Аватарка-->
               <a href="#" class="card">
                 <div class="card__content">
-                  <div class="avatar-container">
+                  <div class="index__avatar-container">
                     <article class="avatar">
                       <div class="avatar__circle">
                         <img src="components/avatar/images/640.jpg" class="avatar__img" alt="Изображение аватарки"
@@ -258,7 +258,7 @@
               <!--Отдельные элементы-->
               <a href="#" class="card">
                 <div class="card__content">
-                  <div class="card__grid-of-elements">
+                  <div class="index__grid-of-elements">
 
                     <label class="radio">
                       <input class="radio__input" name="group1" type="radio">
@@ -289,7 +289,7 @@
                         <div class="radio__title">Заблокирован</div>
                       </div>
                     </label>
-                  </div> <!--card__grid-of-elements-->
+                  </div> <!--index__grid-of-elements-->
                 </div> <!--card__content-->
                 <div class="card__footer">
                   <h4 class="card__description">Пользовательские<br>элементы формы</h4>
@@ -301,14 +301,14 @@
         </section>
 
         <!--start tab 2-->
-        <section class="tabs__content tabs__content_elements">
+        <section class="tabs__content tabs__content_elements index__tab-content">
           <div class="container">
             <!--карточки-->
             <div class="index__cards">
               <!--Аватарка-->
               <a href="#" class="card">
                 <div class="card__content">
-                  <div class="avatar-container">
+                  <div class="index__avatar-container">
                     <article class="avatar">
                       <div class="avatar__circle">
                         <img src="components/avatar/images/640.jpg" class="avatar__img" alt="Изображение аватарки"
@@ -537,15 +537,212 @@
         </section>
 
         <!--start tab 3-->
-        <section class="tabs__content tabs__content_containers">
+        <section class="tabs__content tabs__content_containers index__tab-content">
           <div class="container">
-            СЕКЦИЯ 3
+            <div class="index__cards">
+              <!--Календарь-->
+              <a href="#" class="card">
+                <div class="card__content">
+                  <article class="calendar">
+                    <h2 class="calendar__title">Август 2024 г</h2>
+                    <div class="calendar__wrapper">
+                      <div class="calendar__content">
+                        <span class="calendar__item calendar__item_grey">Пн</span>
+                        <span class="calendar__item calendar__item_grey">Вт</span>
+                        <span class="calendar__item calendar__item_grey">Ср</span>
+                        <span class="calendar__item calendar__item_grey">Чт</span>
+                        <span class="calendar__item calendar__item_grey">Пт</span>
+                        <span class="calendar__item calendar__item_grey">Сб</span>
+                        <span class="calendar__item calendar__item_grey">Вс</span>
+                        <span class="calendar__item calendar__item_grey">29</span>
+                        <span class="calendar__item calendar__item_grey">30</span>
+                        <span class="calendar__item calendar__item_grey">31</span>
+                        <span class="calendar__item">1</span>
+                        <span class="calendar__item">2</span>
+                        <span class="calendar__item">3</span>
+                        <span class="calendar__item calendar__item_active">4</span>
+                        <span class="calendar__item calendar__item_active-range">5</span>
+                        <span class="calendar__item calendar__item_active-range">6</span>
+                        <span class="calendar__item calendar__item_active-range">7</span>
+                        <span class="calendar__item calendar__item_active">8</span>
+                        <span class="calendar__item">9</span>
+                        <span class="calendar__item">10</span>
+                        <span class="calendar__item">11</span>
+                        <span class="calendar__item">12</span>
+                        <span class="calendar__item">13</span>
+                        <span class="calendar__item">14</span>
+                        <span class="calendar__item">15</span>
+                        <span class="calendar__item">16</span>
+                        <span class="calendar__item">17</span>
+                        <span class="calendar__item">18</span>
+                        <span class="calendar__item">19</span>
+                        <span class="calendar__item">20</span>
+                        <span class="calendar__item">21</span>
+                        <span class="calendar__item">22</span>
+                        <span class="calendar__item">23</span>
+                        <span class="calendar__item">24</span>
+                        <span class="calendar__item">25</span>
+                        <span class="calendar__item">26</span>
+                        <span class="calendar__item">27</span>
+                        <span class="calendar__item">28</span>
+                        <span class="calendar__item">29</span>
+                        <span class="calendar__item">30</span>
+                        <span class="calendar__item">31</span>
+                        <span class="calendar__item calendar__item_grey">1</span>
+                        <span class="calendar__item calendar__item_grey">2</span>
+                        <span class="calendar__item calendar__item_grey">3</span>
+                        <span class="calendar__item calendar__item_grey">4</span>
+                        <span class="calendar__item calendar__item_grey">5</span>
+                        <span class="calendar__item calendar__item_grey">6</span>
+                        <span class="calendar__item calendar__item_grey">7</span>
+                        <span class="calendar__item calendar__item_grey">8</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="card__footer">
+                  <h4 class="card__description">Календарь</h4>
+                  <p class="card__content-type">Контейнер</p>
+                </div>
+              </a>
+
+              <!--Тултип-->
+              <a href="#" class="card">
+                <div class="card__content">
+                  <div class="index__tooltip-container">
+                    <article class="tooltip">
+                      <div class="tooltip__triger"></div>
+                      <div class="tooltip__bubble tooltip__bubble_show tooltip__bubble_top">
+                        <p class="tooltip__helper-text">
+                          Текст подсказки
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <h4 class="card__description">Тултип</h4>
+                  <p class="card__content-type">Контейнер</p>
+                </div>
+              </a>
+
+              <!--Модальное окно-->
+              <a href="#" class="card">
+                <div class="card__content">
+
+                  <div class="modal__wrapper index__modal">
+                    <form action="" class="userdata-form" id="userdata-form">
+                      <label class="input-field 
+                                    userdata-form__input-field 
+                                    index__modal-input-field">
+                        <input class="input-field__input" type="text" name="user-name" placeholder="&nbsp;">
+                        <span class="input-field__placeholder">Укажите имя</span>
+                        <span class="input-field__valid-msg" aria-live="polite"></span>
+                      </label>
+
+                      <label class="input-field 
+                                    userdata-form__input-field 
+                                    index__modal-input-field">
+                        <input class="input-field__input" type="email" name="user-email" placeholder="&nbsp;">
+                        <span class="input-field__placeholder">Укажите email</span>
+                        <span class="input-field__valid-msg" aria-live="polite"></span>
+                      </label>
+
+                      <button class="btn 
+                                    userdata-form__btn
+                                    btn_primary" type="button">Отправить</button>
+                    </form>
+                    <button class="modal__btn-close" type="button" onclick="window.myDialog.close()">&times;</button>
+                  </div> <!--modal__wrapper-->
+
+                </div>
+                <div class="card__footer">
+                  <h4 class="card__description">Модальное окно</h4>
+                  <p class="card__content-type">Контейнер</p>
+                </div>
+              </a>
+
+            </div> <!--cards-->
+
+            <h3 class="index__title-chapter">Аккордион</h3>
+            <article class="accordion">
+              <details class="accordion__details" open>
+                <summary class="accordion__summary">
+                  Accordion item 1
+                  <img src="components/accordion/icons/arrow-down-black.svg" alt="Открывающийся список" class="accordion__summary-marker">
+                </summary>
+                <p class="accordion__content">
+                  По крайней мере, я не заслуживаю того, чтобы меня оставили позади. Это самая худшая работа, которую я когда-либо выполнял. Упражнение приходит как следствие Нострадамуса.
+                </p>
+              </details>
+              <details class="accordion__details">
+                <summary class="accordion__summary">
+                  Accordion item 2
+                  <img src="components/accordion/icons/arrow-down-black.svg" alt="Открывающийся список" class="accordion__summary-marker">
+                </summary>
+                <p class="accordion__content">
+                  С другой стороны дальнейшее развитие различных форм деятельности обеспечивает актуальность ключевых компонентов планируемого обновления. Практический опыт показывает, что консультация с профессионалами из IT требует от нас системного анализа ключевых компонентов планируемого обновления. Соображения высшего порядка, а также постоянное информационно-техническое обеспечение нашей деятельности способствует повышению актуальности существующих финансовых и административных условий?
+                </p>
+              </details>
+              <details class="accordion__details">
+                <summary class="accordion__summary">
+                  Accordion item 3
+                  <img src="components/accordion/icons/arrow-down-black.svg" alt="Открывающийся список" class="accordion__summary-marker">
+                </summary>
+                <p class="accordion__content">
+                  Разнообразный и богатый опыт курс на социально-ориентированный национальный проект обеспечивает актуальность направлений прогрессивного развития? Таким образом, постоянное информационно-техническое обеспечение нашей деятельности позволяет выполнить важнейшие задания по разработке экономической целесообразности принимаемых решений! Таким образом, постоянный количественный рост и сфера нашей активности позволяет оценить значение новых предложений? Дорогие друзья, постоянный количественный рост и сфера нашей активности способствует повышению актуальности позиций, занимаемых участниками в отношении поставленных задач!
+                </p>
+              </details>
+            </article> <!-- accordion -->
           </div> <!--container-->
         </section>
+
         <!--start tab 4-->
-        <section class="tabs__content tabs__content_templates">
+        <section class="tabs__content tabs__content_templates index__tab-content">
           <div class="container">
-            СЕКЦИЯ 3
+            <div class="index__title-flex">
+              <h3 class="index__title-chapter">Модальное окно</h3>
+              <button class="btn btn_primary modalOpener">Открыть</button>
+            </div>
+            <div class="modal__wrapper index__modal">
+              <form action="" class="userdata-form" id="userdata-form">
+                <label class="input-field 
+                              userdata-form__input-field 
+                              index__modal-input-field">
+                  <input class="input-field__input" type="text" name="user-name" placeholder="&nbsp;">
+                  <span class="input-field__placeholder">Укажите имя</span>
+                  <span class="input-field__valid-msg" aria-live="polite"></span>
+                </label>
+
+                <label class="input-field 
+                              userdata-form__input-field 
+                              index__modal-input-field">
+                  <input class="input-field__input" type="email" name="user-email" placeholder="&nbsp;">
+                  <span class="input-field__placeholder">Укажите email</span>
+                  <span class="input-field__valid-msg" aria-live="polite"></span>
+                </label>
+
+                <button class="btn 
+                              userdata-form__btn
+                              index__modal-btn
+                              btn_alternate" type="button">Отправить</button>
+              </form>
+              <button class="modal__btn-close" type="button" onclick="window.myDialog.close()">&times;</button>
+            </div> <!--modal__wrapper-->
+
+            <h3 class="index__title-chapter">Скелетон</h3>
+            <div class="skeleton">
+              <div class="skeleton__header">
+                <div class="skeleton__logo"></div>
+                <div class="skeleton__line skeleton__title1 line-short lg-type1"></div>
+                <div class="skeleton__line skeleton__title2 line-middle lg-type1"></div>
+              </div>
+              <div class="skeleton__body">
+                <div class="skeleton__line line-long lg-type2"></div>
+                <div class="skeleton__line line-middle lg-type2"></div>
+              </div>
+            </div>
+
           </div> <!--container-->
         </section>
 
@@ -563,6 +760,33 @@
     </footer>
 
   </div> <!-- page -->
+
+  <!--Модальное окно-->
+  <dialog class="modal" aria-labelledby="Модальное окно" id="myDialog">
+    <div class="modal__wrapper">
+      
+      <form action="" class="userdata-form" id="userdata-form">
+
+        <label class="input-field userdata-form__input-field">
+          <input class="input-field__input" type="text" name="user-name" placeholder="&nbsp;">
+          <span class="input-field__placeholder">Укажите имя</span>
+          <span class="input-field__valid-msg" aria-live="polite"></span>
+        </label>
+
+        <label class="input-field userdata-form__input-field">
+          <input class="input-field__input" type="email" name="user-email" placeholder="&nbsp;">
+          <span class="input-field__placeholder">Укажите email</span>
+          <span class="input-field__valid-msg" aria-live="polite"></span>
+        </label>
+
+        <button class="btn userdata-form__btn btn_primary">Отправить</button>
+
+      </form>
+      
+      <button class="modal__btn-close" type="button" onclick="window.myDialog.close()">&times;</button>
+
+    </div> <!--modal__wrapper-->
+  </dialog>
 
 </body>
 </html>
