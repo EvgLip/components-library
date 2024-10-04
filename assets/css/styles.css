@@ -1,5 +1,7 @@
 @import url('normolize.css');
 
+@import url('../fonts/fonts.css');
+
 @import url('../../components/container/container.css');
 @import url('../../components/button/button.css');
 @import url('../../components/accordion/accordion.css');
@@ -16,20 +18,17 @@
 @import url('../../components/avatar/avatar.css');
 @import url('../../components/userdata-form/userdata-form.css');
 @import url('../../components/tabs/tabs.css');
+@import url('../../components/menu/menu.css');
 @import url('../../components/burger-menu/burger-menu.css');
 
 
 @import url('../../components/page/page.css');
-@import url('../../components/main/main.css');
 @import url('../../components/header/header.css');
 @import url('../../components/nav/nav.css');
 @import url('../../components/footer/footer.css');
 
 @import url('../../index.css');
-
-@import url('../fonts/fonts.css');
-
-
+@import url('../../pages/component-page.css');
 
 :root {
   --white: 255 255 255;

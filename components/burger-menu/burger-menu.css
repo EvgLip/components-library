@@ -10,12 +10,6 @@
   z-index: 555;
 
   transition: transform 0.2s linear;
-
-  background: rgb(var(--background-light));
-  font-family: var(--font-family-1);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
 }
 
 .burger-menu[data-open] {
@@ -48,12 +42,4 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-}
-
-.burger-menu__list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  color: rgb(var(--font-soft-dark));
 }
