@@ -1,9 +1,3 @@
-html,
-body {
-  /* резервирование места для скрола */
-  scrollbar-gutter: stable;
-}
-
 .modal {
   box-sizing: border-box;
 
@@ -46,21 +40,14 @@ body {
   border: none;
   cursor: pointer;
   opacity: 0.3;
-
-
 }
 
 .modal__btn-close:hover {
   opacity: 1;
 }
 
-.scroll-lock {
-  overflow: hidden;
-}
-
 .backdrop {
   padding: 20px;
   background: rgb(196, 196, 196);
   opacity: 0.5;
-  ;
 }

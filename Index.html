@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css">
+
   <script defer src="components/modal/modal.js" type="text/javascript"></script>
+  <script defer src="assets/js/script.js" type="text/javascript"></script>
+
   <title>Библиотека компонентов</title>
 </head>
 <body>
@@ -13,27 +16,51 @@
 
     <header class="header header_light">
       <div class="container">
-
-        <nav class="nav header__nav">
-
-          <a class="nav__logo" href="#">
-            <img src="assets/images/logo-black.svg" alt="Логотип сайта. Переход на главную страницу.">
+        <div class="header__inner">
+          <button class="header__burger-btn" id="burger-menu-open" type="button">
+            <img src="../../assets/images/burger.svg" alt="Мобильное меню">
+          </button>
+          <a class="header__logo" href="#">
+            <img src="../../assets/images/logo-black.svg" alt="Логотип сайта. Переход на главную страницу.">
           </a>
-
-          <ul class="nav__items">
-            <li class="nav__item">1</li>
-            <li class="nav__item">2</li>
-            <li class="nav__item">3</li>
-            <li class="nav__item">4</li>
-          </ul>
-
-          <div class="burger">
-            <img src="assets/images/burger.svg" alt="Меню навигации">
-          </div>
-        </nav>
-
+          <div class="header__theme-toggle">Переключатель</div>
+        </div>
       </div> <!-- container -->
     </header>
+
+    <nav class="burger-menu">
+      <div class="container">
+
+        <div class="header">
+          <div class="header__inner">
+            <button class="burger-menu__btn-close" id="burger-menu-close">
+              <img src="../../assets/images/x.svg" alt="Закрыть мобильное меню">
+            </button>
+            <a class="header__logo" href="#">
+              <img src="../../assets/images/logo-black.svg" alt="Логотип сайта. Переход на главную страницу.">
+            </a>
+          </div>
+        </div>
+        <hr class="burger-menu__hr">
+        <div class="toggle-theme">
+          <div class="toggle-theme__title">Темная тема</div>
+          <div class="toggle-theme__toggle">Переключатель</div>
+        </div>
+        <hr class="burger-menu__hr">
+        <div class="burger-menu__list">
+          <a class="burger-menu__item" href="#">Календарь</a>
+          <a class="burger-menu__item" href="#">Гистограмма</a>
+          <a class="burger-menu__item" href="#">Тултип</a>
+          <a class="burger-menu__item" href="#">Модальное окно</a>
+          <a class="burger-menu__item" href="#">Аватарка</a>
+          <a class="burger-menu__item" href="#">Пользовательские элементы формы</a>
+          <a class="burger-menu__item" href="#">Календарь</a>
+          <a class="burger-menu__item" href="#">Аккордион</a>
+          <a class="burger-menu__item" href="#">Скелетон</a>
+        </div>
+        
+      </div> <!-- container -->
+    </nav>
   
     <main class="page__main_index">
 
@@ -55,7 +82,7 @@
             <label for="containers">Контейнеры</label>
             <label for="templates">Шаблоны</label>
           </div>
-        </div>
+        </div> <!-- container -->
 
         <!-- start tab 1-->
         <section class="tabs__content tabs__content_all-components index__tab-content">

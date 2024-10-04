@@ -16,6 +16,7 @@
 @import url('../../components/avatar/avatar.css');
 @import url('../../components/userdata-form/userdata-form.css');
 @import url('../../components/tabs/tabs.css');
+@import url('../../components/burger-menu/burger-menu.css');
 
 
 @import url('../../components/page/page.css');
@@ -86,9 +87,18 @@
   --border-light-grey: var(--grey-1);
 }
 
-/* html, body {
-  height: 100%;
-} */
+html,
+body {
+  /* резервирование места для скрола */
+  scrollbar-gutter: stable;
+}
+
+/* класс добавляется: 
+   -в модальном окне,
+   -в бургер меню. */
+.scroll-lock {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
