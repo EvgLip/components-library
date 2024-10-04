@@ -11,7 +11,11 @@ if (burgBtnOpen)
 {
   burgBtnOpen.addEventListener('click', function ()
   {
-    if (burgMenu) burgMenu.setAttribute('data-open', '');
+    if (burgMenu)
+    {
+      burgMenu.setAttribute('data-open', '');
+      document.body.classList.add("scroll-lock");
+    }
   });
 }
 
@@ -19,6 +23,10 @@ if (burgBtnClose)
 {
   burgBtnClose.addEventListener('click', function ()
   {
-    if (burgMenu) burgMenu.removeAttribute('data-open');
+    if (burgMenu)
+    {
+      burgMenu.removeAttribute('data-open');
+      document.body.classList.remove("scroll-lock");
+    }
   });
 }
