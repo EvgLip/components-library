@@ -43,13 +43,3 @@
   line-height: 1.2;
   text-transform: uppercase;
 }
-
-/* общие */
-
-.footer_light {
-  background: rgb(var(--background-light));
-}
-
-.footer_dark {
-  background: rgb(var(--background-light-grey));
-}

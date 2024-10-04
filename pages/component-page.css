@@ -1,0 +1,23 @@
+/* component-page */
+
+.main__body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+}
+
+.main__menu {
+  display: block;
+  width: clamp(229px, 30vw, 350px);
+}
+
+
+.main__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+.main__menu {
+  display: none;
+}

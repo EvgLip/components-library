@@ -105,3 +105,12 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
+
+.style_dark {
+  background: rgb(var(--background-light-grey));
+}
+
+.style_light {
+  background: rgb(var(--background-light));
+}
