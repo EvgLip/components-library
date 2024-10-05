@@ -1,4 +1,5 @@
 @import url('normolize.css');
+@import url('variables.css');
 
 @import url('../fonts/fonts.css');
 
@@ -30,62 +31,6 @@
 @import url('../../index.css');
 @import url('../../pages/component-page.css');
 
-:root {
-  --white: 255 255 255;
-  --white-2: 249 250 252;
-  --black: 0 0 0;
-  --soft-black: 33 36 41;
-  --pink: 247 132 173;
-  --purple: 112 72 232;
-  --purple-2: 80 40 198;
-  --blue: 66 99 235;
-  --blue-2: 35 66 192;
-  --red: 240 61 62;
-  --grey-1: 248 249 250;
-  --grey-2: 221 226 229;
-  --grey-3: 172 181 189;
-  --grey-4: 73 80 87;
-
-  --error: var(--red);
-  --success: var(--blue);
-
-  /* для компонентов */
-  --primary: var(--blue);
-  --primary-hover: var(--blue-2);
-  --secondary: var(--purple);
-  --secondary-hover: var(--purple-2);
-
-  /* background */
-  --background-dark: var(--black);
-  --background-soft-dark: var(--soft-black);
-  --background-dark-grey: var(--grey-4);
-  --background-soft-grey: var(--grey-3);
-  --background-grey: var(--grey-2);
-  --background-light-grey: var(--grey-1);
-  --background-light: var(--white);
-
-  /* font-family */
-  --font-family-1: 'Inter';
-  --font-family-2: 'Roboto';
-
-  /* font color */
-  --font-dark: var(--black);
-  --font-soft-dark: var(--soft-black);
-  --font-dark-grey: var(--grey-4);
-  --font-soft-grey: var(--grey-3);
-  --font-grey: var(--grey-2);
-  --font-light-grey: var(--grey-1);
-  --font-light: var(--white);
-
-  /* border color */
-  --border-dark: var(--black);
-  --border-soft-dark: var(--soft-black);
-  --border-dark-grey: var(--grey-4);
-  --border-soft-grey: var(--grey-3);
-  --border-grey: var(--grey-2);
-  --border-light-grey: var(--grey-1);
-}
-
 html,
 body {
   /* резервирование места для скрола */
@@ -104,7 +49,6 @@ a {
   color: inherit;
   cursor: pointer;
 }
-
 
 .style_dark {
   background: rgb(var(--background-light-grey));

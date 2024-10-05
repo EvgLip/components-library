@@ -16,3 +16,9 @@
 .menu__item {
   list-style-type: none;
 }
+
+.menu__item a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
