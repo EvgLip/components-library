@@ -9,6 +9,7 @@
   transform: translateX(-120vw);
   z-index: 555;
 
+  background: rgb(var(--background-light));
   transition: transform 0.2s linear;
 }
 
@@ -42,4 +43,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+
+  font-family: var(--font-family-1);
+  color: rgb(var(--font-soft-dark));
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }

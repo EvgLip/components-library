@@ -3,39 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../assets/css/main-styles.css">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
   <title>Вкладки</title>
 </head>
 <body>
   
   <article class="tabs">
-    <input type="radio" name="tab" id="all-components" checked>
-    <input type="radio" name="tab" id="elements">
-    <input type="radio" name="tab" id="containers">
-    <input type="radio" name="tab" id="templates">
+    <input type="radio" name="tab" id="tab1" checked>
+    <input type="radio" name="tab" id="tab2">
+    <input type="radio" name="tab" id="tab3">
+    <input type="radio" name="tab" id="tab4">
 
     <div class="tabs__label">
-      <label for="all-components">Все компоненты</label>
-      <label for="elements">Элементы</label>
-      <label for="containers">Контейнеры</label>
-      <label for="templates">Шаблоны</label>
+      <label for="tab1">Все компоненты</label>
+      <label for="tab2">Элементы</label>
+      <label for="tab3">Контейнеры</label>
+      <label for="tab4">Шаблоны</label>
     </div>
 
-    <section class="tabs__content tabs__content_all-components">
+    <section class="tabs__content tabs__tab1">
       СЕКЦИЯ 1
     </section>
 
-    <section class="tabs__content tabs__content_elements">
+    <section class="tabs__content tabs__tab2">
       СЕКЦИЯ 2
     </section>
 
-    <section class="tabs__content tabs__content_containers">
+    <section class="tabs__content tabs__tab3">
       СЕКЦИЯ 3
     </section>
 
-    <section class="tabs__content tabs__content_templates">
+    <section class="tabs__content tabs__tab4">
       СЕКЦИЯ 4
     </section>
   </article>
+
 </body>
 </html>

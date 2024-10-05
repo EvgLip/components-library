@@ -6,11 +6,6 @@
   height: 100%;
 }
 
-.components__menu {
-  display: block;
-  width: clamp(229px, 30vw, 350px);
-}
-
 /* .main__menu {
   display: none;
 } */

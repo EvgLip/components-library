@@ -5,7 +5,10 @@
   flex-direction: column;
   gap: 16px;
 
-  background: rgb(var(--background-light));
+  width: min-content;
+  padding-inline-start: 0;
+  padding-inline-end: 50px;
+
   font-family: var(--font-family-1);
   color: rgb(var(--font-soft-dark));
   font-size: 1rem;

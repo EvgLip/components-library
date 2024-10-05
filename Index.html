@@ -47,17 +47,36 @@
           <div class="toggle-theme__toggle">Переключатель</div>
         </div>
         <hr class="burger-menu__hr">
-        <div class="burger-menu__list">
-          <a class="burger-menu__item" href="#">Календарь</a>
-          <a class="burger-menu__item" href="#">Гистограмма</a>
-          <a class="burger-menu__item" href="#">Тултип</a>
-          <a class="burger-menu__item" href="#">Модальное окно</a>
-          <a class="burger-menu__item" href="#">Аватарка</a>
-          <a class="burger-menu__item" href="#">Пользовательские элементы формы</a>
-          <a class="burger-menu__item" href="#">Календарь</a>
-          <a class="burger-menu__item" href="#">Аккордион</a>
-          <a class="burger-menu__item" href="#">Скелетон</a>
-        </div>
+
+        <ul class="menu__list" role="menu">
+          <li class="menu__item">
+            <a href="#">Календарь</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Гистограмма</a>
+          </li>
+          <li class="menu__item">
+          <a href="#">Тултип</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Модальное окно</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Аватарка</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Пользовательские элементы формы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Календарь</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Аккордион</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Скелетон</a>
+          </li>
+        </ul>
 
       </div> <!-- container -->
     </nav>
@@ -69,23 +88,23 @@
       </div>
       <!--start tabs-->
       <article class="tabs">
-        <input type="radio" name="tab" id="all-components" checked>
-        <input type="radio" name="tab" id="elements">
-        <input type="radio" name="tab" id="containers">
-        <input type="radio" name="tab" id="templates">
+        <input type="radio" name="tab" id="tab1" checked>
+        <input type="radio" name="tab" id="tab2">
+        <input type="radio" name="tab" id="tab3">
+        <input type="radio" name="tab" id="tab4">
 
         <!--tab labels-->
         <div class="container">
           <div class="tabs__label">
-            <label for="all-components">Все компоненты</label>
-            <label for="elements">Элементы</label>
-            <label for="containers">Контейнеры</label>
-            <label for="templates">Шаблоны</label>
+            <label for="tab1">Все компоненты</label>
+            <label for="tab2">Элементы</label>
+            <label for="tab3">Контейнеры</label>
+            <label for="tab4">Шаблоны</label>
           </div>
         </div> <!-- container -->
 
         <!-- start tab 1-->
-        <section class="tabs__content tabs__content_all-components index__tab-content style_dark">
+        <section class="tabs__content tabs__tab1 index__tab-content style_dark">
           <div class="container">
             <div class="index__cards">
               <!--Календарь-->
@@ -328,7 +347,7 @@
         </section>
 
         <!--start tab 2-->
-        <section class="tabs__content tabs__content_elements index__tab-content style_dark">
+        <section class="tabs__content tabs__tab2 index__tab-content style_dark">
           <div class="container">
             <!--карточки-->
             <div class="index__cards">
@@ -564,7 +583,7 @@
         </section>
 
         <!--start tab 3-->
-        <section class="tabs__content tabs__content_containers index__tab-content style_dark">
+        <section class="tabs__content tabs__tab3 index__tab-content style_dark">
           <div class="container">
             <div class="index__cards">
               <!--Календарь-->
@@ -725,7 +744,7 @@
         </section>
 
         <!--start tab 4-->
-        <section class="tabs__content tabs__content_templates index__tab-content style_dark">
+        <section class="tabs__content tabs__tab4 index__tab-content style_dark">
           <div class="container">
             <div class="index__title-flex">
               <h3 class="index__title-chapter">Модальное окно</h3>

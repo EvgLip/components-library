@@ -44,30 +44,32 @@ input[name="tab"] {
   }
 }
 
-.tabs:has(#all-components:checked) .tabs__label label[for="all-components"],
-.tabs:has(#elements:checked) .tabs__label label[for="elements"],
-.tabs:has(#containers:checked) .tabs__label label[for="containers"],
-.tabs:has(#templates:checked) .tabs__label label[for="templates"] {
+.tabs:has(#tab1:checked) .tabs__label label[for="tab1"],
+.tabs:has(#tab2:checked) .tabs__label label[for="tab2"],
+.tabs:has(#tab3:checked) .tabs__label label[for="tab3"],
+.tabs:has(#tab4:checked) .tabs__label label[for="tab4"] {
   color: rgb(var(--font-dark-grey));
   cursor: default;
 }
 
 
-.tabs:has(#all-components:checked) .tabs__label label[for="all-components"]::after,
-.tabs:has(#elements:checked) .tabs__label label[for="elements"]::after,
-.tabs:has(#containers:checked) .tabs__label label[for="containers"]::after,
-.tabs:has(#templates:checked) .tabs__label label[for="templates"]::after {
+.tabs:has(#tab1:checked) .tabs__label label[for="tab1"]::after,
+.tabs:has(#tab2:checked) .tabs__label label[for="tab2"]::after,
+.tabs:has(#tab3:checked) .tabs__label label[for="tab3"]::after,
+.tabs:has(#tab4:checked) .tabs__label label[for="tab4"]::after {
   transform: scaleX(1);
   background: rgb(var(--background-dark-grey));
 }
 
 .tabs__content {
   display: none;
+
+  padding: 50px 0;
 }
 
-#all-components:checked~.tabs__content_all-components,
-#elements:checked~.tabs__content_elements,
-#containers:checked~.tabs__content_containers,
-#templates:checked~.tabs__content_templates {
+#tab1:checked~.tabs__tab1,
+#tab2:checked~.tabs__tab2,
+#tab3:checked~.tabs__tab3,
+#tab4:checked~.tabs__tab4 {
   display: block;
 }
