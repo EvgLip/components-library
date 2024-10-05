@@ -116,39 +116,45 @@
               </li>
             </ul>
           </nav>
+          <!--окно просмотра компонента-->
+          <section class="component-viewing">
+            <!--МЕСТО ДЛЯ РАЗМЕЩЕНИЯ РАЗМЕТКИ КОМПОНЕНТА-->
 
-            <!--Вкладки для демонстрации кода-->
+            <!--Вкладки для демонстрации кода компонента-->
             <article class="tabs">
               <input type="radio" name="tab" id="tab1" checked>
               <input type="radio" name="tab" id="tab2">
-
+  
               <div class="tabs__label">
                 <label for="tab1">Вкладка 1</label>
                 <label for="tab2">Вкладка 2</label>
               </div>
-
+  
               <section class="tabs__content tabs__tab1">
-                <figure class="code-preview">
+                <figure class="code-viewing">
                   <pre>
                     <code>
- html code
+  html code
                     </code>
                   </pre>
                 </figure>
-              </section>
-
+              </section> <!-- tabs__tab1 -->
+  
               <section class="tabs__content tabs__tab2">
-                <figure class="code-preview">
+                <figure class="code-viewing">
                   <pre>
                     <code>
- css code
+  css code
                     </code>
                   </pre>
                 </figure>
-              </section>
-            </article>
-          </div>
-        </div>
+              </section> <!-- tabs__tab2 -->
+            </article> <!-- tabs -->
+
+          </section> <!-- component-viewing -->
+
+
+        </div> <!-- components__body -->
       </div> <!-- container -->
     </main>
 

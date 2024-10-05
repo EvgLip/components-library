@@ -25,7 +25,14 @@
   }
 }
 
-.code-preview {
+.component-viewing {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+.code-viewing {
   margin: 0;
   padding: 20px 15px;
 
