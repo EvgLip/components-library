@@ -80,11 +80,12 @@
       </div> <!-- container -->
     </nav>
   
-    <main class="components style_dark">
+    <main class="components">
       <div class="container">
         <div class="components__body">
 
-          <nav class="components__menu">
+          <!--сайдбар-->
+          <nav class="components__sidebar style_dark">
             <ul class="menu__list" role="menu">
               <li class="menu__item">
                 <a href="#">Календарь</a>
@@ -115,9 +116,36 @@
               </li>
             </ul>
           </nav>
-          
-          <div class="components__component style_light">
-            <article>
+
+            <!--Вкладки для демонстрации кода-->
+            <article class="tabs">
+              <input type="radio" name="tab" id="tab1" checked>
+              <input type="radio" name="tab" id="tab2">
+
+              <div class="tabs__label">
+                <label for="tab1">Вкладка 1</label>
+                <label for="tab2">Вкладка 2</label>
+              </div>
+
+              <section class="tabs__content tabs__tab1">
+                <figure class="code-preview">
+                  <pre>
+                    <code>
+ html code
+                    </code>
+                  </pre>
+                </figure>
+              </section>
+
+              <section class="tabs__content tabs__tab2">
+                <figure class="code-preview">
+                  <pre>
+                    <code>
+ css code
+                    </code>
+                  </pre>
+                </figure>
+              </section>
             </article>
           </div>
         </div>

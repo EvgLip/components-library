@@ -63,8 +63,6 @@ input[name="tab"] {
 
 .tabs__content {
   display: none;
-
-  padding: 50px 0;
 }
 
 #tab1:checked~.tabs__tab1,
@@ -72,4 +70,8 @@ input[name="tab"] {
 #tab3:checked~.tabs__tab3,
 #tab4:checked~.tabs__tab4 {
   display: block;
+}
+
+.tabs_padding-block_50 {
+  padding: 50px 0;
 }

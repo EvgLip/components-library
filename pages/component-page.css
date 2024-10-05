@@ -1,11 +1,35 @@
 /* component-page */
 
 .components__body {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  height: 100%;
+  & {
+    display: grid;
+    height: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      grid-template-columns: auto 1fr;
+    }
+  }
 }
 
-/* .main__menu {
-  display: none;
-} */
+.components__sidebar {
+  & {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: block;
+    }
+  }
+}
+
+.code-preview {
+  margin: 0;
+  padding: 20px 15px;
+
+  & pre {
+    margin: 0;
+  }
+}
