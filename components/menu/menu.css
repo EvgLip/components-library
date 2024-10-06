@@ -18,10 +18,19 @@
 
 .menu__item {
   list-style-type: none;
-}
 
-.menu__item a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+  & a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  & .menu__item_active {
+    color: rgb(216, 73, 16);
+  }
+
+  &:hover {
+    font-weight: 600;
+    color: rgb(var(--font-dark))
+  }
 }
