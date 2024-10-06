@@ -27,10 +27,6 @@
 
   & .menu__item_active {
     color: rgb(216, 73, 16);
-  }
-
-  &:hover {
-    font-weight: 600;
-    color: rgb(var(--font-dark))
+    cursor: default;
   }
 }

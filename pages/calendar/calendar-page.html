@@ -20,7 +20,7 @@
           <button class="header__burger-btn" id="burger-menu-open" type="button">
             <img src="../../assets/images/burger.svg" alt="Открыть мобильное меню">
           </button>
-          <a class="header__logo" href="#">
+          <a class="header__logo" href="../../Index.html">
             <img src="../../assets/images/logo-black.svg" alt="Логотип сайта. Переход на главную страницу.">
           </a>
           <div class="header__theme-toggle">Переключатель</div>
@@ -36,7 +36,7 @@
             <button class="burger-menu__btn-close" id="burger-menu-close">
               <img src="../../assets/images/x.svg" alt="Закрыть мобильное меню">
             </button>
-            <a class="header__logo" href="#">
+            <a class="header__logo" href="../../Index.html">
               <img src="../../assets/images/logo-black.svg" alt="Логотип сайта. Переход на главную страницу.">
             </a>
           </div>
@@ -258,7 +258,68 @@
                 <figure class="code-viewing">
                   <pre>
                     <code>
-  css code
+.calendar {
+  box-sizing: border-box;
+  max-width: 200px;
+  min-width: 160px;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgb(var(--border-soft-grey));
+  border-radius: 8px;
+  background: rgb(var(--background-light));
+  font-family: var(--font-family-1);
+}
+
+.calendar__title {
+  margin: 0 0 26px;
+  color: rgb(var(--font-soft-dark));
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.calendar__wrapper {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.calendar__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: stretch;
+}
+
+.calendar__item {
+  display: grid;
+  place-items: center;
+  color: rgb(var(--font-soft-dark));
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+/* модификаторы */
+.calendar__item_grey {
+  color: rgb(var(--font-soft-grey));
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.calendar__item_active {
+  background-color: rgb(var(--primary));
+  color: rgb(var(--font-light));
+}
+
+.calendar__item_active-range {
+  background-color: rgba(var(--primary) / 0.2);
+}
                     </code>
                   </pre>
                 </figure>
