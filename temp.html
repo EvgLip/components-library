@@ -1,57 +1,83 @@
+.histogram {
+  box-sizing: border-box;
+  padding: 16px 24px 24px;
+  width: 100%;
+  border: 1px solid rgb(var(--border-soft-grey));
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgb(var(--background-light));
+  font-family: var(--font-family-1), sans-serif;
+}
 
-&lt;article class="calendar"&gt
-  &lt;h2 class="calendar__title"&gtАвгуст 2024 г&lt;/h2&gt
-  &lt;div class="calendar__wrapper"&gt
-    &lt;div class="calendar__content"&gt
-      &lt;span class="calendar__item calendar__item_grey"&gtПн&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gtВт&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gtСр&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gtЧт&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gtПт&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gtСб&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gtВс&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt29&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt30&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt31&lt;/span&gt
-      &lt;span class="calendar__item"&gt1&lt;/span&gt
-      &lt;span class="calendar__item"&gt2&lt;/span&gt
-      &lt;span class="calendar__item"&gt3&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_active"&gt4&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_active-range"&gt5&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_active-range"&gt6&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_active-range"&gt7&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_active"&gt8&lt;/span&gt
-      &lt;span class="calendar__item"&gt9&lt;/span&gt
-      &lt;span class="calendar__item"&gt10&lt;/span&gt
-      &lt;span class="calendar__item"&gt11&lt;/span&gt
-      &lt;span class="calendar__item"&gt12&lt;/span&gt
-      &lt;span class="calendar__item"&gt13&lt;/span&gt
-      &lt;span class="calendar__item"&gt14&lt;/span&gt
-      &lt;span class="calendar__item"&gt15&lt;/span&gt
-      &lt;span class="calendar__item"&gt16&lt;/span&gt
-      &lt;span class="calendar__item"&gt17&lt;/span&gt
-      &lt;span class="calendar__item"&gt18&lt;/span&gt
-      &lt;span class="calendar__item"&gt19&lt;/span&gt
-      &lt;span class="calendar__item"&gt20&lt;/span&gt
-      &lt;span class="calendar__item"&gt21&lt;/span&gt
-      &lt;span class="calendar__item"&gt22&lt;/span&gt
-      &lt;span class="calendar__item"&gt23&lt;/span&gt
-      &lt;span class="calendar__item"&gt24&lt;/span&gt
-      &lt;span class="calendar__item"&gt25&lt;/span&gt
-      &lt;span class="calendar__item"&gt26&lt;/span&gt
-      &lt;span class="calendar__item"&gt27&lt;/span&gt
-      &lt;span class="calendar__item"&gt28&lt;/span&gt
-      &lt;span class="calendar__item"&gt29&lt;/span&gt
-      &lt;span class="calendar__item"&gt30&lt;/span&gt
-      &lt;span class="calendar__item"&gt31&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt1&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt2&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt3&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt4&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt5&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt6&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt7&lt;/span&gt
-      &lt;span class="calendar__item calendar__item_grey"&gt8&lt;/span&gt
-    &lt;/div&gt
-  &lt;/div&gt
-&lt;/article&gt
+.histogram__header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.histogram__title {
+  color: rgb(var(--font-soft-dark));
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.histogram__view-details {
+  margin-left: 5px;
+  flex-shrink: 0;
+  color: rgb(var(--primary));
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.histogram__view-details:hover {
+  --primary: var(--primary-hover);
+}
+
+.histogram__total {
+  margin: 6px 0 39px;
+  color: rgb(var(--font-soft-dark));
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.3;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.histogram__items {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  gap: 1px;
+  animation: appear-items 0.8s ease-out;
+}
+
+@keyframes appear-items {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+
+  50% {
+    transform: scaleY(1.1);
+    transform-origin: bottom center;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+  }
+}
+
+.histogram__item {
+  width: calc(100% / 30);
+  background-color: rgb(var(--primary));
+}
