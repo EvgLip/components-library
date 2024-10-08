@@ -1,16 +1,15 @@
-<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<desc>
-			Created with Pixso.
-	</desc>
-	<defs>
-		<clipPath id="clip16890_19">
-			<rect rx="-0.500000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
-		</clipPath>
-	</defs>
-	<rect rx="-0.500000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
-	<g clip-path="url(#clip16890_19)">
-		<path d="M2 12C2 11.44 2.44 11 3 11L21 11C21.55 11 22 11.44 22 12C22 12.55 21.55 13 21 13L3 13C2.44 13 2 12.55 2 12Z" fill="#212429" fill-opacity="1.000000" fill-rule="evenodd"/>
-		<path d="M2 6C2 5.44 2.44 5 3 5L21 5C21.55 5 22 5.44 22 6C22 6.55 21.55 7 21 7L3 7C2.44 7 2 6.55 2 6Z" fill="#212429" fill-opacity="1.000000" fill-rule="evenodd"/>
-		<path d="M2 18C2 17.44 2.44 17 3 17L21 17C21.55 17 22 17.44 22 18C22 18.55 21.55 19 21 19L3 19C2.44 19 2 18.55 2 18Z" fill="#212429" fill-opacity="1.000000" fill-rule="evenodd"/>
-	</g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<symbol id="burger">
+		<defs>
+			<clipPath id="clip16890_19">
+				<rect rx="-0.500000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="currentColor" fill-opacity="0"/>
+			</clipPath>
+		</defs>
+		<rect rx="-0.500000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="currentColor" fill-opacity="0"/>
+		<g clip-path="url(#clip16890_19)">
+			<path d="M2 12C2 11.44 2.44 11 3 11L21 11C21.55 11 22 11.44 22 12C22 12.55 21.55 13 21 13L3 13C2.44 13 2 12.55 2 12Z" fill="currentColor" fill-opacity="1.000000" fill-rule="evenodd"/>
+			<path d="M2 6C2 5.44 2.44 5 3 5L21 5C21.55 5 22 5.44 22 6C22 6.55 21.55 7 21 7L3 7C2.44 7 2 6.55 2 6Z" fill="currentColor" fill-opacity="1.000000" fill-rule="evenodd"/>
+			<path d="M2 18C2 17.44 2.44 17 3 17L21 17C21.55 17 22 17.44 22 18C22 18.55 21.55 19 21 19L3 19C2.44 19 2 18.55 2 18Z" fill="currentColor" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</g>
+	</symbol>
 </svg>

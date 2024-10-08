@@ -30,6 +30,12 @@
   border: none;
 }
 
+.header__burger-icon {
+  width: 23px;
+  height: 23px;
+  color: rgb(var(--background-dark));
+}
+
 .header__logo {
   font-size: 0;
 }
