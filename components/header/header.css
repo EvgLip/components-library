@@ -37,6 +37,10 @@
 .header__theme-toggle {
   position: absolute;
   visibility: hidden;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 @media (min-width: 768px) {

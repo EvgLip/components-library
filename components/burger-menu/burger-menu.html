@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../assets/css/styles.css">
 
-  <script defer src="../../assets/js/script.js" type="text/javascript"></script>
+  <script defer src="burger-menu.js" type="text/javascript"></script>
   <title>Мобильное меню</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
       <div class="header">
         <div class="header__inner">
           <button class="burger-menu__btn-close" id="burger-menu-close">
-            <img src="../../assets/images/x.svg" alt="Закрыть мобильное меню">
+            <img src="images/x.svg" alt="Закрыть мобильное меню">
           </button>
           <a class="header__logo" href="#">
             <img src="../../assets/images/logo-black.svg" alt="Логотип сайта. Переход на главную страницу.">
@@ -30,10 +30,19 @@
 
       <hr class="burger-menu__hr">
       <!--переключатель темы-->
-      <div class="toggle-theme">
-        <div class="toggle-theme__title">Темная тема</div>
-        <div class="toggle-theme__toggle">Переключатель</div>
-      </div>
+      <div class="burger-menu__theme-area">
+        <div class="burger-menu__theme-title">Темная тема</div>
+        <div class="burger-menu__theme-toggle">
+          <label class="toggle">
+            <img class="icon-sun" src="../../assets/images/sun.svg" alt="Иконка светлой темы">
+            <input class="toggle__input" type="checkbox" name="name">
+            <div class="toggle__body">
+              <div class="toggle__control"></div>
+            </div>
+            <img class="icon-sun" src="../../assets/images/moon.svg" alt="Иконка темной темы">
+          </label>
+        </div>
+      </div> <!--переключатель темы-->
       <hr class="burger-menu__hr">
 
       <ul class="menu__list" role="menu">

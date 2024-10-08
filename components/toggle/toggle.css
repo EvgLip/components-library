@@ -5,6 +5,7 @@
   --font-size-max: 1rem;
 
   display: inline-flex;
+  gap: 12px;
   cursor: pointer;
 }
 
@@ -33,7 +34,7 @@
   width: 52px;
   height: 28px;
 
-  border: 1px solid rgb(var(--border-light));
+  border: 1px solid rgb(var(--border-soft-grey));
   border-radius: 16px;
 
   background: rgb(var(--background-light));

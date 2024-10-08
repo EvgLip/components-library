@@ -38,7 +38,7 @@
   border-color: var(--border-soft-grey);
 }
 
-.toggle-theme {
+.burger-menu__theme-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
