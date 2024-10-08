@@ -10,24 +10,29 @@
 </head>
 <body>
 
-  <button class="header__burger-btn" id="burger-menu-open" type="button">
-    <img src="../../assets/images/burger.svg" alt="Открыть мобильное меню">
+  <!-- <button class="header__burger-btn" id="burger-menu-open" type="button"> -->
+  <!--для удобства удален class="header__burger-btn"-->
+  <button id="burger-menu-open" type="button">
+    <svg class="header__burger-icon">
+      <use xlink:href="../../assets/images/burger.svg#burger"></use>
+    </svg>
   </button>
 
   <nav class="burger-menu">
     <div class="container">
-
+      <!--в burger-menu дублируется header самой страницы-->
       <div class="header">
         <div class="header__inner">
           <button class="burger-menu__btn-close" id="burger-menu-close">
-            <img src="images/x.svg" alt="Закрыть мобильное меню">
+            <img src="../../assets/images/x.svg" alt="Закрыть мобильное меню">
           </button>
           <a class="header__logo" href="#">
-            <img src="../../assets/images/logo-black.svg" alt="Логотип сайта. Переход на главную страницу.">
+            <svg class="header__logo-icon">
+              <use xlink:href="../../assets/images/logo.svg#logo"></use>
+            </svg>
           </a>
         </div>
       </div>
-
       <hr class="burger-menu__hr">
       <!--переключатель темы-->
       <div class="burger-menu__theme-area">
@@ -41,18 +46,20 @@
             <div class="toggle__body">
               <div class="toggle__control"></div>
             </div>
-            <img class="icon-sun" src="../../assets/images/moon.svg" alt="Иконка темной темы">
+            <svg class="toggle__icon-moon">
+              <use xlink:href="../../assets/images/moon.svg#moon"></use>
+            </svg>
           </label>
         </div>
-      </div> <!--переключатель темы-->
+      </div>
       <hr class="burger-menu__hr">
 
       <ul class="menu__list" role="menu">
         <li class="menu__item">
-          <a href="#">Календарь</a>
+          <a href="pages/calendar/calendar-page.html">Календарь</a>
         </li>
         <li class="menu__item">
-          <a href="#">Гистограмма</a>
+          <a href="pages/histogram/histogram-page.html">Гистограмма</a>
         </li>
         <li class="menu__item">
         <a href="#">Тултип</a>
@@ -78,7 +85,7 @@
       </ul>
 
     </div> <!-- container -->
-  </nav>
+  </nav> <!-- burger-menu -->
 
 </body>
 </html>

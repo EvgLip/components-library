@@ -16,6 +16,13 @@
   color: rgb(var(--background-dark));
 }
 
+.toggle__icon-moon {
+  width: 23px;
+  height: 23px;
+
+  color: rgb(var(--background-dark));
+}
+
 .toggle:has(.toggle__input:disabled) {
   cursor: not-allowed;
 }
