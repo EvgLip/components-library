@@ -38,6 +38,7 @@ body {
 }
 
 html.dark-theme {
+  --background-dark: var(--grey-3);
   --background-dark-grey: var(--grey-1);
   --background-light-grey: var(--grey-4);
   --background-light: var(--soft-black);

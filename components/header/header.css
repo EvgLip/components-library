@@ -34,6 +34,12 @@
   font-size: 0;
 }
 
+.header__logo-icon {
+  width: 110px;
+  height: 32px;
+  color: rgb(var(--background-dark));
+}
+
 .header__theme-toggle {
   position: absolute;
   visibility: hidden;
