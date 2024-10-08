@@ -2,4 +2,6 @@
 
 'use strict';
 
-
+const betweenPages = {
+  isDarkTheme: false,
+};

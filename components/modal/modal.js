@@ -3,9 +3,12 @@
 const modalOpener = document.querySelector('.modalOpener'); //кнопка открытия модалки
 const modal = document.querySelector('.modal');
 
-modalOpener.addEventListener("click", openModalAndLockScroll);
-modal.addEventListener('click', onclickOnBackDrop);
-modal.addEventListener("close", returnScroll);
+if (modalOpener) modalOpener.addEventListener("click", openModalAndLockScroll);
+if (modal)
+{
+  modal.addEventListener('click', onclickOnBackDrop);
+  modal.addEventListener("close", returnScroll);
+}
 
 //закрытие по щелчку на подложке BackDrop
 function onclickOnBackDrop ({ currentTarget, target })
