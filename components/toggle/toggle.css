@@ -9,6 +9,13 @@
   cursor: pointer;
 }
 
+.toggle__icon-sun {
+  width: 23px;
+  height: 23px;
+
+  color: rgb(var(--background-dark));
+}
+
 .toggle:has(.toggle__input:disabled) {
   cursor: not-allowed;
 }
