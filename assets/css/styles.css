@@ -37,7 +37,17 @@ body {
   scrollbar-gutter: stable;
 }
 
-/* класс добавляется: 
+html.dark-theme {
+  --background-dark-grey: var(--grey-1);
+  --background-light-grey: var(--grey-4);
+  --background-light: var(--soft-black);
+
+  --font-dark: var(--grey-3);
+  --font-soft-dark: var(--grey-2);
+  --font-dark-grey: var(--white);
+}
+
+/* класс добавляется к body для блокировки скрола: 
    -в модальном окне,
    -в бургер меню. */
 .scroll-lock {

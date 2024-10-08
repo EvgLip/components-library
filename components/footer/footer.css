@@ -1,5 +1,7 @@
 .footer {
   box-sizing: border-box;
+
+  color: rgb(var(--font-soft-dark));
   font-family: var(--font-family-1);
   text-align: center;
 }
@@ -9,8 +11,6 @@
 /* для страницы index.html */
 .footer_index {
   padding: 70px 50px 50px;
-
-  color: rgb(var(--font-soft-dark));
 }
 
 .footer__title_index {
@@ -37,7 +37,6 @@
   margin: 0;
   padding: 56px;
 
-  color: rgb(var(--font-soft-dark-grey));
   font-size: clamp(0.6rem, 2.5vw, 0.75rem);
   font-weight: 500;
   line-height: 1.2;

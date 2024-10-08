@@ -11,6 +11,8 @@
 
 .page__main_index {
   flex-grow: 1;
+
+  background: rgb(var(--background-light));
 }
 
 

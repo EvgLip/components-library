@@ -43,6 +43,11 @@
   background: rgb(var(--primary));
 }
 
+.checkbox__input:checked:not([disabled])~.checkbox__body .checkbox__control>.checkbox__icon {
+  visibility: visible;
+}
+
+
 .checkbox__input:hover:not([disabled])~.checkbox__body .checkbox__control {
   border-width: 3px;
 }
@@ -55,10 +60,11 @@
   width: 18px;
   height: 13px;
   color: rgb(var(--white));
+  visibility: hidden;
 }
 
 .checkbox__input:disabled~.checkbox__body .checkbox__control .checkbox__icon {
-  display: none;
+  visibility: hidden;
 }
 
 

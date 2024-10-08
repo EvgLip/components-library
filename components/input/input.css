@@ -107,7 +107,7 @@
   padding: 0 calc(var(--padding)/2);
   top: 0;
 
-  background: #fff;
+  background: rgb(var(--background-light));
 
   color: rgb(var(--font-dark-grey));
   font-size: max(10px, 0.6em);

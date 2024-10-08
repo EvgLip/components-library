@@ -81,6 +81,8 @@
   margin: 0;
   padding: 20px 0;
 
+  color: rgb(var(--font-dark));
+
   & pre {
     margin: 0;
   }
