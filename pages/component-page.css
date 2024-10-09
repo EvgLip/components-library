@@ -75,6 +75,11 @@
   }
 }
 
+.component-viewing_padding {
+  padding-left: 90px;
+  padding-top: 30px;
+}
+
 .code-viewing {
   width: 100%;
   overflow: auto;
