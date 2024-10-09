@@ -25,6 +25,10 @@
   position: absolute;
 
   min-width: 200px;
+
+  background: rgb(var(--background-dark-grey));
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(var(--background-dark-grey) 0.05);
 }
 
 /* tooltip снизу*/
@@ -32,11 +36,6 @@
   top: calc(100% + var(--size));
   left: 50%;
   transform: translateX(-50%);
-
-  background: rgb(var(--background-soft-dark));
-  border-radius: 10px;
-
-  box-shadow: 0px 2px 4px 0px rgba(var(--background-soft-dark) 0.05);
 }
 
 /* создание хвостика для tooltip */
@@ -49,7 +48,7 @@
   transform: translateX(-50%);
 
   border: var(--size) solid transparent;
-  border-bottom: var(--size) solid rgb(var(--background-soft-dark));
+  border-bottom: var(--size) solid rgb(var(--background-dark-grey));
 }
 
 /* tooltip сверху*/
@@ -57,11 +56,6 @@
   bottom: calc(100% + var(--size));
   left: 50%;
   transform: translateX(-50%);
-
-  background: rgb(var(--background-soft-dark));
-  border-radius: 10px;
-
-  box-shadow: 0px 2px 4px 0px rgba(var(--background-soft-dark) 0.05);
 }
 
 /* создание хвостика для tooltip */
@@ -74,7 +68,7 @@
   transform: translateX(-50%);
 
   border: var(--size) solid transparent;
-  border-top: var(--size) solid rgb(var(--background-soft-dark));
+  border-top: var(--size) solid rgb(var(--background-dark-grey));
 }
 
 .tooltip__helper-text {
