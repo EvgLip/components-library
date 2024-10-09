@@ -39,6 +39,7 @@ body {
 
 html.dark-theme {
   --background-dark: var(--grey-3);
+  --background-soft-dark: var(--grey-2);
   --background-dark-grey: var(--grey-1);
   --background-light-grey: var(--grey-4);
   --background-light: var(--soft-black);
@@ -46,6 +47,7 @@ html.dark-theme {
   --font-dark: var(--grey-3);
   --font-soft-dark: var(--grey-2);
   --font-dark-grey: var(--white);
+  --font-light: var(--black);
 }
 
 /* класс добавляется к body для блокировки скрола: 

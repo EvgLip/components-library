@@ -11,7 +11,6 @@
   width: 22px;
   height: 22px;
 
-  background-image: url('icons/help.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -20,15 +19,21 @@
   display: block;
 }
 
+.tooltip__icon {
+  width: 24px;
+  height: 24px;
+  color: rgba(var(--background-soft-dark));
+}
+
 .tooltip__bubble {
   display: none;
   position: absolute;
 
   min-width: 200px;
 
-  background: rgb(var(--background-dark-grey));
+  background: rgb(var(--background-soft-dark));
   border-radius: 10px;
-  box-shadow: 0px 2px 4px 0px rgba(var(--background-dark-grey) 0.05);
+  box-shadow: 0px 2px 4px 0px rgba(var(--background-soft-dark) 0.05);
 }
 
 /* tooltip снизу*/
@@ -48,7 +53,7 @@
   transform: translateX(-50%);
 
   border: var(--size) solid transparent;
-  border-bottom: var(--size) solid rgb(var(--background-dark-grey));
+  border-bottom: var(--size) solid rgb(var(--background-soft-dark));
 }
 
 /* tooltip сверху*/
@@ -68,14 +73,14 @@
   transform: translateX(-50%);
 
   border: var(--size) solid transparent;
-  border-top: var(--size) solid rgb(var(--background-dark-grey));
+  border-top: var(--size) solid rgb(var(--background-soft-dark));
 }
 
 .tooltip__helper-text {
   color: rgb(var(--font-light));
   font-family: var(--font-family-1);
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1;
 
   text-align: center;
