@@ -54,11 +54,11 @@
         <div class="header">
           <div class="header__inner">
             <button class="burger-menu__btn-close" id="burger-menu-close">
-              <img src="../../assets/images/x.svg" alt="Закрыть мобильное меню">
+              <img src="../assets/images/x.svg" alt="Закрыть мобильное меню">
             </button>
-            <a class="header__logo" href="../../Index.html">
+            <a class="header__logo" href="../Index.html">
               <svg class="header__logo-icon">
-                <use xlink:href="../../assets/images/logo.svg#logo"></use>
+                <use xlink:href="../assets/images/logo.svg#logo"></use>
               </svg>
             </a>
           </div>
@@ -92,13 +92,13 @@
             <a href="../histogram/histogram-page.html">Гистограмма</a>
           </li>
           <li class="menu__item">
-          <a class="menu__item_active" href="#">Тултип</a>
+          <a href="../tooltip/tooltip-page.html">Тултип</a>
           </li>
           <li class="menu__item">
             <a href="../modal/modal-page.html">Модальное окно</a>
           </li>
           <li class="menu__item">
-            <a href="../avatar/">Аватарка</a>
+            <a class="menu__item_active" href="#">Аватарка</a>
           </li>
           <li class="menu__item">
             <a href="#">Пользовательские элементы формы</a>
@@ -131,13 +131,13 @@
                 <a href="../histogram/histogram-page.html">Гистограмма</a>
               </li>
               <li class="menu__item">
-              <a class="menu__item_active" href="#">Тултип</a>
+              <a href="../tooltip/tooltip-page.html">Тултип</a>
               </li>
               <li class="menu__item">
                 <a href="../modal/modal-page.html">Модальное окно</a>
               </li>
               <li class="menu__item">
-                <a href="../avatar/avatar-page.html">Аватарка</a>
+                <a class="menu__item_active" href="#">Аватарка</a>
               </li>
               <li class="menu__item">
                 <a href="#">Пользовательские элементы формы</a>
@@ -155,19 +155,18 @@
           </nav>
           <!--окно просмотра компонента-->
           <section class="component-viewing style_light">
-            <h3 class="component-viewing__title">Тултип</h3>
-            <div class="component-viewing__container component-viewing_padding">
+            <h3 class="component-viewing__title">Название компонента</h3>
+            <div class="component-viewing__container">
             <!--МЕСТО ДЛЯ РАЗМЕЩЕНИЯ РАЗМЕТКИ КОМПОНЕНТА-->
-              <article class="tooltip">
-                <div class="tooltip__triger">
-                  <svg class="tooltip__icon">
-                    <use xlink:href="../../components/tooltip/icons/help.svg#tooltip-help"></use>
-                  </svg>
-                </div>
-                <div class="tooltip__bubble tooltip__bubble_top">
-                  <p class="tooltip__helper-text">
-                    Текст подсказки
-                  </p>
+              <article class="avatar">
+                <div class="avatar__circle">
+                  <img src="../../components/avatar/images/640.jpg" class="avatar__img" alt="Изображение аватарки"
+                    srcset="../../components/avatar/images/160.jpg 1x,
+                            ../../components/avatar/images/320.jpg 2x,
+                            ../../components/avatar/images/480.jpg 3x,
+                            ../../components/avatar/images/640.jpg 4x"
+                    sizes="160px"
+                  >
                 </div>
               </article>
             </div> <!--component-viewing__container-->
@@ -185,16 +184,15 @@
                 <figure class="code-viewing">
                   <pre>
                     <code>
-&lt;article class="tooltip"&gt;
-  &lt;div class="tooltip__triger"&gt;
-    &lt;svg class="tooltip__icon"&gt;
-      &lt;use xlink:href="icons/help.svg#tooltip-help"&gt&lt;/use&gt;
-    &lt;/svg&gt;
-  &lt;/div&gt;
-  &lt;div class="tooltip__bubble tooltip__bubble_top"&gt;
-    &lt;p class="tooltip__helper-text"&gt;
-      Текст подсказки
-    &lt;/p&gt;
+&lt;article class="avatar"&gt;
+  &lt;div class="avatar__circle"&gt;
+    &lt;img src="images/640.jpg" class="avatar__img" alt="Изображение аватарки"
+      srcset="images/160.jpg 1x,
+              images/320.jpg 2x,
+              images/480.jpg 3x,
+              images/640.jpg 4x"
+      sizes="160px"
+    &gt;
   &lt;/div&gt;
 &lt;/article&gt;
                     </code>
@@ -206,92 +204,32 @@
                 <figure class="code-viewing">
                   <pre>
                     <code>
- .tooltip {
-  --size: 10px;
+.avatar {
+  position: relative;
 
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.avatar__circle {
   box-sizing: border-box;
 
-  display: inline-block;
-  position: relative;
-}
-
-.tooltip__triger {
-  width: 22px;
-  height: 22px;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.tooltip__triger:hover~.tooltip__bubble {
-  display: block;
-}
-
-.tooltip__icon {
-  width: 24px;
-  height: 24px;
-  color: rgba(var(--background-soft-dark));
-}
-
-.tooltip__bubble {
-  display: none;
   position: absolute;
+  top: 0;
+  left: 0;
 
-  min-width: 200px;
+  width: 100%;
+  height: 100%;
 
-  background: rgb(var(--background-soft-dark));
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px 0px rgba(var(--background-soft-dark) 0.05);
+  border: 3px solid rgb(var(--border-soft-grey));
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-/* tooltip снизу*/
-.tooltip__bubble_bottom {
-  top: calc(100% + var(--size));
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* создание хвостика для tooltip */
-.tooltip__bubble_bottom::before {
-  content: '';
-
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-
-  border: var(--size) solid transparent;
-  border-bottom: var(--size) solid rgb(var(--background-soft-dark));
-}
-
-/* tooltip сверху*/
-.tooltip__bubble_top {
-  bottom: calc(100% + var(--size));
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* создание хвостика для tooltip */
-.tooltip__bubble_top::before {
-  content: '';
-
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-
-  border: var(--size) solid transparent;
-  border-top: var(--size) solid rgb(var(--background-soft-dark));
-}
-
-.tooltip__helper-text {
-  color: rgb(var(--font-light));
-  font-family: var(--font-family-1);
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1;
-
-  text-align: center;
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
                     </code>
                   </pre>
