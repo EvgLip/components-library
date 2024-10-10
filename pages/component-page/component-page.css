@@ -92,3 +92,8 @@
     margin: 0;
   }
 }
+
+.component-page__avatar-container {
+  box-sizing: border-box;
+  width: 160px;
+}

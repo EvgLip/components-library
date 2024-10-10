@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+
+  <script defer src="../../components/modal/modal.js" type="text/javascript"></script>
+  <script defer src="../../components/burger-menu/burger-menu.js" type="text/javascript"></script>
+  <script defer src="../../components/toggle-theme/toggle-theme.js" type="text/javascript"></script>
+  <script defer src="../../assets/js/script.js" type="text/javascript"></script>
+  
+  <title>Страница компонента</title>
+</head>
+<body>
+
+  <div class="page page_grid">
+
+    <header class="header style_dark">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__burger-btn" id="burger-menu-open" type="button">
+            <svg class="header__burger-icon">
+              <use xlink:href="../../assets/images/burger.svg#burger"></use>
+            </svg>
+          </button>
+          <a class="header__logo" href="../../Index.html">
+            <svg class="header__logo-icon">
+              <use xlink:href="../../assets/images/logo.svg#logo"></use>
+            </svg>
+          </a>
+          <!--переключатель светлой/темной тем-->
+          <div class="header__theme-toggle">
+            <label class="toggle">
+              <svg class="toggle__icon-sun">
+                <use xlink:href="../../assets/images/sun.svg#sun"></use>
+              </svg>
+              <input class="toggle__input theme-toggle__input" type="checkbox" name="name">
+              <div class="toggle__body">
+                <div class="toggle__control"></div>
+              </div>
+              <svg class="toggle__icon-moon">
+                <use xlink:href="../../assets/images/moon.svg#moon"></use>
+              </svg>
+            </label>
+          </div> <!--переключатель светлой/темной тем-->
+        </div> <!-- header__inner -->
+      </div> <!-- container -->
+    </header>
+
+    <nav class="burger-menu">
+      <div class="container">
+        <!--в burger-menu дублируется header самой страницы-->
+        <div class="header">
+          <div class="header__inner">
+            <button class="burger-menu__btn-close" id="burger-menu-close">
+              <img src="../../assets/images/x.svg" alt="Закрыть мобильное меню">
+            </button>
+            <a class="header__logo" href="../Index.html">
+              <svg class="header__logo-icon">
+                <use xlink:href="../assets/images/logo.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <hr class="burger-menu__hr">
+        <!--переключатель темы-->
+        <div class="burger-menu__theme-area">
+          <div class="burger-menu__theme-title">Темная тема</div>
+          <div class="burger-menu__theme-toggle">
+            <label class="toggle">
+              <svg class="toggle__icon-sun">
+                <use xlink:href="../../assets/images/sun.svg#sun"></use>
+              </svg>
+              <input class="toggle__input theme-toggle__input" type="checkbox" name="name">
+              <div class="toggle__body">
+                <div class="toggle__control"></div>
+              </div>
+              <svg class="toggle__icon-moon">
+                <use xlink:href="../../assets/images/moon.svg#moon"></use>
+              </svg>
+            </label>
+          </div>
+        </div> <!--переключатель темы-->
+        <hr class="burger-menu__hr">
+
+        <ul class="menu__list" role="menu">
+          <li class="menu__item">
+            <a href="../calendar/calendar-page.html">Календарь</a>
+          </li>
+          <li class="menu__item">
+            <a href="../histogram/histogram-page.html">Гистограмма</a>
+          </li>
+          <li class="menu__item">
+          <a href="../tooltip/tooltip-page.html">Тултип</a>
+          </li>
+          <li class="menu__item">
+            <a href="../modal/modal-page.html">Модальное окно</a>
+          </li>
+          <li class="menu__item">
+            <a href="../avatar/avatar-page.html">Аватарка</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Пользовательские элементы формы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item_active" href="#">Аккордион</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Скелетон</a>
+          </li>
+        </ul>
+
+      </div> <!-- container -->
+    </nav>
+  
+    <main class="components style_dark">
+      <div class="container">
+        <div class="components__body">
+
+          <!--сайдбар-->
+          <nav class="components__sidebar style_dark">
+            <ul class="menu__list" role="menu">
+              <li class="menu__item">
+                <a href="../calendar/calendar-page.html">Календарь</a>
+              </li>
+              <li class="menu__item">
+                <a href="../histogram/histogram-page.html">Гистограмма</a>
+              </li>
+              <li class="menu__item">
+              <a href="../tooltip/tooltip-page.html">Тултип</a>
+              </li>
+              <li class="menu__item">
+                <a href="../modal/modal-page.html">Модальное окно</a>
+              </li>
+              <li class="menu__item">
+                <a href="../avatar/avatar-page.html">Аватарка</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Пользовательские элементы формы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item_active" href="#">Аккордион</a>
+              </li>
+              <li class="menu__item">
+                <a href="../skeleton/skeleton-page.html">Скелетон</a>
+              </li>
+            </ul>
+          </nav>
+          <!--окно просмотра компонента-->
+          <section class="component-viewing style_light">
+            <h3 class="component-viewing__title">Аккордион</h3>
+            <div class="component-viewing__container">
+            <!--МЕСТО ДЛЯ РАЗМЕЩЕНИЯ РАЗМЕТКИ КОМПОНЕНТА-->
+            <article class="accordion">
+              <details class="accordion__details" open>
+                <summary class="accordion__summary">
+                  Accordion item 1
+                  <img src="../../components/accordion/icons/arrow-down-black.svg" alt="Открывающийся список" class="accordion__summary-marker">
+                </summary>
+                <p class="accordion__content">
+                  По крайней мере, я не заслуживаю того, чтобы меня оставили позади. Это самая худшая работа, которую я когда-либо выполнял. Упражнение приходит как следствие Нострадамуса.
+                </p>
+              </details>
+              <details class="accordion__details">
+                <summary class="accordion__summary">
+                  Accordion item 2
+                  <img src="../../components/accordion/icons/arrow-down-black.svg" alt="Открывающийся список" class="accordion__summary-marker">
+                </summary>
+                <p class="accordion__content">
+                  С другой стороны дальнейшее развитие различных форм деятельности обеспечивает актуальность ключевых компонентов планируемого обновления. Практический опыт показывает, что консультация с профессионалами из IT требует от нас системного анализа ключевых компонентов планируемого обновления. Соображения высшего порядка, а также постоянное информационно-техническое обеспечение нашей деятельности способствует повышению актуальности существующих финансовых и административных условий?
+                </p>
+              </details>
+              <details class="accordion__details">
+                <summary class="accordion__summary">
+                  Accordion item 3
+                  <img src="../../components/accordion/icons/arrow-down-black.svg" alt="Открывающийся список" class="accordion__summary-marker">
+                </summary>
+                <p class="accordion__content">
+                  Разнообразный и богатый опыт курс на социально-ориентированный национальный проект обеспечивает актуальность направлений прогрессивного развития? Таким образом, постоянное информационно-техническое обеспечение нашей деятельности позволяет выполнить важнейшие задания по разработке экономической целесообразности принимаемых решений! Таким образом, постоянный количественный рост и сфера нашей активности позволяет оценить значение новых предложений? Дорогие друзья, постоянный количественный рост и сфера нашей активности способствует повышению актуальности позиций, занимаемых участниками в отношении поставленных задач!
+                </p>
+              </details>
+            </article> <!-- accordion -->
+            </div> <!--component-viewing__container-->
+            <!--Вкладки для демонстрации кода компонента-->
+            <article class="tabs">
+              <input type="radio" name="tab" id="tab1" checked>
+              <input type="radio" name="tab" id="tab2">
+  
+              <div class="tabs__label">
+                <label for="tab1">HTML</label>
+                <label for="tab2">CSS</label>
+              </div>
+              <hr>
+              <section class="tabs__content tabs__tab1">
+                <figure class="code-viewing">
+                  <pre>
+                    <code>
+&lt;article class="accordion"&gt;
+  &lt;details class="accordion__details" open&gt;
+    &lt;summary class="accordion__summary"&gt;
+      Accordion item 1
+      &lt;img src="icons/arrow-down-black.svg" alt="Открывающийся список" class="accordion__summary-marker"&gt;
+    &lt;/summary&gt;
+    &lt;p class="accordion__content"&gt;
+      По крайней мере, я не заслуживаю того, чтобы меня оставили позади. Это самая худшая работа, которую <br> я когда-либо выполнял. Упражнение приходит как следствие Нострадамуса.
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class="accordion__details"&gt;
+    &lt;summary class="accordion__summary"&gt;
+      Accordion item 2
+      &lt;img src="icons/arrow-down-black.svg" alt="Открывающийся список" class="accordion__summary-marker"&gt;
+    &lt;/summary&gt;
+    &lt;p class="accordion__content"&gt;
+      С другой стороны дальнейшее развитие различных форм деятельности обеспечивает актуальность ключевых <br> компонентов планируемого обновления. Практический опыт показывает, что консультация с профессионалами из <br> IT требует от нас системного анализа ключевых компонентов планируемого обновления. Соображения высшего <br> порядка, а также постоянное информационно-техническое обеспечение нашей деятельности способствует повышению <br> актуальности существующих финансовых и административных условий?
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class="accordion__details"&gt;
+    &lt;summary class="accordion__summary"&gt;
+      Accordion item 3
+      &lt;img src="icons/arrow-down-black.svg" alt="Открывающийся список" class="accordion__summary-marker"&gt;
+    &lt;/summary&gt;
+    &lt;p class="accordion__content"&gt;
+      Разнообразный и богатый опыт курс на социально-ориентированный национальный проект обеспечивает актуальность <br> направлений прогрессивного развития? Таким образом, постоянное информационно-техническое обеспечение <br> нашей деятельности позволяет выполнить важнейшие задания по разработке экономической целесообразности <br> принимаемых решений! Таким образом, постоянный количественный рост и сфера нашей активности позволяет оценить <br> значение новых предложений? Дорогие друзья, постоянный количественный рост и сфера нашей активности <br> способствует повышению актуальности позиций, занимаемых участниками в отношении поставленных задач!
+    &lt;/p&gt;
+  &lt;/details&gt;
+&lt;/article&gt;
+                    </code>
+                  </pre>
+                </figure>
+              </section> <!-- tabs__tab1 -->
+  
+              <section class="tabs__content tabs__tab2">
+                <figure class="code-viewing">
+                  <pre>
+                    <code>
+.accordion {
+  box-sizing: border-box;
+
+  font-family: var(--font-family-1), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.accordion__details {
+  margin-top: 8px;
+  padding: 24px 32px;
+
+  border: rgb(var(--border-soft-grey)) solid 1px;
+  border-radius: 8px;
+
+  background: rgb(var(--background-light));
+}
+
+.accordion__summary {
+  position: relative;
+  color: rgb(var(--font-soft-dark));
+
+  cursor: pointer;
+}
+
+.accordion__summary::marker {
+  content: '';
+}
+
+.accordion__summary-marker {
+  width: 1.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.svg-icon {
+  width: 24px;
+  height: 24px;
+  color: red;
+}
+
+.accordion__details[open] .accordion__summary-marker {
+  transform: rotate(180deg);
+  transform-origin: 50% 25%;
+}
+
+.accordion__content {
+  margin: 16px 0 0;
+
+  color: rgb(var(--font-dark-grey));
+
+  text-indent: 10px;
+}
+                    </code>
+                  </pre>
+                </figure>
+              </section> <!-- tabs__tab2 -->
+            </article> <!-- tabs -->
+
+          </section> <!-- component-viewing -->
+
+
+        </div> <!-- components__body -->
+      </div> <!-- container -->
+    </main>
+
+    <footer class="footer style_dark">
+      <div class="container">
+        <h5 class="footer__title_component">Библиотека переиспользуемых компонентов</h5>
+      </div> <!-- container -->
+    </footer>
+
+  </div> <!-- page -->
+  
+</body>
+</html>

@@ -134,13 +134,11 @@
 }
 
 .index__modal {
-  border: 1px solid rgb(var(--border-soft-grey));
-  border-radius: 8px;
-}
-
-.index__modal {
   width: 100%;
   max-width: min(700px, 90vw);
+
+  border: 1px solid rgb(var(--border-soft-grey));
+  border-radius: 8px;
 
   & .index__modal-input-field,
   & .index__modal-btn {
