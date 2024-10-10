@@ -101,13 +101,13 @@
             <a href="../avatar/avatar-page.html">Аватарка</a>
           </li>
           <li class="menu__item">
-            <a href="../custom-elements-page/custom-elements-page.html">Пользовательские элементы формы</a>
+            <a class="menu__item_active" href="#">Пользовательские элементы формы</a>
           </li>
           <li class="menu__item">
             <a href="../accordion/accordion-page.html">Аккордион</a>
           </li>
           <li class="menu__item">
-            <a class="menu__item_active" href="#">Скелетон</a>
+            <a href="../skeleton/skeleton-page.html">Скелетон</a>
           </li>
         </ul>
 
@@ -137,31 +137,159 @@
                 <a href="../avatar/avatar-page.html">Аватарка</a>
               </li>
               <li class="menu__item">
-                <a href="../custom-elements-page/custom-elements-page.html">Пользовательские элементы формы</a>
+                <a class="menu__item_active" href="#">Пользовательские элементы формы</a>
               </li>
               <li class="menu__item">
                 <a href="../accordion/accordion-page.html">Аккордион</a>
               </li>
               <li class="menu__item">
-                <a class="menu__item_active" href="#">Скелетон</a>
+                <a href="../skeleton/skeleton-page.html">Скелетон</a>
               </li>
             </ul>
           </nav>
           <!--окно просмотра компонента-->
           <section class="component-viewing style_light">
-            <h3 class="component-viewing__title">Скелетон</h3>
+            <h3 class="component-viewing__title">Пользовательские элементы формы</h3>
             <div class="component-viewing__container">
-              <!--МЕСТО ДЛЯ РАЗМЕЩЕНИЯ РАЗМЕТКИ КОМПОНЕНТА-->
-              <div class="skeleton">
-                <div class="skeleton__header">
-                  <div class="skeleton__logo"></div>
-                  <div class="skeleton__line skeleton__title1 line-short lg-type1"></div>
-                  <div class="skeleton__line skeleton__title2 line-middle lg-type1"></div>
+            <!--МЕСТО ДЛЯ РАЗМЕЩЕНИЯ РАЗМЕТКИ КОМПОНЕНТА-->
+              <div class="index__grid-elements">
+                <!--radiobutton-->
+                <div class="index__flex-elements">
+
+                  <span class="index__title-elements">Радиокнопка</span>
+
+                  <label class="radio">
+                    <input class="radio__input" name="group1" type="radio">
+                    <div class="radio__body">
+                      <div class="radio__control">
+                        <div class="radio__dot"></div>
+                      </div>
+                      <div class="radio__title" data-on="Выбран" data-off="По умолчанию"></div>
+                    </div>
+                  </label>
+                  
+                  <label class="radio">
+                    <input class="radio__input" name="group1" type="radio" checked>
+                    <div class="radio__body">
+                      <div class="radio__control">
+                        <div class="radio__dot"></div>
+                      </div>
+                      <div class="radio__title" data-on="Выбран" data-off="По умолчанию"></div>
+                    </div>
+                  </label>
+                  
+                  <label class="radio">
+                    <input class="radio__input" name="group1" type="radio" disabled>
+                    <div class="radio__body">
+                      <div class="radio__control">
+                        <div class="radio__dot"></div>
+                      </div>
+                      <div class="radio__title">Заблокирован</div>
+                    </div>
+                  </label>
                 </div>
-                <div class="skeleton__body">
-                  <div class="skeleton__line line-long lg-type2"></div>
-                  <div class="skeleton__line line-middle lg-type2"></div>
+
+                <!--checkbox-->
+                <div class="index__flex-elements">
+
+                  <span class="index__title-elements">Чекбокс</span>
+
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox">
+                    <div class="checkbox__body">
+                      <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                          <use href="../../components/checkbox/icons/check.svg#check"></use>
+                        </svg>
+                      </div>
+                      <div class="checkbox__title" data-on="Выбран" data-off="По умолчанию"></div>
+                    </div>
+                  </label>
+
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" checked>
+                    <div class="checkbox__body">
+                      <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                          <use href="../../components/checkbox/icons/check.svg#check"></use>
+                        </svg>
+                      </div>
+                      <div class="checkbox__title" data-on="Выбран" data-off="По умолчанию"></div>
+                    </div>
+                  </label>
+
+                  <!-- заблокированный -->
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="name" checked disabled>
+                    <div class="checkbox__body">
+                      <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                          <use href="../../components/checkbox/icons/check.svg#check"></use>
+                        </svg>
+                      </div>
+                      <div class="checkbox__title">Заблокированный</div>
+                    </div>
+                  </label>
                 </div>
+
+                <!--togle-->
+                <div class="index__flex-elements">
+
+                  <span class="index__title-elements">Переключатель</span>
+
+                  <label class="toggle">
+                    <input class="toggle__input" type="checkbox" name="name">
+                    <div class="toggle__body">
+                      <div class="toggle__control"></div>
+                      <span class="toggle__title" data-on="On" data-off="Off"></span>
+                    </div>
+                  </label>
+
+                  <label class="toggle">
+                    <input class="toggle__input" type="checkbox" name="name" checked>
+                    <div class="toggle__body">
+                      <div class="toggle__control"></div>
+                      <span class="toggle__title" data-on="On" data-off="Off"></span>
+                    </div>
+                  </label>
+
+                  <label class="toggle">
+                    <input class="toggle__input" type="checkbox" name="name" checked disabled>
+                    <div class="toggle__body">
+                      <div class="toggle__control"></div>
+                      <span class="toggle__title" data-on="On" data-off="Off"></span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              
+              <!--текстовые поля ввода-->
+              <div class="index__grid-txtinput">
+                <article class="input-wrapper">
+                  <label class="input-field">
+                    <input class="input-field__input" type="text" name="name" placeholder="&nbsp;">
+                    <span class="input-field__placeholder">Введите текст</span>
+                  </label>
+                  <span class="input-wrapper__valid-msg" aria-live="polite"></span>
+                </article>
+
+                <article class="input-wrapper">
+                  <label class="input-field">
+                    <input class="input-field__input input-field_success" type="text" name="name" placeholder="&nbsp;" value="Успешно">
+                    <span class="input-field__placeholder">Введите текст</span>
+                  </label>
+                  <span class="input-wrapper__valid-msg" aria-live="polite"></span>
+                </article>
+
+                <article class="input-wrapper">
+                  <label class="input-field">
+                  <input class="input-field__input input-field_error" type="text" name="name" placeholder="&nbsp;" value="Ошибка">
+                  <span class="input-field__placeholder" data-err="Внесите изменения">Введите текст</span>
+                  </label>
+                  <span class="input-wrapper__valid-msg" aria-live="polite">
+                    Текст, поясняющий ошибку.
+                  </span>
+                </article>
               </div>
             </div> <!--component-viewing__container-->
 
@@ -179,17 +307,7 @@
                 <figure class="code-viewing">
                   <pre>
                     <code>
-&lt;div class="skeleton"&gt;
-  &lt;div class="skeleton__header"&gt;
-    &lt;div class="skeleton__logo"&gt;&lt;/div&gt;
-    &lt;div class="skeleton__line skeleton__title1 line-short lg-type1"&gt;&lt;/div&gt;
-    &lt;div class="skeleton__line skeleton__title2 line-middle lg-type1"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="skeleton__body"&gt;
-    &lt;div class="skeleton__line line-long lg-type2"&gt;&lt;/div&gt;
-    &lt;div class="skeleton__line line-middle lg-type2"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+  html code
                     </code>
                   </pre>
                 </figure>
@@ -199,107 +317,7 @@
                 <figure class="code-viewing">
                   <pre>
                     <code>
-.skeleton {
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 100%;
-  max-width: min(700px, 90vw);
-
-  padding: 32px 24px 40px;
-  border: 1px solid rgb(var(--border-soft-grey));
-  border-radius: 8px;
-
-  background: rgb(var(--background-light));
-}
-
-.skeleton__line {
-  height: 20px;
-}
-
-.skeleton__header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 16px;
-  row-gap: 8px;
-
-  grid-template-areas: 'logo title1'
-    'logo title2';
-}
-
-.skeleton__logo {
-  grid-area: logo;
-
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-
-  background: rgb(var(--grey-2));
-}
-
-.skeleton__title1 {
-  grid-area: title1;
-  align-self: self-end;
-}
-
-.skeleton__title2 {
-  grid-area: title2;
-  align-self: start;
-}
-
-.skeleton__body {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-/* модификаторы скелетона */
-
-.line-short {
-  width: 50%;
-}
-
-.line-middle {
-  width: 75%;
-}
-
-.line-long {
-  width: 100%;
-}
-
-.lg-type1 {
-  background: linear-gradient(160deg,
-      rgb(221, 226, 229) 10%,
-      rgb(226, 230, 232) 40%,
-      rgb(243, 245, 245) 57%,
-      rgb(227, 231, 234) 77%,
-      rgb(221, 226, 229) 100%);
-  background-size: 200%;
-  animation: shine 1.5s linear infinite;
-}
-
-.lg-type2 {
-  background: linear-gradient(160deg,
-      rgb(221, 226, 229) 7%,
-      rgb(226, 230, 232) 35%,
-      rgb(243, 245, 245) 60%,
-      rgb(227, 231, 234) 80%,
-      rgb(221, 226, 229) 100%);
-  background-size: 200%;
-  animation: shine 2s linear infinite;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 100%;
-  }
-
-  100% {
-    background-position: -100%;
-  }
-}
+  css code
                     </code>
                   </pre>
                 </figure>
