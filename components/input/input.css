@@ -75,10 +75,6 @@
   background-position: right calc(var(--padding)) center;
 }
 
-/* .input-field__input:valid {
-  background: red;
-} */
-
 .input-field__input,
 .input-field__placeholder {
   font-weight: 400;

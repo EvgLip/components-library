@@ -1,4 +1,6 @@
 /* Вкладки */
+
+
 input[name="tab"] {
   position: absolute;
   opacity: 0;

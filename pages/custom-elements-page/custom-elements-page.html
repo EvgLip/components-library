@@ -58,7 +58,7 @@
             </button>
             <a class="header__logo" href="../Index.html">
               <svg class="header__logo-icon">
-                <use xlink:href="../assets/images/logo.svg#logo"></use>
+                <use xlink:href="../../assets/images/logo.svg#logo"></use>
               </svg>
             </a>
           </div>
@@ -147,6 +147,7 @@
               </li>
             </ul>
           </nav>
+
           <!--окно просмотра компонента-->
           <section class="component-viewing style_light">
             <h3 class="component-viewing__title">Пользовательские элементы формы</h3>
@@ -293,36 +294,713 @@
               </div>
             </div> <!--component-viewing__container-->
 
-            <!--Вкладки для демонстрации кода компонента-->
+            <!--ГРУППА ВНЕШНИЙ ВКЛАДОК-->
             <article class="tabs">
               <input type="radio" name="tab" id="tab1" checked>
               <input type="radio" name="tab" id="tab2">
+              <input type="radio" name="tab" id="tab3">
+              <input type="radio" name="tab" id="tab4">
   
               <div class="tabs__label">
-                <label for="tab1">HTML</label>
-                <label for="tab2">CSS</label>
+                <label for="tab1">Радиокнопка</label>
+                <label for="tab2">Чекбокс</label>
+                <label for="tab3">Переключатель</label>
+                <label for="tab4">Текстовое поле</label>
               </div>
               <hr>
+              <!--РАДИОКНОПКА-->
               <section class="tabs__content tabs__tab1">
-                <figure class="code-viewing">
-                  <pre>
-                    <code>
-  html code
-                    </code>
-                  </pre>
-                </figure>
+                <form action="#">
+                        <article class="tabs-inner">
+                          <input type="radio" name="tab-inner" id="tabs__radio-html" checked>
+                          <input type="radio" name="tab-inner" id="tabs__radio-css">
+              
+                          <div class="tabs-inner__label">
+                            <label for="tabs__radio-html">HTML</label>
+                            <label for="tabs__radio-css">CSS</label>
+                          </div>
+                          
+                          <section class="tabs-inner__content tabs__html">
+                            <figure class="code-viewing">
+                              <pre>
+                                <code>
+&lt;label class="radio"&gt;
+  &lt;input class="radio__input" name="group1" type="radio"&gt;
+  &lt;div class="radio__body"&gt;
+    &lt;div class="radio__control"&gt;
+      &lt;div class="radio__dot"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="radio__title" data-on="Выбран" data-off="По умолчанию"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;label class="radio"&gt;
+  &lt;input class="radio__input" name="group1" type="radio" checked&gt;
+  &lt;div class="radio__body"&gt;
+    &lt;div class="radio__control"&gt;
+      &lt;div class="radio__dot"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="radio__title" data-on="Выбран" data-off="По умолчанию"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;label class="radio"&gt;
+  &lt;input class="radio__input" name="group1" type="radio" disabled&gt;
+  &lt;div class="radio__body"&gt;
+    &lt;div class="radio__control"&gt;
+      &lt;div class="radio__dot"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="radio__title"&gt;Заблокирован&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+                                </code>
+                              </pre>
+                            </figure>
+                          </section> <!-- tabs__HTML -->
+              
+                          <section class="tabs-inner__content tabs__css">
+                            <figure class="code-viewing">
+                              <pre>
+                                <code>
+.radio {
+  --font-size-min: 0.8rem;
+  --font-size-max: 1rem;
+
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.radio:has(.radio__input:disabled) {
+  cursor: not-allowed;
+}
+
+.radio__input {
+  position: absolute;
+  left: -100vw;
+  opacity: 0;
+}
+
+.radio__body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.radio__control {
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid rgb(var(--border-soft-grey));
+  border-radius: 50%;
+
+  background: rgb(var(--background-light));
+}
+
+.radio__input:disabled~.radio__body .radio__control {
+  background: rgb(var(--background-grey));
+  border-color: rgb(var(--border-soft-grey));
+}
+
+.radio__input:checked:not([disabled])~.radio__body .radio__control {
+  border: 2px solid rgb(var(--primary));
+}
+
+.radio__input:hover:not([disabled])~.radio__body .radio__control {
+  border-width: 3px;
+}
+
+.radio__dot {
+  box-sizing: inherit;
+  display: none;
+
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  background: rgb(var(--primary));
+}
+
+.radio__input:checked:not([disabled])~.radio__body .radio__dot {
+  display: block;
+}
+
+.radio__title {
+  color: rgb(var(--font-dark-grey));
+  font-family: var(--font-family-1);
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
+  font-weight: 400;
+  line-height: 1.5;
+
+  user-select: none;
+}
+
+.radio__input:disabled~.radio__body .radio__title {
+  color: rgb(var(--font-grey));
+}
+
+.radio__input:hover:not([disabled])~.radio__body .radio__title,
+.radio__input:focus:not([disabled])~.radio__body .radio__title {
+  font-weight: 600;
+}
+
+.radio__title::before {
+  content: attr(data-off);
+  color: rgb(var(--font-dark-grey));
+  font-family: var(--font-family-1);
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.radio__input:focus:not([disabled])~.radio__body .radio__title::before,
+.radio__input:hover:not([disabled])~.radio__body .radio__title::before {
+  font-weight: 600;
+}
+
+.radio__input:checked:not([disabled])~.radio__body .radio__title::before {
+  content: attr(data-on);
+}
+                                </code>
+                              </pre>
+                            </figure>
+                          </section> <!-- tabs__CSS -->
+                        </article>
+                </form>
               </section> <!-- tabs__tab1 -->
-  
+              
+              <!--ЧЕКБОКС-->
               <section class="tabs__content tabs__tab2">
-                <figure class="code-viewing">
-                  <pre>
-                    <code>
-  css code
-                    </code>
-                  </pre>
-                </figure>
+                <form action="#">
+                        <article class="tabs-inner">
+                          <input type="radio" name="tab-inner" id="tabs__check-html" checked>
+                          <input type="radio" name="tab-inner" id="tabs__check-css">
+              
+                          <div class="tabs-inner__label">
+                            <label for="tabs__check-html">HTML</label>
+                            <label for="tabs__check-css">CSS</label>
+                          </div>
+                          
+                          <section class="tabs-inner__content tabs__html">
+                            <figure class="code-viewing">
+                              <pre>
+                                <code>
+&lt;label class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox"&gt;
+  &lt;div class="checkbox__body"&gt;
+    &lt;div class="checkbox__control"&gt;
+      &lt;svg class="checkbox__icon"&gt;
+        &lt;use href="icons/check.svg#check"&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class="checkbox__title" data-on="Выбран" data-off="По умолчанию"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;!-- Отмеченный --&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox" checked&gt;
+  &lt;div class="checkbox__body"&gt;
+    &lt;div class="checkbox__control"&gt;
+      &lt;svg class="checkbox__icon"&gt;
+        &lt;use href="icons/check.svg#check"&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class="checkbox__title" data-on="Выбран" data-off="По умолчанию"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;!-- заблокированный --&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox" name="name" checked disabled&gt;
+  &lt;div class="checkbox__body"&gt;
+    &lt;div class="checkbox__control"&gt;
+      &lt;svg class="checkbox__icon"&gt;
+        &lt;use href="icons/check.svg#check"&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class="checkbox__title"&gt;Заблокированный&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+                                </code>
+                              </pre>
+                            </figure>
+                          </section> <!-- tabs__HTML -->
+              
+                          <section class="tabs-inner__content tabs__css">
+                            <figure class="code-viewing">
+                              <pre>
+                                <code>
+.checkbox {
+  --font-size-min: 0.8rem;
+  --font-size-max: 1rem;
+
+  display: inline-flex;
+
+  cursor: pointer;
+}
+
+.checkbox:has(.checkbox__input:disabled) {
+  cursor: not-allowed;
+}
+
+.checkbox__input {
+  position: absolute;
+  left: -100vw;
+  opacity: 0;
+}
+
+.checkbox__body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox__control {
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid rgb(var(--border-soft-grey));
+  border-radius: 4px;
+
+  background: rgb(var(--background-light));
+}
+
+.checkbox__input:checked:not([disabled])~.checkbox__body .checkbox__control {
+  background: rgb(var(--primary));
+}
+
+.checkbox__input:checked:not([disabled])~.checkbox__body .checkbox__control>.checkbox__icon {
+  visibility: visible;
+}
+
+
+.checkbox__input:hover:not([disabled])~.checkbox__body .checkbox__control {
+  border-width: 3px;
+}
+
+.checkbox__input:disabled~.checkbox__body .checkbox__control {
+  background: rgb(var(--background-grey));
+}
+
+.checkbox__icon {
+  width: 18px;
+  height: 13px;
+  color: rgb(var(--white));
+  visibility: hidden;
+}
+
+.checkbox__input:disabled~.checkbox__body .checkbox__control .checkbox__icon {
+  visibility: hidden;
+}
+
+
+.checkbox__title {
+  color: rgb(var(--font-dark-grey));
+  font-family: var(--font-family-1);
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
+  font-weight: 400;
+  line-height: 1.5;
+
+  user-select: none;
+}
+
+.checkbox__input:hover:not([disabled])~.checkbox__body .checkbox__title,
+.checkbox__input:focus:not([disabled])~.checkbox__body .checkbox__title {
+  font-weight: 600;
+}
+
+.checkbox__input:disabled~.checkbox__body .checkbox__title {
+  color: rgb(var(--font-grey));
+}
+
+
+.checkbox__title::before {
+  content: attr(data-off);
+  color: rgb(var(--font-dark-grey));
+  font-family: var(--font-family-1);
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.checkbox__input:focus:not([disabled])~.checkbox__body .checkbox__title::before,
+.checkbox__input:hover:not([disabled])~.checkbox__body .checkbox__title::before {
+  font-weight: 600;
+}
+
+.checkbox__input:checked:not([disabled])~.checkbox__body .checkbox__title::before {
+  content: attr(data-on);
+}
+                                </code>
+                              </pre>
+                            </figure>
+                          </section> <!-- tabs__CSS -->
+                        </article>
+                </form>
               </section> <!-- tabs__tab2 -->
-            </article> <!-- tabs -->
+              
+              <!--TOGGLE ПЕРЕКЛЮЧАТЕЛЬ-->
+              <section class="tabs__content tabs__tab3">
+                <form action="#">
+                        <article class="tabs-inner">
+                          <input type="radio" name="tab-inner" id="tabs__toggle-html" checked>
+                          <input type="radio" name="tab-inner" id="tabs__toggle-css">
+              
+                          <div class="tabs-inner__label">
+                            <label for="tabs__toggle-html">HTML</label>
+                            <label for="tabs__toggle-css">CSS</label>
+                          </div>
+                          
+                          <section class="tabs-inner__content tabs__html">
+                            <figure class="code-viewing">
+                              <pre>
+                                <code>
+&lt;label class="toggle"&gt;
+  &lt;input class="toggle__input" type="checkbox" name="name" checked&gt;
+  &lt;div class="toggle__body"&gt;
+    &lt;div class="toggle__control"&gt;&lt;/div&gt;
+    &lt;span class="toggle__title" data-on="On" data-off="Off"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;label class="toggle"&gt;
+  &lt;input class="toggle__input" type="checkbox" name="name" disabled&gt;
+  &lt;div class="toggle__body"&gt;
+    &lt;div class="toggle__control"&gt;&lt;/div&gt;
+    &lt;span class="toggle__title" data-on="On" data-off="Off"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+                                </code>
+                              </pre>
+                            </figure>
+                          </section> <!-- tabs__HTML -->
+              
+                          <section class="tabs-inner__content tabs__css">
+                            <figure class="code-viewing">
+                              <pre>
+                                <code>
+.toggle {
+  --font-size-min: 0.8rem;
+  --font-size-max: 1rem;
+
+  display: inline-flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.toggle__icon-sun {
+  width: 23px;
+  height: 23px;
+
+  color: rgb(var(--background-dark));
+}
+
+.toggle__icon-moon {
+  width: 23px;
+  height: 23px;
+
+  color: rgb(var(--background-dark));
+}
+
+.toggle:has(.toggle__input:disabled) {
+  cursor: not-allowed;
+}
+
+.toggle__input {
+  position: absolute;
+  left: -100vw;
+  opacity: 0;
+}
+
+.toggle__body {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle__control {
+  box-sizing: border-box;
+
+  width: 52px;
+  height: 28px;
+
+  border: 1px solid rgb(var(--border-soft-grey));
+  border-radius: 16px;
+
+  background: rgb(var(--background-light));
+
+  transition: background 0.2s;
+}
+
+.toggle__input:checked:not([disabled])~.toggle__body .toggle__control {
+  background: rgb(var(--primary));
+  border-color: rgb(var(--primary));
+}
+
+.toggle__input:disabled~.toggle__body .toggle__control {
+  background: rgb(var(--background-grey));
+}
+
+.toggle__control::before {
+  content: '';
+  position: absolute;
+  top: 2.5px;
+  left: 2.2px;
+
+  width: 23px;
+  height: 23px;
+
+  border-radius: 50%;
+  background: rgb(var(--background-soft-grey));
+
+  transition: transform 0.3s, background 0.5s;
+}
+
+.toggle__input:checked:not([disabled])~.toggle__body .toggle__control::before {
+  transform: translateX(105%);
+  background: rgb(var(--background-light));
+}
+
+.toggle__input:disabled~.toggle__body .toggle__control::before {
+  background: rgb(var(--background-soft-grey));
+}
+
+.toggle__input:disabled~.toggle__body .toggle__title::before {
+  color: rgb(var(--font-soft-grey));
+}
+
+.toggle__title::before {
+  content: attr(data-off);
+  color: rgb(var(--font-dark-grey));
+  font-family: var(--font-family-1);
+  font-size: clamp(var(--font-size-min), 2.5vw, var(--font-size-max));
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.toggle__input:focus:not([disabled])~.toggle__body .toggle__title::before,
+.toggle__input:hover:not([disabled])~.toggle__body .toggle__title::before {
+  font-weight: 600;
+}
+
+.toggle__input:checked:not([disabled])~.toggle__body .toggle__title::before {
+  content: attr(data-on);
+}
+                                </code>
+                              </pre>
+                            </figure>
+                          </section> <!-- tabs__CSS -->
+                        </article>
+                </form>
+              </section> <!-- tabs__tab3 -->
+              
+              <!--ТЕКСТОВОЕ ПОЛЕ-->
+              <section class="tabs__content tabs__tab4">
+                <form action="#">
+                        <article class="tabs-inner">
+                          <input type="radio" name="tab-inner" id="tabs__txtfield-html" checked>
+                          <input type="radio" name="tab-inner" id="tabs__txtfield-css">
+
+                          <div class="tabs-inner__label">
+                            <label for="tabs__txtfield-html">HTML</label>
+                            <label for="tabs__txtfield-css">CSS</label>
+                          </div>
+
+                          <section class="tabs-inner__content tabs__html">
+                            <figure class="code-viewing">
+                              <pre>
+                                <code>
+&lt;article class="input-wrapper"&gt;
+  &lt;label class="input-field"&gt;
+    &lt;input class="input-field__input" type="text" name="name" placeholder="&nbsp;"&gt;
+    &lt;span class="input-field__placeholder"&gt;Введите текст&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;span class="input-wrapper__valid-msg" aria-live="polite"&gt;&lt;/span&gt;
+&lt;/article&gt;
+
+&lt;article class="input-wrapper"&gt;
+  &lt;label class="input-field"&gt;
+    &lt;input class="input-field__input input-field_success" type="text" name="name" placeholder="&nbsp;" value="Успешно"&gt;
+    &lt;span class="input-field__placeholder"&gt;Введите текст&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;span class="input-wrapper__valid-msg" aria-live="polite"&gt;&lt;/span&gt;
+&lt;/article&gt;
+
+&lt;article class="input-wrapper"&gt;
+  &lt;label class="input-field"&gt;
+    &lt;input class="input-field__input input-field_error" type="text" name="name" placeholder="&nbsp;" value="Ошибка"&gt;
+    &lt;span class="input-field__placeholder" data-err="Внесите изменения"&gt;Введите текст&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;span class="input-wrapper__valid-msg" aria-live="polite"&gt;
+    Не правильный текст Не правильный текст Не правильный текст Не правильный текст Не правильный текст Не правильный текст Не правильный текст
+  &lt;/span&gt;
+&lt;/article&gt;
+                                </code>
+                              </pre>
+                            </figure>
+                          </section> <!-- tabs__HTML -->
+
+                          <section class="tabs-inner__content tabs__css">
+                            <figure class="code-viewing">
+                              <pre>
+                                <code>
+.input-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.input-field {
+  --padding: 10px;
+  --font-size-min: 0.8rem;
+  --font-size-max: 1.25rem;
+  --width: 200px;
+
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+
+  min-width: var(--width);
+  width: 100%;
+
+  font-family: var(--font-family-1);
+  font-size: clamp(var(--font-size-min), 2vw, var(--font-size-max));
+}
+
+.input-field__input {
+  box-sizing: border-box;
+
+  padding: var(--padding) calc(var(--padding)*2.4) var(--padding);
+  width: 100%;
+
+  border: 1px solid rgb(var(--border-soft-grey));
+  border-radius: calc(0.8*var(--padding));
+  background: rgb(var(--background-light));
+
+  color: rgb(var(--font-dark-grey));
+  line-height: 1.3;
+}
+
+.input-field__input:-webkit-autofill,
+.input-field__input:-webkit-autofill:hover,
+.input-field__input:-webkit-autofill:focus,
+.input-field__input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(var(--font-dark-grey)) !important;
+}
+
+.input-field:has(.input-field__placeholder:hover) .input-field__input:not(.input-field__input.input-field_error),
+.input-field__input:focus:not(.input-field__input.input-field_error),
+.input-field__input:hover:not(.input-field__input.input-field_error) {
+  outline: none;
+  border-color: rgb(var(--primary));
+  box-shadow: 1px 1px 1px 0px rgba(var(--primary-hover) / 0.1);
+}
+
+.input-field_error {
+  outline: none;
+  border-color: rgb(var(--error));
+
+  background-image: url('img/error-circle.svg');
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: right calc(var(--padding)) center;
+}
+
+.input-field__input.input-field_error:hover,
+.input-field__input.input-field_error:focus {
+  outline: rgba(var(--error) / 0.2) solid 5px;
+}
+
+.input-field_success {
+  background-image: url('img/success.svg');
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: right calc(var(--padding)) center;
+}
+
+.input-field__input,
+.input-field__placeholder {
+  font-weight: 400;
+}
+
+.input-field__placeholder {
+  position: absolute;
+  left: calc(var(--padding)*2.4);
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: calc(100% - calc(6*var(--padding)));
+
+  color: rgb(var(--font-grey));
+  line-height: 1;
+  /* text-transform: uppercase; */
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.input-field__placeholder:hover,
+.input-field__input:focus~.input-field__placeholder,
+.input-field__input:hover~.input-field__placeholder,
+.input-field__input:not(:placeholder-shown)~.input-field__placeholder {
+  padding: 0 calc(var(--padding)/2);
+  top: 0;
+
+  background: rgb(var(--background-light));
+
+  color: rgb(var(--font-dark-grey));
+  font-size: max(10px, 0.6em);
+
+  transition: top ease .3s, font-size ease .3s;
+}
+
+.input-field__input.input-field_error~.input-field__placeholder {
+  /* правило выше переопределило font-size в .input-field__placeholder */
+  /* на 0.6em поэтому чтобы вернуться к родительскому font-size */
+  /* нужно установить 2em */
+  text-indent: calc(2em/(-0.29));
+  color: transparent;
+}
+
+.input-field__input.input-field_error~.input-field__placeholder::after {
+  content: attr(data-err);
+  color: rgb(var(--error));
+}
+
+.input-wrapper__valid-msg {
+  display: none;
+  font-size: max(11px, 0.6em);
+  color: rgb(var(--error));
+}
+
+.input-field:has(.input-field__input.input-field_error)~.input-wrapper__valid-msg {
+  display: inline-block;
+}
+                                </code>
+                              </pre>
+                            </figure>
+                          </section> <!-- tabs__CSS -->
+                        </article>
+                </form>
+              </section> <!-- tabs__tab4 -->
+
+            </article> <!-- ГРУППА ВНЕШНИЙ ВКЛАДОК-->
 
           </section> <!-- component-viewing -->
 

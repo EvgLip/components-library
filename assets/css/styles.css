@@ -30,6 +30,7 @@
 
 @import url('../../index.css');
 @import url('../../pages/component-page/component-page.css');
+@import url('../../pages/custom-elements-page/custom-elements-page.css');
 
 html,
 body {

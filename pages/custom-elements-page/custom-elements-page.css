@@ -1,0 +1,90 @@
+/* Вкладки */
+
+
+input[name="tab-inner"] {
+  position: absolute;
+  opacity: 0;
+  left: -100vw;
+}
+
+.tabs-inner__label {
+  display: flex;
+  gap: 20px;
+
+  color: rgb(var(--font-soft-grey));
+  font-family: var(--font-family-1);
+  font-size: clamp(0.6rem, 2.5vw, 1rem);
+  font-weight: 400;
+  line-height: 1.5;
+
+  & label {
+    box-sizing: border-box;
+    position: relative;
+
+    cursor: pointer;
+    user-select: none;
+  }
+
+  & label::after {
+    box-sizing: border-box;
+    position: absolute;
+
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+
+    background: rgb(var(--background-soft-grey));
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  & label:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.tabs:has(#tabs__radio-html:checked) .tabs-inner__label label[for="tabs__radio-html"],
+.tabs:has(#tabs__radio-css:checked) .tabs-inner__label label[for="tabs__radio-css"],
+.tabs:has(#tabs__check-html:checked) .tabs-inner__label label[for="tabs__check-html"],
+.tabs:has(#tabs__check-css:checked) .tabs-inner__label label[for="tabs__check-css"],
+.tabs:has(#tabs__toggle-html:checked) .tabs-inner__label label[for="tabs__toggle-html"],
+.tabs:has(#tabs__toggle-css:checked) .tabs-inner__label label[for="tabs__toggle-css"],
+.tabs:has(#tabs__txtfield-html:checked) .tabs-inner__label label[for="tabs__txtfield-html"],
+.tabs:has(#tabs__txtfield-css:checked) .tabs-inner__label label[for="tabs__txtfield-css"] {
+  color: rgb(var(--font-dark-grey));
+  cursor: default;
+}
+
+.tabs:has(#tabs__radio-html:checked) .tabs-inner__label label[for="tabs__radio-html"]::after,
+.tabs:has(#tabs__radio-css:checked) .tabs-inner__label label[for="tabs__radio-css"]::after,
+.tabs:has(#tabs__check-html:checked) .tabs-inner__label label[for="tabs__check-html"]::after,
+.tabs:has(#tabs__check-css:checked) .tabs-inner__label label[for="tabs__check-css"]::after,
+.tabs:has(#tabs__toggle-html:checked) .tabs-inner__label label[for="tabs__toggle-html"]::after,
+.tabs:has(#tabs__toggle-css:checked) .tabs-inner__label label[for="tabs__toggle-css"]::after,
+.tabs:has(#tabs__txtfield-html:checked) .tabs-inner__label label[for="tabs__txtfield-html"]::after,
+.tabs:has(#tabs__txtfield-css:checked) .tabs-inner__label label[for="tabs__txtfield-css"]::after {
+  transform: scaleX(1);
+  background: rgb(var(--background-dark-grey));
+}
+
+.tabs-inner__content {
+  display: none;
+}
+
+#tabs__radio-html:checked~.tabs__html,
+#tabs__radio-css:checked~.tabs__css,
+#tabs__check-html:checked~.tabs__html,
+#tabs__check-css:checked~.tabs__css,
+#tabs__toggle-html:checked~.tabs__html,
+#tabs__toggle-css:checked~.tabs__css,
+#tabs__txtfield-html:checked~.tabs__html,
+#tabs__txtfield-css:checked~.tabs__css {
+  display: block;
+}
+
+.tabs_padding-block_50 {
+  padding: 50px 0;
+}
